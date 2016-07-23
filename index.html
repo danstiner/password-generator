@@ -43,7 +43,7 @@
           
           var randomSymbols = Array.from(randomValues).map(value => { console.log(value); return symbols[value % symbols.length];});
         
-          document.getElementById("password").textContent = randomSymbols.reduce((prev, cur) => prev + " " + cur);
+          document.getElementById("generated_password").textContent = randomSymbols.reduce((prev, cur) => prev + " " + cur);
         }
         
         var dicewareWordListText = `-----BEGIN PGP SIGNED MESSAGE-----
