@@ -4,7 +4,7 @@ function generate_password(symbols) {
   var randomValues = new Uint32Array(6);
   crypto.getRandomValues(randomValues);
   
-  var randomSymbols = Array.from(randomValues).map(value => { console.log(value); return symbols[value % symbols.length];});
+  var randomSymbols = Array.from(randomValues).map(value => { return symbols[value % symbols.length];});
 
   document.getElementById("generated_password").textContent = randomSymbols.reduce((prev, cur) => prev + " " + cur);
 }
