@@ -38,7 +38,7 @@
         function generate_password(symbols) {
           var crypto = window.crypto;
         
-          var randomValues = new Uint32Array(4);
+          var randomValues = new Uint32Array(6);
           crypto.getRandomValues(randomValues);
           
           var randomSymbols = Array.from(randomValues).map(value => { console.log(value); return symbols[value % symbols.length];});
