@@ -9,6 +9,11 @@ function generate_password(symbols) {
   document.getElementById("generated_password").textContent = randomSymbols.reduce((prev, cur) => prev + " " + cur);
 }
 
+
+/**
+ * Word list from Diceware. (http://world.std.com/%7Ereinhold/diceware.wordlist.asc)
+ * Licensed under CC-BY 3.0.
+ */
 var dicewareWordListText = `-----BEGIN PGP SIGNED MESSAGE-----
 
 11111	a
