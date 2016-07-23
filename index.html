@@ -31,9 +31,17 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <p> ... </p>
-
-
+        <span id="generated_password"> ... </span>
+        <script type="text/javascript">//<![CDATA[
+        window.onload=function(){
+        var crypto = window.crypto;
+        
+        var randomValues = new Uint32Array(4);
+        crypto.getRandomValues(randomValues);
+        
+        document.getElementById("generated_password").textContent = randomValues.reduce((prev, cur) => prev + " " + cur);;
+        }//]]>
+        </script>
       </section>
     </div>
 
