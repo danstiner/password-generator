@@ -49,11 +49,15 @@ function concat_words(words) {
 
 function displayPassphraseStrength(bitsOfEntropy) {
   var offlineHashRate = 100000000000000;
-  var offlineHashRateText = "one hundred trillion guesses/sec"
+  var offlineHashRateText = "one hundred trillion guesses/sec";
+  var timeToCrack = getTimeToCrack(offlineHashRate, bitsOfEntropy);
 
-  var element = document.getElementById("generated_passphrase_strength");
-  element.textContent = getTimeToCrack(offlineHashRate, bitsOfEntropy) + " at " + offlineHashRateText;
-  element.title = "Conservative estimate. Assumes attacker has a hash "
+  var strengthElement = document.getElementById("generated_passphrase_strength");
+  var entropyElement = document.getElementById("generated_passphrase_entropy");
+
+  entropyElement.textContent = "~" + Math.floor(bitsOfEntropy) + " bits of entropy";
+  strengthElement.textContent = timeToCrack.value + " " + timeToCrack.unit + " at " + offlineHashRateText;
+  strengthElement.title = "Conservative estimate. Assumes attacker has a hash "
   + "of the passphrase (say through a server data breach) and is using a "
   + "supercomputer to brute-force guess each of the ~2^" + Math.floor(bitsOfEntropy)
   + " possible passphrases (unlikely now but computers continue double in speed each year).";
@@ -62,8 +66,7 @@ function displayPassphraseStrength(bitsOfEntropy) {
 function getTimeToCrack(guessesPerSecond, bitsOfEntropy) {
   var log2GuessRate = Math.log2(guessesPerSecond);
   var secondsToCrack = (bitsOfEntropy < log2GuessRate) ? 0 : Math.pow(2, bitsOfEntropy - log2GuessRate);
-  var timeToCrack = secondsToTimeWithUnit(secondsToCrack);
-  return "~" + timeToCrack.value + " " + timeToCrack.unit;
+  return secondsToTimeWithUnit(secondsToCrack);
 }
 
 function secondsToTimeWithUnit(seconds) {
