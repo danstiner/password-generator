@@ -21,36 +21,48 @@
           <h1 id="project_title">Password Generator</h1>
           <h2 id="project_tagline"></h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/danstiner/password-generator/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/danstiner/password-generator/tarball/master">Download this project as a tar.gz file</a>
-            </section>
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/danstiner/password-generator/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/danstiner/password-generator/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+
+          <script type="text/javascript" src="javascripts/main.js"></script>
+          <script type="text/javascript">//<![CDATA[
+
+          window.onload = () => {
+            generate_password(wordListCommonPasswords);
+          };
+
+          //]]>
+          </script>
         </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <script type="text/javascript" src="javascripts/main.js"></script>
-        <script type="text/javascript">//<![CDATA[
-
-        window.onload = () => {
-          generate_password(wordListCommonPasswords);
-        };
-
-        //]]>
-        </script>
-        <span id="generated_password"> ... </span>
-        <p>Inspired by xkcd's <a href="https://xkcd.com/936/">Password Strength</a> comic</p>
-        <p>Word lists from <a href="http://world.std.com/~reinhold/diceware.html">Diceware</a> and <a href="http://wordlist.aspell.net/12dicts/">12Dicts</a></p>
-        <p>Cryptographically secure randomness from <a href="https://developer.mozilla.org/en-US/docs/Web/API/RandomSource/getRandomValues">window.crypto.getRandomValues</a>
+        <h1>Multi-word Passphrase Generator</h1>
+        <center>
+          <span id="generated_password"> </span>
+        </center>
+        <p>
+          <ul>
+            <li>Cryptographically secure randomness from <a href="https://developer.mozilla.org/en-US/docs/Web/API/RandomSource/getRandomValues">window.crypto.getRandomValues</a></li>
+            <li>Inspired by xkcd's <a href="https://xkcd.com/936/">Password Strength</a> comic</li>
+          </ul>
+        </p>
+        <div id="comic">
+          <a href="https://xkcd.com/936/">
+            <img src="https://imgs.xkcd.com/comics/password_strength.png" title="To anyone who understands information theory and security and is in an infuriating argument with someone who does not (possibly involving mixed case), I sincerely apologize." alt="Password Strength">
+          </a>
+        </div>
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Password Generator maintained by <a href="https://github.com/danstiner">danstiner</a></p>
+        <p class="copyright">Password Generator maintained by <a href="//danielstiner.com">Daniel Stiner</a></p>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
