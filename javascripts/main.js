@@ -56,7 +56,7 @@ function displayPassphraseStrength(bitsOfEntropy) {
 
   var element = document.getElementById("generated_passphrase_strength");
   element.textContent = "~" + timeToCrack.value + " " + timeToCrack.unit + " to crack";
-  element.title = "Assuming one hundred trillion guesses per second. Passphrase contains ~" + Math.floor(bitsOfEntropy) + " bits of entropy";
+  element.title = "Assuming one hundred trillion guesses per second which as of 2016 would require a nation-state level of resources. Passphrase contains ~" + Math.floor(bitsOfEntropy) + " bits of entropy";
 }
 
 function secondsToTimeWithUnit(seconds) {
