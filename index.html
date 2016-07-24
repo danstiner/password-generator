@@ -37,6 +37,17 @@
           .containwidth {
             max-width: 100%;
           }
+          .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+          }
+          .alert-danger {
+            color: #a94442;
+            background-color: #f2dede;
+            border-color: #ebccd1;
+          }
           </style>
 
           <script type="text/javascript" src="javascripts/main.js"></script>
@@ -60,6 +71,7 @@
         <div class="passphrase_block">
           <span id="generated_passphrase"></span><br>
           <span id="generated_passphrase_strength"></span>
+          <span id="passphrase_generation_error" class="alert alert-danger" style="display:none"></span>
         </div>
         <br>
         <div id="comic">

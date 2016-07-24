@@ -21,13 +21,17 @@
 */
 
 function generatePassphrase() {
-  var wordList = listOfCommonPasswords;
-  var wordCount = 6;
+    var wordList = listOfCommonPasswords;
+    var wordCount = 6;
 
-  var result = getRandomSymbols(wordList, wordCount);
-
-  document.getElementById("generated_passphrase").textContent = concat_words(result.symbols);
-  displayPassphraseStrength(result.bitsOfEntropy);
+    try {
+      var result = getRandomSymbols(wordList, wordCount);
+      document.getElementById("generated_passphrase").textContent = concat_words(result.symbols);
+      displayPassphraseStrength(result.bitsOfEntropy);
+    } catch (ex) {
+      displayError(ex);
+      throw ex;
+    } 
 }
 
 function getRandomSymbols(alphabet, count) {
@@ -82,7 +86,12 @@ function secondsToTimeWithUnit(seconds) {
     }
 }
 
-
+function displayError(exception)
+{
+    var element = document.getElementById("passphrase_generation_error");
+    element.innerHTML = "<strong>Error</strong>: " + exception.message;
+    element.style.display = "";
+}
 
 var listOfCommonPasswords = `abnormal
 absolute
