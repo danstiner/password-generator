@@ -81,28 +81,43 @@
           <script type="text/javascript">//<![CDATA[
 
           var wordlists = {
-            "common-passwords": wordlistCommonPasswords,
-            "diceware": wordlistDiceware
+            "common-passwords": {
+              description: "common words",
+              alphabet: wordlistCommonPasswords
+            },
+            "diceware": {
+              description: "<a href=\"http://www.diceware.com/\">Diceware</a> words",
+              alphabet: wordlistDiceware
+            }
           };
-          var wordlist = wordlists["common-passwords"];
-          var wordCount = 6;
+          var wordlist = wordlists[localStorage.getItem("wordlist")] || wordlists["common-passwords"]
+          var wordCount = parseInt(localStorage.getItem("wordCount")) || 6;
 
           window.onload = () => {
-            generatePassphrase(wordlist, wordCount);
+            updateSelectors();
+            generatePassphrase(wordlist.alphabet, wordCount);
           };
 
           var onSelectSymbolCount = target => {
             wordCount = parseInt(target.dataset.value);
-            generatePassphrase(wordlist, wordCount);
+            localStorage.setItem("wordCount", wordCount);
+            generatePassphrase(wordlist.alphabet, wordCount);
             document.getElementById("passphrase_generation_symbol_count").innerHTML = target.innerHTML;
             return false;
           };
           var onSelectAlphabet = target => {
-            wordlist = wordlists[target.dataset.value];
-            generatePassphrase(wordlist, wordCount);
-            document.getElementById("passphrase_generation_alphabet").innerHTML = target.innerHTML;
+            var wordlistName = target.dataset.value;
+            wordlist = wordlists[wordlistName];
+            localStorage.setItem("wordlist", wordlistName)
+            generatePassphrase(wordlist.alphabet, wordCount);
+            document.getElementById("passphrase_generation_alphabet").innerHTML = wordlist.description;
             return false;
           };
+
+          var updateSelectors = () => {
+            document.getElementById("passphrase_generation_symbol_count").innerHTML = Array.from(document.querySelectorAll("#passphrase_generation_symbol_counts a")).filter(elem => elem.dataset.value == wordCount)[0].innerHTML;
+            document.getElementById("passphrase_generation_alphabet").innerHTML = wordlist.description;
+          }
 
           //]]>
           </script>
@@ -116,7 +131,7 @@
           This phrase consists of
           <span class="dropdown">
             <span id="passphrase_generation_symbol_count" class="text-decoration-underline-dotted">six</span>
-            <span class="dropdown-content">
+            <span class="dropdown-content" id="passphrase_generation_symbol_counts">
               <a href="#" onclick="return onSelectSymbolCount(this)" data-value=4>four</a>
               <a href="#" onclick="return onSelectSymbolCount(this)" data-value=5>five</a>
               <a href="#" onclick="return onSelectSymbolCount(this)" data-value=6>six</a>
