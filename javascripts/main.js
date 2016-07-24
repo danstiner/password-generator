@@ -5,6 +5,7 @@ function concat_words(words) {
 function generate_password() {
   var result = getRandomSymbols(wordListCommonPasswords, 6);
   document.getElementById("generated_password").textContent = concat_words(result.symbols);
+  document.getElementById("generated_password_entropy").textContent = Math.floor(result.bitsOfEntropy) + " bits of entropy";
 }
 
 function getRandomSymbols(alphabet, count) {
@@ -16,7 +17,8 @@ function getRandomSymbols(alphabet, count) {
   var randomSymbols = Array.from(randomValues).map(value => { return alphabet[value % alphabet.length];});
 
   return {
-  	symbols: randomSymbols
+  	symbols: randomSymbols,
+  	bitsOfEntropy: count * Math.log2(alphabet.length)
   };
 }
 
