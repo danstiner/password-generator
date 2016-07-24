@@ -48,11 +48,15 @@ function concat_words(words) {
 }
 
 function displayPassphraseStrength(bitsOfEntropy) {
-  var offlineHashRate = 100000000000000; // one hundred trillion
+  var offlineHashRate = 100000000000000;
+  var offlineHashRateText = "one hundred trillion guesses/sec"
 
   var element = document.getElementById("generated_passphrase_strength");
-  element.textContent = getTimeToCrack(offlineHashRate, bitsOfEntropy) + " to crack";
-  element.title = "Assuming one hundred trillion guesses per second which as of 2016 would require a nation-state level of resources. Passphrase contains ~" + Math.floor(bitsOfEntropy) + " bits of entropy";
+  element.textContent = getTimeToCrack(offlineHashRate, bitsOfEntropy) + " at " + offlineHashRateText;
+  element.title = "Conservative estimate. Assumes attacker has a hash " +
+  "of the passphrase (say through a server data breach) and is using a " +
+  "supercomputer to brute-force guess each of the ~2^" + Math.floor(bitsOfEntropy) +
+  " possible passphrases (unlikely now but computers continue double in speed each year).";
 }
 
 function getTimeToCrack(guessesPerSecond, bitsOfEntropy) {
