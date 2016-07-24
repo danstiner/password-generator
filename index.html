@@ -79,13 +79,16 @@
           <script type="text/javascript" src="javascripts/main.js"></script>
           <script type="text/javascript">//<![CDATA[
 
+          var wordlist = wordlistCommonPasswords;
+          var wordCount = 6;
+
           window.onload = () => {
-            generatePassphrase();
+            generatePassphrase(wordlist, wordCount);
           };
 
           var onSelectSymbolCount = target => {
             wordCount = parseInt(target.dataset.value);
-            generatePassphrase();
+            generatePassphrase(wordlist, wordCount);
             document.getElementById("passphrase_generation_symbol_count").textContent = target.textContent;
             return false;
           };

@@ -20,12 +20,9 @@
     OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-var wordlist = wordlistCommonPasswords;
-var wordCount = 6;
-
-function generatePassphrase() {
+function generatePassphrase(alphabet, count) {
   try {
-    var result = getRandomSymbols(wordlist, wordCount);
+    var result = getRandomSymbols(alphabet, count);
     document.getElementById("generated_passphrase").textContent = concat_words(result.symbols);
     displayPassphraseStrength(result.bitsOfEntropy);
   } catch (ex) {
