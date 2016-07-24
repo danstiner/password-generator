@@ -112,7 +112,14 @@
           var updateSelectors = () => {
             document.getElementById("passphrase_generation_symbol_count").innerHTML = Array.from(document.querySelectorAll("#passphrase_generation_symbol_counts a")).filter(elem => elem.dataset.value == wordCount)[0].innerHTML;
             document.getElementById("passphrase_generation_alphabet").innerHTML = wordlist.description;
-          }
+          };
+          function selectNodeContents(element) {
+            var range = document.createRange();
+            range.selectNodeContents(element);
+            var selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+          };
 
           //]]>
           </script>
@@ -144,7 +151,7 @@
           It should be easy to remember but hard to guess, making it a good password.
         </p>
         <div class="passphrase_block">
-          <span id="generated_passphrase"></span><br>
+          <span id="generated_passphrase" onclick="selectNodeContents(this)" ></span><br>
           <span id="generated_passphrase_strength"></span><br>
           <span id="generated_passphrase_entropy"></span><br>
           <span id="passphrase_generation_error" class="alert alert-danger" style="display:none"></span>
