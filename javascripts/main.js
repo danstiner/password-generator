@@ -1,5 +1,36 @@
+function generate_password() {
+  var wordList = listOfCommonPasswords;
+  var wordCount = 6;
+
+  var result = getRandomSymbols(wordList, wordCount);
+  
+  document.getElementById("generated_password").textContent = concat_words(result.symbols);
+  displayEntropy(result.bitsOfEntropy);
+}
+
+function getRandomSymbols(alphabet, count) {
+  var randomValues = new Uint32Array(count);
+  window.crypto.getRandomValues(randomValues);
+  return {
+    symbols: Array.from(randomValues).map(value => alphabet[value % alphabet.length]),
+    bitsOfEntropy: count * Math.log2(alphabet.length)
+  };
+}
+
 function concat_words(words) {
     return words.reduce((prev, cur) => prev + " " + cur);
+}
+
+function displayEntropy(bitsOfEntropy) {
+    var assumedHashRate = 100000000000000; // one hundred trillion
+    var log2HashRate = Math.log2(assumedHashRate);
+
+    var secondsToCrack = (bitsOfEntropy < log2HashRate) ? 0 : Math.pow(2, bitsOfEntropy - log2HashRate);
+    var timeToCrack = secondsToTimeWithUnit(secondsToCrack);
+
+    var element = document.getElementById("generated_password_strength");
+    element.textContent = timeToCrack.value + " " + timeToCrack.unit + " to crack";
+    element.title = "Assuming one hundred trillion guesses per second. Passphrase contains ~" + Math.floor(bitsOfEntropy) + " bits of entropy";
 }
 
 function secondsToTimeWithUnit(seconds) {
@@ -29,45 +60,9 @@ function secondsToTimeWithUnit(seconds) {
     }
 }
 
-function generate_password() {
-  var result = getRandomSymbols(wordListCommonPasswords, 6);
-  document.getElementById("generated_password").textContent = concat_words(result.symbols);
-    var hashRate = 100000000000000; // one hundred trillion
-    var log2HashRate = Math.log2(hashRate);
-    var bitsOfEntropy = result.bitsOfEntropy;
-    var secondsToCrack;
-
-    if (bitsOfEntropy < log2HashRate) {
-        secondsToCrack = 0;
-    } else {
-        secondsToCrack = Math.pow(2, bitsOfEntropy - log2HashRate);
-    }
-
-    var timeToCrack = secondsToTimeWithUnit(secondsToCrack);
-
-    var timeToCrackText = timeToCrack.value + " " + timeToCrack.unit;
-
-    var element = document.getElementById("generated_password_strength");
-    element.textContent = timeToCrackText + " to crack";
-    element.title = "Assuming one hundred trillion guesses per second. Passphrase contains ~" + Math.floor(result.bitsOfEntropy) + " bits of entropy";
-}
-
-function getRandomSymbols(alphabet, count) {
-  var crypto = window.crypto;
-
-  var randomValues = new Uint32Array(count);
-  crypto.getRandomValues(randomValues);
-  
-  var randomSymbols = Array.from(randomValues).map(value => { return alphabet[value % alphabet.length];});
-
-  return {
-    symbols: randomSymbols,
-    bitsOfEntropy: count * Math.log2(alphabet.length)
-  };
-}
 
 
-var wordListCommonPasswords = `abnormal
+var listOfCommonPasswords = `abnormal
 absolute
 access
 accord
