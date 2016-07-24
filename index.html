@@ -26,6 +26,15 @@
             <a class="tar_download_link" href="https://github.com/danstiner/password-generator/tarball/master">Download this project as a tar.gz file</a>
           </section>
 
+          <style>
+          #generated_password {
+            font-size: 150%;
+          }
+          .passphrase_block {
+            text-align: center;
+          }
+          </style>
+
           <script type="text/javascript" src="javascripts/main.js"></script>
           <script type="text/javascript">//<![CDATA[
 
@@ -41,10 +50,10 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <center>
+        <div class="passphrase_block">
           <span id="generated_password"></span><br>
           <span id="generated_password_strength"></span>
-        </center>
+        </div>
         <p>
           <ul>
             <li>Cryptographically secure randomness from <a href="https://developer.mozilla.org/en-US/docs/Web/API/RandomSource/getRandomValues">window.crypto.getRandomValues</a></li>
