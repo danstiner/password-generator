@@ -93,8 +93,7 @@ function secondsToTimeWithUnit(seconds) {
   }
 }
 
-function displayError(exception)
-{
+function displayError(exception) {
   var element = document.getElementById("passphrase_generation_error");
   element.innerHTML = "<strong>Error</strong>: " + exception.message;
   element.style.display = "";
