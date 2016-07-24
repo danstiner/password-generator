@@ -21,17 +21,17 @@
 */
 
 function generatePassphrase() {
-    var wordList = listOfCommonPasswords;
-    var wordCount = 6;
+  var wordList = listOfCommonPasswords;
+  var wordCount = 6;
 
-    try {
-      var result = getRandomSymbols(wordList, wordCount);
-      document.getElementById("generated_passphrase").textContent = concat_words(result.symbols);
-      displayPassphraseStrength(result.bitsOfEntropy);
-    } catch (ex) {
-      displayError(ex);
-      throw ex;
-    } 
+  try {
+    var result = getRandomSymbols(wordList, wordCount);
+    document.getElementById("generated_passphrase").textContent = concat_words(result.symbols);
+    displayPassphraseStrength(result.bitsOfEntropy);
+  } catch (ex) {
+    displayError(ex);
+    throw ex;
+  } 
 }
 
 function getRandomSymbols(alphabet, count) {
@@ -44,53 +44,53 @@ function getRandomSymbols(alphabet, count) {
 }
 
 function concat_words(words) {
-    return words.reduce((prev, cur) => prev + " " + cur);
+  return words.reduce((prev, cur) => prev + " " + cur);
 }
 
 function displayPassphraseStrength(bitsOfEntropy) {
-    var assumedHashRate = 100000000000000; // one hundred trillion
-    var log2HashRate = Math.log2(assumedHashRate);
+  var assumedHashRate = 100000000000000; // one hundred trillion
+  var log2HashRate = Math.log2(assumedHashRate);
 
-    var secondsToCrack = (bitsOfEntropy < log2HashRate) ? 0 : Math.pow(2, bitsOfEntropy - log2HashRate);
-    var timeToCrack = secondsToTimeWithUnit(secondsToCrack);
+  var secondsToCrack = (bitsOfEntropy < log2HashRate) ? 0 : Math.pow(2, bitsOfEntropy - log2HashRate);
+  var timeToCrack = secondsToTimeWithUnit(secondsToCrack);
 
-    var element = document.getElementById("generated_passphrase_strength");
-    element.textContent = timeToCrack.value + " " + timeToCrack.unit + " to crack";
-    element.title = "Assuming one hundred trillion guesses per second. Passphrase contains ~" + Math.floor(bitsOfEntropy) + " bits of entropy";
+  var element = document.getElementById("generated_passphrase_strength");
+  element.textContent = timeToCrack.value + " " + timeToCrack.unit + " to crack";
+  element.title = "Assuming one hundred trillion guesses per second. Passphrase contains ~" + Math.floor(bitsOfEntropy) + " bits of entropy";
 }
 
 function secondsToTimeWithUnit(seconds) {
-    var secondsPerMinute = 60;
-    var secondsPerHour = 60 * secondsPerMinute;
-    var secondsPerDay = 24 * secondsPerHour;
-    var secondsPerYear = 365 * secondsPerDay;
+  var secondsPerMinute = 60;
+  var secondsPerHour = 60 * secondsPerMinute;
+  var secondsPerDay = 24 * secondsPerHour;
+  var secondsPerYear = 365 * secondsPerDay;
 
-    var pluralize = (value, unit) => {
-        var roundedValue = Math.round(value);
-        return {
-            value: roundedValue,
-            unit: roundedValue === 1 ? unit : unit + "s"
-        };
+  var pluralize = (value, unit) => {
+    var roundedValue = Math.round(value);
+    return {
+      value: roundedValue,
+      unit: roundedValue === 1 ? unit : unit + "s"
     };
+  };
 
-    if (seconds > secondsPerYear) {
-        return pluralize(seconds / secondsPerYear, "year");
-    } else if (seconds > secondsPerDay) {
-        return pluralize(seconds / secondsPerDay, "day");
-    } else if (seconds > secondsPerHour) {
-        return pluralize(seconds / secondsPerHour, "hour");
-    } else if (seconds > secondsPerMinute) {
-        return pluralize(seconds / secondsPerMinute, "minute");
-    } else {
-        return pluralize(seconds, "second");
-    }
+  if (seconds > secondsPerYear) {
+    return pluralize(seconds / secondsPerYear, "year");
+  } else if (seconds > secondsPerDay) {
+    return pluralize(seconds / secondsPerDay, "day");
+  } else if (seconds > secondsPerHour) {
+    return pluralize(seconds / secondsPerHour, "hour");
+  } else if (seconds > secondsPerMinute) {
+    return pluralize(seconds / secondsPerMinute, "minute");
+  } else {
+    return pluralize(seconds, "second");
+  }
 }
 
 function displayError(exception)
 {
-    var element = document.getElementById("passphrase_generation_error");
-    element.innerHTML = "<strong>Error</strong>: " + exception.message;
-    element.style.display = "";
+  var element = document.getElementById("passphrase_generation_error");
+  element.innerHTML = "<strong>Error</strong>: " + exception.message;
+  element.style.display = "";
 }
 
 var listOfCommonPasswords = `abnormal
