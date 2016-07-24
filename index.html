@@ -48,6 +48,31 @@
             background-color: #f2dede;
             border-color: #ebccd1;
           }
+          .dropdown {
+            display: inline;
+            position: relative;
+          }
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #F9F9F9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+          }
+          .dropdown-content a {
+            display: block;
+            text-decoration: none;
+            padding: 4px 6px;
+            color: #373737;
+          }
+          .dropdown-content a:hover {
+            background-color: #F1F1F1;
+          }
+          .dropdown:hover .dropdown-content {
+            display: inline;
+          }
+          .text-decoration-underline-dotted {
+            border-bottom: 1px dotted #999;
+          }
           </style>
 
           <script type="text/javascript" src="javascripts/wordlist-common-passwords.js"></script>
@@ -56,6 +81,13 @@
 
           window.onload = () => {
             generatePassphrase();
+          };
+
+          var onSelectSymbolCount = target => {
+            wordCount = parseInt(target.dataset.value);
+            generatePassphrase();
+            document.getElementById("passphrase_generation_symbol_count").textContent = target.textContent;
+            return false;
           };
 
           //]]>
@@ -67,7 +99,18 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <p>
-          This phrase consists of six common words chosen securely at random. It should be easy to remember but hard to guess even for a supercomputer, making it a good password.
+          This phrase consists of
+          <span class="dropdown">
+            <span class="dropdown-content">
+              <a href="#" onclick="return onSelectSymbolCount(this)" data-value=4>four</a>
+              <a href="#" onclick="return onSelectSymbolCount(this)" data-value=5>five</a>
+              <a href="#" onclick="return onSelectSymbolCount(this)" data-value=6>six</a>
+              <a href="#" onclick="return onSelectSymbolCount(this)" data-value=7>seven</a>
+            </span>
+            <span id="passphrase_generation_symbol_count" class="text-decoration-underline-dotted">six</span>
+            
+          </span> 
+          common words chosen securely at random. It should be easy to remember but hard to guess even for a supercomputer, making it a good password.
         </p>
         <div class="passphrase_block">
           <span id="generated_passphrase"></span><br>
