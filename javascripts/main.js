@@ -1,11 +1,11 @@
-function generate_password() {
+function generatePassphrase() {
   var wordList = listOfCommonPasswords;
   var wordCount = 6;
 
   var result = getRandomSymbols(wordList, wordCount);
 
-  document.getElementById("generated_password").textContent = concat_words(result.symbols);
-  displayEntropy(result.bitsOfEntropy);
+  document.getElementById("generated_passphrase").textContent = concat_words(result.symbols);
+  displayPassphraseStrength(result.bitsOfEntropy);
 }
 
 function getRandomSymbols(alphabet, count) {
@@ -21,14 +21,14 @@ function concat_words(words) {
     return words.reduce((prev, cur) => prev + " " + cur);
 }
 
-function displayEntropy(bitsOfEntropy) {
+function displayPassphraseStrength(bitsOfEntropy) {
     var assumedHashRate = 100000000000000; // one hundred trillion
     var log2HashRate = Math.log2(assumedHashRate);
 
     var secondsToCrack = (bitsOfEntropy < log2HashRate) ? 0 : Math.pow(2, bitsOfEntropy - log2HashRate);
     var timeToCrack = secondsToTimeWithUnit(secondsToCrack);
 
-    var element = document.getElementById("generated_password_strength");
+    var element = document.getElementById("generated_passphrase_strength");
     element.textContent = timeToCrack.value + " " + timeToCrack.unit + " to crack";
     element.title = "Assuming one hundred trillion guesses per second. Passphrase contains ~" + Math.floor(bitsOfEntropy) + " bits of entropy";
 }
