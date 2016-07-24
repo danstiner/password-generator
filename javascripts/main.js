@@ -3,14 +3,14 @@ function concat_words(words) {
 }
 
 function generate_password() {
-  var result = getRandomSymbols(wordListCommonPasswords);
+  var result = getRandomSymbols(wordListCommonPasswords, 6);
   document.getElementById("generated_password").textContent = concat_words(result.symbols);
 }
 
-function getRandomSymbols(alphabet) {
+function getRandomSymbols(alphabet, count) {
   var crypto = window.crypto;
 
-  var randomValues = new Uint32Array(6);
+  var randomValues = new Uint32Array(count);
   crypto.getRandomValues(randomValues);
   
   var randomSymbols = Array.from(randomValues).map(value => { return alphabet[value % alphabet.length];});
