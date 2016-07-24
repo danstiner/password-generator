@@ -104,7 +104,10 @@
         </p>
         <div class="passphrase_block">
           <span id="generated_passphrase" onclick="selectNodeContents(this)" ></span><br>
-          <span id="generated_passphrase_strength"></span><br>
+          <span>
+            <span id="time_to_guess_offline" data-rate=100000000000000></span>
+            <span title="Conservative estimate for cracking a stolen hash of the passphrase. Server data breaches have become common enough this is plausible, if still an unlikely worst-case scenario.">at one hundred trillion guesses/sec</span>
+          </span><br>
           <span id="generated_passphrase_entropy"></span><br>
           <span id="passphrase_generation_error" class="alert alert-danger" style="display:none"></span>
         </div>
