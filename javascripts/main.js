@@ -1,12 +1,23 @@
-function generate_password(symbols) {
+function concat_words(words) {
+	return words.reduce((prev, cur) => prev + " " + cur);
+}
+
+function generate_password() {
+  var result = getRandomSymbols(wordListCommonPasswords);
+  document.getElementById("generated_password").textContent = concat_words(result.symbols);
+}
+
+function getRandomSymbols(alphabet) {
   var crypto = window.crypto;
 
   var randomValues = new Uint32Array(6);
   crypto.getRandomValues(randomValues);
   
-  var randomSymbols = Array.from(randomValues).map(value => { return symbols[value % symbols.length];});
+  var randomSymbols = Array.from(randomValues).map(value => { return alphabet[value % alphabet.length];});
 
-  document.getElementById("generated_password").textContent = randomSymbols.reduce((prev, cur) => prev + " " + cur);
+  return {
+  	symbols: randomSymbols
+  };
 }
 
 
