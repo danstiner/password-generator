@@ -1,11 +1,55 @@
 function concat_words(words) {
-	return words.reduce((prev, cur) => prev + " " + cur);
+    return words.reduce((prev, cur) => prev + " " + cur);
+}
+
+function secondsToTimeWithUnit(seconds) {
+    var secondsPerMinute = 60;
+    var secondsPerHour = 60 * secondsPerMinute;
+    var secondsPerDay = 24 * secondsPerHour;
+    var secondsPerYear = 365 * secondsPerDay;
+
+    var pluralize = (value, unit) => {
+        var roundedValue = Math.round(value);
+        return {
+            value: roundedValue,
+            unit: roundedValue === 1 ? unit : unit + "s"
+        };
+    };
+
+    if (seconds > secondsPerYear) {
+        return pluralize(seconds / secondsPerYear, "year");
+    } else if (seconds > secondsPerDay) {
+        return pluralize(seconds / secondsPerDay, "day");
+    } else if (seconds > secondsPerHour) {
+        return pluralize(seconds / secondsPerHour, "hour");
+    } else if (seconds > secondsPerMinute) {
+        return pluralize(seconds / secondsPerMinute, "minute");
+    } else {
+        return pluralize(seconds, "second");
+    }
 }
 
 function generate_password() {
   var result = getRandomSymbols(wordListCommonPasswords, 6);
   document.getElementById("generated_password").textContent = concat_words(result.symbols);
-  document.getElementById("generated_password_entropy").textContent = Math.floor(result.bitsOfEntropy) + " bits of entropy";
+    var hashRate = 100000000000000; // one hundred trillion
+    var log2HashRate = Math.log2(hashRate);
+    var bitsOfEntropy = result.bitsOfEntropy;
+    var secondsToCrack;
+
+    if (bitsOfEntropy < log2HashRate) {
+        secondsToCrack = 0;
+    } else {
+        secondsToCrack = Math.pow(2, bitsOfEntropy - log2HashRate);
+    }
+
+    var timeToCrack = secondsToTimeWithUnit(secondsToCrack);
+
+    var timeToCrackText = timeToCrack.value + " " + timeToCrack.unit;
+
+    var element = document.getElementById("generated_password_strength");
+    element.textContent = timeToCrackText + " to crack";
+    element.title = "Assuming one hundred trillion guesses per second. Passphrase contains ~" + Math.floor(result.bitsOfEntropy) + " bits of entropy";
 }
 
 function getRandomSymbols(alphabet, count) {
@@ -17,8 +61,8 @@ function getRandomSymbols(alphabet, count) {
   var randomSymbols = Array.from(randomValues).map(value => { return alphabet[value % alphabet.length];});
 
   return {
-  	symbols: randomSymbols,
-  	bitsOfEntropy: count * Math.log2(alphabet.length)
+    symbols: randomSymbols,
+    bitsOfEntropy: count * Math.log2(alphabet.length)
   };
 }
 
