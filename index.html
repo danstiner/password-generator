@@ -25,45 +25,39 @@
           <script type="text/javascript" src="javascripts/wordlist-common-passwords.js"></script>
           <script type="text/javascript" src="javascripts/wordlist-diceware.js"></script>
           <script type="text/javascript" src="javascripts/main.js"></script>
-          <script type="text/javascript">//<![CDATA[
-
+          <script type="text/javascript">
+          //<![CDATA[
           var wordlists = {
             "common-passwords": {
               description: "common words",
-              alphabet: wordlistCommonPasswords
+              words: wordlistCommonPasswords
             },
             "diceware": {
               description: "<a href=\"http://www.diceware.com/\">Diceware</a> words",
-              alphabet: wordlistDiceware
+              words: wordlistDiceware
             }
           };
           var wordlist = wordlists[localStorage.getItem("wordlist")] || wordlists["common-passwords"]
           var wordCount = parseInt(localStorage.getItem("wordCount")) || 6;
 
-          window.onload = () => {
-            updateSelectors();
-            generatePassphrase(wordlist.alphabet, wordCount);
-          };
-
-          var onSelectSymbolCount = target => {
+          var onSelectWordCount = target => {
             wordCount = parseInt(target.dataset.value);
             localStorage.setItem("wordCount", wordCount);
-            generatePassphrase(wordlist.alphabet, wordCount);
+            generatePassphrase(wordlist.words, wordCount);
             document.getElementById("passphrase_generation_symbol_count").innerHTML = target.innerHTML;
             return false;
           };
-          var onSelectAlphabet = target => {
+          var onSelectWordlist = target => {
             var wordlistName = target.dataset.value;
             wordlist = wordlists[wordlistName];
             localStorage.setItem("wordlist", wordlistName)
-            generatePassphrase(wordlist.alphabet, wordCount);
-            document.getElementById("passphrase_generation_alphabet").innerHTML = wordlist.description;
+            generatePassphrase(wordlist.words, wordCount);
+            document.getElementById("passphrase_generation_wordlist").innerHTML = wordlist.description;
             return false;
           };
-
           var updateSelectors = () => {
             document.getElementById("passphrase_generation_symbol_count").innerHTML = Array.from(document.querySelectorAll("#passphrase_generation_symbol_counts a")).filter(elem => elem.dataset.value == wordCount)[0].innerHTML;
-            document.getElementById("passphrase_generation_alphabet").innerHTML = wordlist.description;
+            document.getElementById("passphrase_generation_wordlist").innerHTML = wordlist.description;
           };
           function selectNodeContents(element) {
             var range = document.createRange();
@@ -72,7 +66,10 @@
             selection.removeAllRanges();
             selection.addRange(range);
           };
-
+          window.onload = () => {
+            updateSelectors();
+            generatePassphrase(wordlist.words, wordCount);
+          };
           //]]>
           </script>
         </header>
@@ -86,18 +83,18 @@
           <span class="dropdown">
             <span id="passphrase_generation_symbol_count" class="text-decoration-underline-dotted">six</span>
             <span class="dropdown-content" id="passphrase_generation_symbol_counts">
-              <a href="#" onclick="return onSelectSymbolCount(this)" data-value=4>four</a>
-              <a href="#" onclick="return onSelectSymbolCount(this)" data-value=5>five</a>
-              <a href="#" onclick="return onSelectSymbolCount(this)" data-value=6>six</a>
-              <a href="#" onclick="return onSelectSymbolCount(this)" data-value=7>seven</a>
+              <a href="#" onclick="return onSelectWordCount(this)" data-value=4>four</a>
+              <a href="#" onclick="return onSelectWordCount(this)" data-value=5>five</a>
+              <a href="#" onclick="return onSelectWordCount(this)" data-value=6>six</a>
+              <a href="#" onclick="return onSelectWordCount(this)" data-value=7>seven</a>
             </span>
           </span> 
           random
           <span class="dropdown">
-            <span id="passphrase_generation_alphabet" class="text-decoration-underline-dotted">common words</span><span>.</span>
+            <span id="passphrase_generation_wordlist" class="text-decoration-underline-dotted">common words</span><span>.</span>
             <span class="dropdown-content">
-              <a href="#" onclick="return onSelectAlphabet(this)" data-value="common-passwords">common&nbsp;words</a>
-              <a href="#" onclick="return onSelectAlphabet(this)" data-value="diceware">Diceware&nbsp;words</a>
+              <a href="#" onclick="return onSelectWordlist(this)" data-value="common-passwords">common&nbsp;words</a>
+              <a href="#" onclick="return onSelectWordlist(this)" data-value="diceware">Diceware&nbsp;words</a>
             </span>
           </span>
           It should be easy to remember but hard to guess, making it a good password.
