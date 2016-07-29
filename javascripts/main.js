@@ -61,9 +61,9 @@ function getTimeToCrackText(guessesPerSecond, bitsOfEntropy) {
 
 function secondsToTimeWithUnit(seconds) {
   var secondsPerMinute = 60;
-  var secondsPerHour = 60 * secondsPerMinute;
-  var secondsPerDay = 24 * secondsPerHour;
-  var secondsPerYear = 365 * secondsPerDay;
+  var secondsPerHour = 3600;
+  var secondsPerDay = 86400;
+  var secondsPerYear = 31556940; // one average Gregorian year
 
   var pluralize = (value, unit) => {
     var roundedValue = Math.round(value);
