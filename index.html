@@ -23,7 +23,7 @@
           <h2 id="project_tagline">Secure multi-word passphrases generated in your browser</h2>
 
           <script type="text/javascript" src="javascripts/wordlists.js"></script>
-          <script type="text/javascript" src="javascripts/main.js"></script>
+          <script type="text/javascript" src="javascripts/passphrase_generator.js"></script>
           <script type="text/javascript">
           //<![CDATA[
           var wordlistMetadata = {
@@ -42,7 +42,7 @@
           var onSelectWordCount = target => {
             wordCount = parseInt(target.dataset.value);
             localStorage.setItem("wordCount", wordCount);
-            generatePassphrase(wordlist.words, wordCount);
+            passphrase_generator.generatePassphrase(wordlist.words, wordCount);
             document.getElementById("passphrase_generation_symbol_count").innerHTML = target.innerHTML;
             return false;
           };
@@ -50,7 +50,7 @@
             var wordlistName = target.dataset.value;
             wordlist = wordlistMetadata[wordlistName];
             localStorage.setItem("wordlist", wordlistName)
-            generatePassphrase(wordlist.words, wordCount);
+            passphrase_generator.generatePassphrase(wordlist.words, wordCount);
             document.getElementById("passphrase_generation_wordlist").innerHTML = wordlist.description;
             return false;
           };
@@ -67,7 +67,7 @@
           };
           window.onload = () => {
             updateSelectors();
-            generatePassphrase(wordlist.words, wordCount);
+            passphrase_generator.generatePassphrase(wordlist.words, wordCount);
           };
           //]]>
           </script>
