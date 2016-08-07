@@ -11,7 +11,7 @@
     "adj_noun_pairs": {
       description: "adjective-noun pairs",
       run: wordCount => {
-        if (wordCount > 8) {
+        if (wordCount < 4 || wordCount > 8) {
           throw new RangeError("Word count out of range");
         }
         var pattern = [
@@ -25,6 +25,48 @@
           wordlists.googlebooks_ngram_nouns
           ];
         return crypto_random_generator.getRandomSymbolsFromAlphabets(pattern.slice(0, wordCount));
+      }
+    },
+    "sentence": {
+      description: "words in a sentence",
+      run: wordCount => {
+        if (wordCount < 4 || wordCount > 7) {
+          throw new RangeError("Word count out of range");
+        } else if (wordCount === 4) {
+          return crypto_random_generator.getRandomSymbolsFromAlphabets([
+            wordlists.googlebooks_ngram_adjectives,
+            wordlists.googlebooks_ngram_nouns,
+            wordlists.googlebooks_ngram_verbs,
+            wordlists.googlebooks_ngram_nouns
+            ]);
+        } else if (wordCount === 5) {
+          return crypto_random_generator.getRandomSymbolsFromAlphabets([
+            wordlists.googlebooks_ngram_adjectives,
+            wordlists.googlebooks_ngram_nouns,
+            wordlists.googlebooks_ngram_verbs,
+            wordlists.googlebooks_ngram_adjectives,
+            wordlists.googlebooks_ngram_nouns
+            ]);
+        } else if (wordCount === 6) {
+          return crypto_random_generator.getRandomSymbolsFromAlphabets([
+            wordlists.googlebooks_ngram_adjectives,
+            wordlists.googlebooks_ngram_adjectives,
+            wordlists.googlebooks_ngram_nouns,
+            wordlists.googlebooks_ngram_verbs,
+            wordlists.googlebooks_ngram_adjectives,
+            wordlists.googlebooks_ngram_nouns
+            ]);
+        } else if (wordCount === 7) {
+          return crypto_random_generator.getRandomSymbolsFromAlphabets([
+            wordlists.googlebooks_ngram_adjectives,
+            wordlists.googlebooks_ngram_adjectives,
+            wordlists.googlebooks_ngram_nouns,
+            wordlists.googlebooks_ngram_verbs,
+            wordlists.googlebooks_ngram_adjectives,
+            wordlists.googlebooks_ngram_adjectives,
+            wordlists.googlebooks_ngram_nouns
+            ]);
+        }
       }
     }
   };
