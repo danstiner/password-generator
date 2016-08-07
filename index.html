@@ -22,22 +22,21 @@
           <h1 id="project_title">Passphrase Generator</h1>
           <h2 id="project_tagline">Secure multi-word passphrases generated in your browser</h2>
 
-          <script type="text/javascript" src="javascripts/wordlist-common-passwords.js"></script>
-          <script type="text/javascript" src="javascripts/wordlist-diceware.js"></script>
+          <script type="text/javascript" src="javascripts/wordlists.js"></script>
           <script type="text/javascript" src="javascripts/main.js"></script>
           <script type="text/javascript">
           //<![CDATA[
-          var wordlists = {
-            "common-passwords": {
+          var wordlistMetadata = {
+            "common_passwords": {
               description: "common words",
-              words: wordlistCommonPasswords
+              words: wordlists.common_passwords
             },
             "diceware": {
               description: "<a href=\"http://www.diceware.com/\">Diceware</a> words",
-              words: wordlistDiceware
+              words: wordlists.diceware
             }
           };
-          var wordlist = wordlists[localStorage.getItem("wordlist")] || wordlists["common-passwords"]
+          var wordlist = wordlistMetadata[localStorage.getItem("wordlist")] || wordlistMetadata["common_passwords"];
           var wordCount = parseInt(localStorage.getItem("wordCount")) || 6;
 
           var onSelectWordCount = target => {
@@ -49,7 +48,7 @@
           };
           var onSelectWordlist = target => {
             var wordlistName = target.dataset.value;
-            wordlist = wordlists[wordlistName];
+            wordlist = wordlistMetadata[wordlistName];
             localStorage.setItem("wordlist", wordlistName)
             generatePassphrase(wordlist.words, wordCount);
             document.getElementById("passphrase_generation_wordlist").innerHTML = wordlist.description;
