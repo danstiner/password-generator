@@ -24,8 +24,8 @@ write_wordlist()
 
 	echo "  exports[\"$exportName\"] =" >> "$TARGET"
 	read -r first_line
-	echo "$first_line" | to_js_array_element "[" >> "$TARGET"
-	cat | to_js_array_element "," >> "$TARGET";
+	echo "$first_line" | to_js_array_element "    [ " >> "$TARGET"
+	cat | to_js_array_element "    , " >> "$TARGET";
 	echo "  ];" >> "$TARGET"
 }
 
