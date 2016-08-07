@@ -20,28 +20,22 @@
     OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 (function(exports) {
-  var max_uint32 = 4294967295;
-
-  if (!Array.prototype.fill) {
-    Array.prototype.fill = function(value) {
-      if (this == null) {
-        throw new TypeError('this is null or not defined');
-      }
-
-      var O = Object(this);
-      var len = O.length >>> 0;
-
-      for (var k = 0; k < len; k++) {
-        O[k] = value;
-      }
-
-      return O;
-    };
+  var wordlistMetadata = {
+    "common_passwords": {
+      description: "common words",
+      words: wordlists.common_passwords
+    },
+    "diceware": {
+      description: "<a href=\"http://www.diceware.com/\">Diceware</a> words",
+      words: wordlists.diceware
+    }
   };
+  var wordlist = wordlistMetadata[localStorage.getItem("wordlist")] || wordlistMetadata["common_passwords"];
+  var wordCount = parseInt(localStorage.getItem("wordCount")) || 6;
 
-  exports.generatePassphrase = function(alphabet, count) {
+  function generatePassphrase() {
     try {
-      var result = getRandomSymbols(alphabet, count);
+      var result = crypto_random_generator.getRandomSymbolsFromFixedAlphabet(wordlist.words, wordCount);
       document.getElementById("generated_passphrase").textContent = concat_words(result.symbols);
       displayPassphraseStrength(result.bitsOfEntropy);
     } catch (ex) {
@@ -50,30 +44,18 @@
     } 
   };
 
-  function getRandomSymbols(alphabet, count) {
-    return Array(count).fill(alphabet).map(getRandomSymbol).reduce(
-      (previousValue, currentValue) => ({
-        symbols: previousValue.symbols.concat(currentValue.symbol),
-        bitsOfEntropy: (previousValue.bitsOfEntropy + currentValue.bitsOfEntropy)
-      }),
-      {symbols: [], bitsOfEntropy: 0});
-  }
+  var updateSelectors = () => {
+    document.getElementById("passphrase_generation_symbol_count").innerHTML = Array.from(document.querySelectorAll("#passphrase_generation_symbol_counts a")).filter(elem => elem.dataset.value == wordCount)[0].innerHTML;
+    document.getElementById("passphrase_generation_wordlist").innerHTML = wordlist.description;
+  };
 
-  function getRandomSymbol(alphabet) {
-    if (alphabet.length >= max_uint32) {
-      throw new RangeError("Symbol alphabet too large");
-    }
-    if(!window.crypto || !window.crypto.getRandomValues)
-    {
-      throw new Error("Browser does support secure randomness generation")
-    }
-    var randomValues = new Uint32Array(1);
-    window.crypto.getRandomValues(randomValues);
-    return {
-      symbol: alphabet[randomValues[0] % alphabet.length],
-      bitsOfEntropy: Math.log2(alphabet.length)
-    };
-  }
+  function selectNodeContents(element) {
+    var range = document.createRange();
+    range.selectNodeContents(element);
+    var selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+  };
 
   function concat_words(words) {
     return words.reduce((prev, cur) => prev + " " + cur);
@@ -126,4 +108,26 @@
     element.innerHTML = "<strong>Error</strong>: " + exception.message;
     element.style.display = "";
   }
+
+  exports.run = function() {
+    updateSelectors();
+    generatePassphrase();
+  };
+
+  exports.setWordCount = target => {
+    wordCount = parseInt(target.dataset.value);
+    localStorage.setItem("wordCount", wordCount);
+    generatePassphrase();
+    document.getElementById("passphrase_generation_symbol_count").innerHTML = target.innerHTML;
+    return false;
+  };
+
+  exports.setWordlist = target => {
+    var wordlistName = target.dataset.value;
+    wordlist = wordlistMetadata[wordlistName];
+    localStorage.setItem("wordlist", wordlistName)
+    generatePassphrase();
+    document.getElementById("passphrase_generation_wordlist").innerHTML = wordlist.description;
+    return false;
+  };
 })(this.passphrase_generator = {});

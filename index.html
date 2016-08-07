@@ -23,51 +23,15 @@
           <h2 id="project_tagline">Secure multi-word passphrases generated in your browser</h2>
 
           <script type="text/javascript" src="javascripts/wordlists.js"></script>
+          <script type="text/javascript" src="javascripts/crypto_random_generator.js"></script>
           <script type="text/javascript" src="javascripts/passphrase_generator.js"></script>
           <script type="text/javascript">
           //<![CDATA[
-          var wordlistMetadata = {
-            "common_passwords": {
-              description: "common words",
-              words: wordlists.common_passwords
-            },
-            "diceware": {
-              description: "<a href=\"http://www.diceware.com/\">Diceware</a> words",
-              words: wordlists.diceware
-            }
-          };
-          var wordlist = wordlistMetadata[localStorage.getItem("wordlist")] || wordlistMetadata["common_passwords"];
-          var wordCount = parseInt(localStorage.getItem("wordCount")) || 6;
+          var onSelectWordCount = passphrase_generator.setWordCount;
+          var onSelectWordlist = passphrase_generator.setWordlist;
 
-          var onSelectWordCount = target => {
-            wordCount = parseInt(target.dataset.value);
-            localStorage.setItem("wordCount", wordCount);
-            passphrase_generator.generatePassphrase(wordlist.words, wordCount);
-            document.getElementById("passphrase_generation_symbol_count").innerHTML = target.innerHTML;
-            return false;
-          };
-          var onSelectWordlist = target => {
-            var wordlistName = target.dataset.value;
-            wordlist = wordlistMetadata[wordlistName];
-            localStorage.setItem("wordlist", wordlistName)
-            passphrase_generator.generatePassphrase(wordlist.words, wordCount);
-            document.getElementById("passphrase_generation_wordlist").innerHTML = wordlist.description;
-            return false;
-          };
-          var updateSelectors = () => {
-            document.getElementById("passphrase_generation_symbol_count").innerHTML = Array.from(document.querySelectorAll("#passphrase_generation_symbol_counts a")).filter(elem => elem.dataset.value == wordCount)[0].innerHTML;
-            document.getElementById("passphrase_generation_wordlist").innerHTML = wordlist.description;
-          };
-          function selectNodeContents(element) {
-            var range = document.createRange();
-            range.selectNodeContents(element);
-            var selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-          };
           window.onload = () => {
-            updateSelectors();
-            passphrase_generator.generatePassphrase(wordlist.words, wordCount);
+            passphrase_generator.run();
           };
           //]]>
           </script>
