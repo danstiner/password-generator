@@ -49,5 +49,8 @@
       return concatRandomSymbols(Array(count).fill(alphabet).map(getRandomSymbol));
   };
 
+  exports.getRandomSymbolsFromAlphabets = function(alphabets) {
+      return concatRandomSymbols(alphabets.map(getRandomSymbol));
+  };
 
 })(this.crypto_random_generator = {});

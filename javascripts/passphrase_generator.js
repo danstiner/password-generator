@@ -7,6 +7,25 @@
     "diceware": {
       description: "<a href=\"http://www.diceware.com/\">Diceware</a> words",
       run: wordCount => crypto_random_generator.getRandomSymbolsFromFixedAlphabet(wordlists.diceware, wordCount)
+    },
+    "adj_noun_pairs": {
+      description: "adjective-noun pairs",
+      run: wordCount => {
+        if (wordCount > 8) {
+          throw new RangeError("Word count out of range");
+        }
+        var pattern = [
+          wordlists.googlebooks_ngram_adjectives,
+          wordlists.googlebooks_ngram_nouns,
+          wordlists.googlebooks_ngram_adjectives,
+          wordlists.googlebooks_ngram_nouns,
+          wordlists.googlebooks_ngram_adjectives,
+          wordlists.googlebooks_ngram_nouns,
+          wordlists.googlebooks_ngram_adjectives,
+          wordlists.googlebooks_ngram_nouns
+          ];
+        return crypto_random_generator.getRandomSymbolsFromAlphabets(pattern.slice(0, wordCount));
+      }
     }
   };
   var algorithm = generationAlgorithms[localStorage.getItem("algorithm")] || generationAlgorithms["common_passwords"];
