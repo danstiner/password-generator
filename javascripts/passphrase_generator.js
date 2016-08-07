@@ -14,13 +14,17 @@
 
   function generatePassphrase() {
     try {
-      var result = crypto_random_generator.getRandomSymbolsFromFixedAlphabet(algorithm.words, wordCount);
+      var result = executeGenerationAlgorithm(algorithm);
       document.getElementById("generated_passphrase").textContent = concat_words(result.symbols);
       displayPassphraseStrength(result.bitsOfEntropy);
     } catch (ex) {
       displayError(ex);
       throw ex;
     } 
+  };
+
+  function executeGenerationAlgorithm(algorithm) {
+    return crypto_random_generator.getRandomSymbolsFromFixedAlphabet(algorithm.words, wordCount);
   };
 
   var updateSelectors = () => {
