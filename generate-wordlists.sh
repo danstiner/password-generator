@@ -29,11 +29,23 @@ write_wordlist()
 	echo "  ];" >> "$TARGET"
 }
 
-regenerate_common_passwords()
+regenerate_common_password_based()
 {
 	cat "$SRC/10_million_password_list_top_10000.txt" \
 	  | comm -12 <(sort >()) <(sort "$SRC/2+2+3cmn.txt") \
 	  > "$WORDLISTS/common_passwords.txt"
+
+	cat "$SRC/10_million_password_list_top_100000.txt" \
+	  | comm -12 <(sort >()) <(sort "$WORDLISTS/googlebooks_ngram_adjectives.txt") \
+	  > "$WORDLISTS/common_password_adjectives.txt"
+
+	cat "$SRC/10_million_password_list_top_100000.txt" \
+	  | comm -12 <(sort >()) <(sort "$WORDLISTS/googlebooks_ngram_nouns.txt") \
+	  > "$WORDLISTS/common_password_nouns.txt"
+
+	cat "$SRC/10_million_password_list_top_100000.txt" \
+	  | comm -12 <(sort >()) <(sort "$WORDLISTS/googlebooks_ngram_verbs.txt") \
+	  > "$WORDLISTS/common_password_verbs.txt"
 }
 
 write_wordlists()
@@ -55,5 +67,5 @@ write_wordlists()
 	echo "})(this.$moduleName = {});" >> "$output"
 }
 
-regenerate_common_passwords
+regenerate_common_password_based
 write_wordlists "$TARGET" "$MODULE_NAME" "$WORDLISTS"

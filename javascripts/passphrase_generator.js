@@ -15,14 +15,14 @@
           throw new RangeError("Word count out of range");
         }
         var pattern = [
-          wordlists.googlebooks_ngram_adjectives,
-          wordlists.googlebooks_ngram_nouns,
-          wordlists.googlebooks_ngram_adjectives,
-          wordlists.googlebooks_ngram_nouns,
-          wordlists.googlebooks_ngram_adjectives,
-          wordlists.googlebooks_ngram_nouns,
-          wordlists.googlebooks_ngram_adjectives,
-          wordlists.googlebooks_ngram_nouns
+          wordlists.common_password_adjectives,
+          wordlists.common_password_nouns,
+          wordlists.common_password_adjectives,
+          wordlists.common_password_nouns,
+          wordlists.common_password_adjectives,
+          wordlists.common_password_nouns,
+          wordlists.common_password_adjectives,
+          wordlists.common_password_nouns
           ];
         return crypto_random_generator.getRandomSymbolsFromAlphabets(pattern.slice(0, wordCount));
       }
@@ -34,37 +34,37 @@
           throw new RangeError("Word count out of range");
         } else if (wordCount === 4) {
           return crypto_random_generator.getRandomSymbolsFromAlphabets([
-            wordlists.googlebooks_ngram_adjectives,
-            wordlists.googlebooks_ngram_nouns,
-            wordlists.googlebooks_ngram_verbs,
-            wordlists.googlebooks_ngram_nouns
+            wordlists.common_password_adjectives,
+            wordlists.common_password_nouns,
+            wordlists.common_password_verbs,
+            wordlists.common_password_nouns
             ]);
         } else if (wordCount === 5) {
           return crypto_random_generator.getRandomSymbolsFromAlphabets([
-            wordlists.googlebooks_ngram_adjectives,
-            wordlists.googlebooks_ngram_nouns,
-            wordlists.googlebooks_ngram_verbs,
-            wordlists.googlebooks_ngram_adjectives,
-            wordlists.googlebooks_ngram_nouns
+            wordlists.common_password_adjectives,
+            wordlists.common_password_nouns,
+            wordlists.common_password_verbs,
+            wordlists.common_password_adjectives,
+            wordlists.common_password_nouns
             ]);
         } else if (wordCount === 6) {
           return crypto_random_generator.getRandomSymbolsFromAlphabets([
-            wordlists.googlebooks_ngram_adjectives,
-            wordlists.googlebooks_ngram_adjectives,
-            wordlists.googlebooks_ngram_nouns,
-            wordlists.googlebooks_ngram_verbs,
-            wordlists.googlebooks_ngram_adjectives,
-            wordlists.googlebooks_ngram_nouns
+            wordlists.common_password_adjectives,
+            wordlists.common_password_adjectives,
+            wordlists.common_password_nouns,
+            wordlists.common_password_verbs,
+            wordlists.common_password_adjectives,
+            wordlists.common_password_nouns
             ]);
         } else if (wordCount === 7) {
           return crypto_random_generator.getRandomSymbolsFromAlphabets([
-            wordlists.googlebooks_ngram_adjectives,
-            wordlists.googlebooks_ngram_adjectives,
-            wordlists.googlebooks_ngram_nouns,
-            wordlists.googlebooks_ngram_verbs,
-            wordlists.googlebooks_ngram_adjectives,
-            wordlists.googlebooks_ngram_adjectives,
-            wordlists.googlebooks_ngram_nouns
+            wordlists.common_password_adjectives,
+            wordlists.common_password_adjectives,
+            wordlists.common_password_nouns,
+            wordlists.common_password_verbs,
+            wordlists.common_password_adjectives,
+            wordlists.common_password_adjectives,
+            wordlists.common_password_nouns
             ]);
         }
       }
