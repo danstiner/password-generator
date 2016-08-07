@@ -1,5 +1,5 @@
 (function(exports) {
-  var wordlistMetadata = {
+  var generationAlgorithms = {
     "common_passwords": {
       description: "common words",
       words: wordlists.common_passwords
@@ -9,12 +9,12 @@
       words: wordlists.diceware
     }
   };
-  var wordlist = wordlistMetadata[localStorage.getItem("wordlist")] || wordlistMetadata["common_passwords"];
+  var algorithm = generationAlgorithms[localStorage.getItem("algorithm")] || generationAlgorithms["common_passwords"];
   var wordCount = parseInt(localStorage.getItem("wordCount")) || 6;
 
   function generatePassphrase() {
     try {
-      var result = crypto_random_generator.getRandomSymbolsFromFixedAlphabet(wordlist.words, wordCount);
+      var result = crypto_random_generator.getRandomSymbolsFromFixedAlphabet(algorithm.words, wordCount);
       document.getElementById("generated_passphrase").textContent = concat_words(result.symbols);
       displayPassphraseStrength(result.bitsOfEntropy);
     } catch (ex) {
@@ -25,7 +25,7 @@
 
   var updateSelectors = () => {
     document.getElementById("passphrase_generation_symbol_count").innerHTML = Array.from(document.querySelectorAll("#passphrase_generation_symbol_counts a")).filter(elem => elem.dataset.value == wordCount)[0].innerHTML;
-    document.getElementById("passphrase_generation_wordlist").innerHTML = wordlist.description;
+    document.getElementById("passphrase_generation_wordlist").innerHTML = algorithm.description;
   };
 
   function selectNodeContents(element) {
@@ -103,10 +103,10 @@
 
   exports.setWordlist = target => {
     var wordlistName = target.dataset.value;
-    wordlist = wordlistMetadata[wordlistName];
-    localStorage.setItem("wordlist", wordlistName)
+    algorithm = generationAlgorithms[wordlistName];
+    localStorage.setItem("algorithm", wordlistName)
     generatePassphrase();
-    document.getElementById("passphrase_generation_wordlist").innerHTML = wordlist.description;
+    document.getElementById("passphrase_generation_wordlist").innerHTML = algorithm.description;
     return false;
   };
 })(this.passphrase_generator = {});
