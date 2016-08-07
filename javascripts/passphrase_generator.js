@@ -2,11 +2,11 @@
   var generationAlgorithms = {
     "common_passwords": {
       description: "common words",
-      words: wordlists.common_passwords
+      run: wordCount => crypto_random_generator.getRandomSymbolsFromFixedAlphabet(wordlists.common_passwords, wordCount)
     },
     "diceware": {
       description: "<a href=\"http://www.diceware.com/\">Diceware</a> words",
-      words: wordlists.diceware
+      run: wordCount => crypto_random_generator.getRandomSymbolsFromFixedAlphabet(wordlists.diceware, wordCount)
     }
   };
   var algorithm = generationAlgorithms[localStorage.getItem("algorithm")] || generationAlgorithms["common_passwords"];
@@ -14,7 +14,7 @@
 
   function generatePassphrase() {
     try {
-      var result = executeGenerationAlgorithm(algorithm);
+      var result = runGenerationAlgorithm(algorithm);
       document.getElementById("generated_passphrase").textContent = concat_words(result.symbols);
       displayPassphraseStrength(result.bitsOfEntropy);
     } catch (ex) {
@@ -23,8 +23,8 @@
     } 
   };
 
-  function executeGenerationAlgorithm(algorithm) {
-    return crypto_random_generator.getRandomSymbolsFromFixedAlphabet(algorithm.words, wordCount);
+  function runGenerationAlgorithm(algorithm) {
+    return algorithm.run(wordCount);
   };
 
   var updateSelectors = () => {
