@@ -93,7 +93,7 @@
     document.getElementById("passphrase_generation_wordlist").innerHTML = algorithm.description;
   };
 
-  function selectNodeContents(element) {
+  exports.selectNodeContents = function (element) {
     var range = document.createRange();
     range.selectNodeContents(element);
     var selection = window.getSelection();
