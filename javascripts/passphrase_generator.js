@@ -8,8 +8,8 @@
       description: "<a href=\"http://www.diceware.com/\">Diceware</a> words",
       run: wordCount => crypto_random_generator.getRandomSymbolsFromFixedAlphabet(wordlists.diceware, wordCount)
     },
-    "sentence": {
-      description: "words in a sentence",
+    "phrase": {
+      description: "words in a phrase",
       run: wordCount => {
         if (wordCount < 4 || wordCount > 7) {
           throw new RangeError("Word count out of range");
@@ -51,8 +51,8 @@
       }
     }
   };
-  var algorithm = generationAlgorithms[localStorage.getItem("algorithm")] || generationAlgorithms["common_passwords"];
-  var wordCount = parseInt(localStorage.getItem("wordCount")) || 6;
+  var algorithm = generationAlgorithms[localStorage.getItem("algorithm")] || generationAlgorithms["phrase"];
+  var wordCount = parseInt(localStorage.getItem("wordCount")) || 5;
 
   function generatePassphrase() {
     try {
