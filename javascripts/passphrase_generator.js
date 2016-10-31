@@ -37,16 +37,6 @@
             wordlists.common_password_adjectives,
             wordlists.common_password_nouns
             ]);
-        } else if (wordCount === 7) {
-          return crypto_random_generator.getRandomSymbolsFromAlphabets([
-            wordlists.common_password_adjectives,
-            wordlists.common_password_adjectives,
-            wordlists.common_password_nouns,
-            wordlists.common_password_verbs,
-            wordlists.common_password_adjectives,
-            wordlists.common_password_adjectives,
-            wordlists.common_password_nouns
-            ]);
         }
       }
     }
