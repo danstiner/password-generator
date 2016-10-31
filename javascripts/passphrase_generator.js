@@ -52,7 +52,7 @@
     }
   };
   var algorithm = generationAlgorithms[localStorage.getItem("algorithm")] || generationAlgorithms["phrase"];
-  var wordCount = parseInt(localStorage.getItem("wordCount")) || 5;
+  var wordCount = parseInt(localStorage.getItem("wordCount")) || 4;
 
   function generatePassphrase() {
     try {
