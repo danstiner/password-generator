@@ -145,4 +145,8 @@
     document.getElementById("passphrase_generation_wordlist").innerHTML = algorithm.description;
     return false;
   };
+
+  exports.regeneratePassphrase = function() {
+    generatePassphrase();
+  }
 })(this.passphrase_generator = {});

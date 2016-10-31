@@ -1,4 +1,5 @@
 @import url(github-theme-slate.css);
+@import url(glyphicons-halflings.css);
 
 #generated_passphrase {
   font-size: 140%;
@@ -45,4 +46,8 @@
 }
 .text-decoration-underline-dotted {
   border-bottom: 1px dotted #999;
+}
+
+.icon-button {
+  color: #373737;
 }
