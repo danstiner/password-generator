@@ -4,6 +4,10 @@
       description: "common words",
       run: wordCount => crypto_random_generator.getRandomSymbolsFromFixedAlphabet(wordlists.common_passwords, wordCount)
     },
+    "bip39": {
+      description: "bip39 words",
+      run: wordCount => crypto_random_generator.getRandomSymbolsFromFixedAlphabet(wordlists.bip39_english, wordCount)
+    },
     "diceware": {
       description: "<a href=\"http://www.diceware.com/\">Diceware</a> words",
       run: wordCount => crypto_random_generator.getRandomSymbolsFromFixedAlphabet(wordlists.diceware, wordCount)
