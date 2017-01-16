@@ -8,7 +8,7 @@ TARGET="$ROOTDIR/javascripts/wordlists.js"
 MODULE_NAME="wordlists"
 
 clean() {
-	cat | grep -Fv -f "$SRC/swearWords.txt" -f "$SRC/disallowed_words.txt" | grep -v -e '[[:upper:]]'
+	cat | grep -Fvx -f "$SRC/swearWords.txt" -f "$SRC/disallowed_words.txt" | grep -v -e '[[:upper:]]'
 }
 
 to_js_array_element()
