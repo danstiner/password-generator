@@ -1,14 +1,14 @@
 #!/bin/bash
 set -e
 
-ROOTDIR=$(dirname "${BASH_SOURCE[0]}")
-SRC="$ROOTDIR/src"
-WORDLISTS="$SRC/wordlists"
+SOURCEDIR="$(dirname "${BASH_SOURCE[0]}")"
+WORDLISTS="$SOURCEDIR/lists"
+ROOTDIR="$SOURCEDIR/../../"
 TARGET="$ROOTDIR/javascripts/wordlists.js"
 MODULE_NAME="wordlists"
 
 clean() {
-	cat | grep -Fvx -f "$SRC/swearWords.txt" -f "$SRC/disallowed_words.txt" | grep -v -e '[[:upper:]]'
+	cat | grep -Fvx -f "$SOURCEDIR/swearWords.txt" -f "$SOURCEDIR/disallowed_words.txt" | grep -v -e '[[:upper:]]'
 }
 
 to_js_array_element()
@@ -29,21 +29,21 @@ write_wordlist()
 	echo "  ];" >> "$TARGET"
 }
 
-regenerate_common_password_based()
+regenerate_common_password_based_lists()
 {
-	cat "$SRC/10_million_password_list_top_10000.txt" \
-	  | comm -12 <(sort >()) <(sort "$SRC/2+2+3cmn.txt") \
+	cat "$SOURCEDIR/10_million_password_list_top_10000.txt" \
+	  | comm -12 <(sort >()) <(sort "$SOURCEDIR/2+2+3cmn.txt") \
 	  > "$WORDLISTS/common_passwords.txt"
 
-	cat "$SRC/10_million_password_list_top_100000.txt" \
+	cat "$SOURCEDIR/10_million_password_list_top_100000.txt" \
 	  | comm -12 <(sort >()) <(sort "$WORDLISTS/googlebooks_ngram_adjectives.txt") \
 	  > "$WORDLISTS/common_password_adjectives.txt"
 
-	cat "$SRC/10_million_password_list_top_100000.txt" \
+	cat "$SOURCEDIR/10_million_password_list_top_100000.txt" \
 	  | comm -12 <(sort >()) <(sort "$WORDLISTS/googlebooks_ngram_nouns.txt") \
 	  > "$WORDLISTS/common_password_nouns.txt"
 
-	cat "$SRC/10_million_password_list_top_100000.txt" \
+	cat "$SOURCEDIR/10_million_password_list_top_100000.txt" \
 	  | comm -12 <(sort >()) <(sort "$WORDLISTS/googlebooks_ngram_verbs.txt") \
 	  > "$WORDLISTS/common_password_verbs.txt"
 }
@@ -67,5 +67,5 @@ write_wordlists()
 	echo "})(this.$moduleName = {});" >> "$output"
 }
 
-regenerate_common_password_based
+regenerate_common_password_based_lists
 write_wordlists "$TARGET" "$MODULE_NAME" "$WORDLISTS"

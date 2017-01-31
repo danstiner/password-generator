@@ -1,5 +1,5 @@
 
-WORDLISTS=$(shell find src/wordlists -maxdepth 1 -type f -name "*.txt")
+WORDLIST_FILES=$(shell find src/wordlists -maxdepth 1 -type f)
 
-javascripts/wordlists.js: generate_wordlists.sh src/disallowed_words.txt src/swearWords.txt $(WORDLISTS)
-	./generate_wordlists.sh
+javascripts/wordlists.js: $(WORDLIST_FILES)
+	src/wordlists/generate.sh
