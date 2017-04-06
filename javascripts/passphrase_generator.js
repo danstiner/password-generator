@@ -150,7 +150,4 @@
     return false;
   };
 
-  exports.regeneratePassphrase = function() {
-    generatePassphrase();
-  }
 })(this.passphrase_generator = {});

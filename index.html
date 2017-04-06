@@ -30,7 +30,6 @@
           var onSelectWordCount = passphrase_generator.setWordCount;
           var onSelectWordlist = passphrase_generator.setWordlist;
           var selectNodeContents = passphrase_generator.selectNodeContents;
-          var regeneratePassphrase = passphrase_generator.regeneratePassphrase;
 
           window.onload = () => {
             passphrase_generator.run();
@@ -66,7 +65,7 @@
           It should be easy to remember but hard to guess, making it a good password.
         </p>
         <div class="passphrase_block">
-          <span><span id="generated_passphrase" onclick="selectNodeContents(this)"></span>&nbsp;&nbsp;<a onclick="regeneratePassphrase()" class="icon-button" href="#"><span class="halflings halflings-repeat"></span></a></span><br>
+          <span><span id="generated_passphrase" onclick="selectNodeContents(this)"></span><br>
           <span>
             <span id="time_to_guess_offline" data-rate=10000000000></span>
             <span>at ten billion guesses/sec</span>
