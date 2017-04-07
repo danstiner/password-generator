@@ -1,3 +1,4 @@
+'use strict';
 (function(exports) {
   var generationAlgorithms = {
     "common_passwords": {

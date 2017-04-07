@@ -54,7 +54,8 @@ write_wordlists()
 	moduleName=$2
 	sourceDirectory=$3
 
-	echo "(function(exports) {" > "$output"
+	echo "'use strict';" > "$output"
+	echo "(function(exports) {" >> "$output"
 
 	# Write word lists as javascript variables
 	find "$sourceDirectory" -maxdepth 1 -type f -name "*.txt" | while read -r filePath;

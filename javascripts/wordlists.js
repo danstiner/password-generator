@@ -1,3 +1,4 @@
+'use strict';
 (function(exports) {
   exports["bip39_english"] =
     [ "abandon"

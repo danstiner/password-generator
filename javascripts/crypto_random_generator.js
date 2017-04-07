@@ -1,3 +1,4 @@
+'use strict';
 (function(exports) {
   var max_uint32 = 4294967295;
 
