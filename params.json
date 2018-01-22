@@ -1,6 +1,0 @@
-{
-  "name": "Password Generator",
-  "tagline": "",
-  "body": "\r\n<span id=\"generated_password\"> ... </p>\r\n\r\n<script type='text/javascript'>\r\n\r\nvar crypto = window.crypto;\r\n\r\nvar randomValues = new Uint32Array(4);\r\ncrypto.getRandomValues(randomValues);\r\n\r\ndocument.getElementById(\"generated_password\").textContent = randomValues.reduce((prev, cur) => prev + \" \" + cur);\r\n</script>",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
