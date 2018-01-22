@@ -134,16 +134,16 @@
     generatePassphrase();
   };
 
-  exports.setWordCount = target => {
-    wordCount = parseInt(target.dataset.value);
+  exports.onChangeWordCount = event => {
+    wordCount = parseInt(event.target.dataset.value);
     localStorage.setItem("wordCount", wordCount);
     generatePassphrase();
-    document.getElementById("passphrase_generation_symbol_count").innerHTML = target.innerHTML;
+    document.getElementById("passphrase_generation_symbol_count").innerHTML = event.target.innerHTML;
     return false;
   };
 
-  exports.setWordlist = target => {
-    var wordlistName = target.dataset.value;
+  exports.onChangeWordlist = event => {
+    var wordlistName = event.target.dataset.value;
     algorithm = generationAlgorithms[wordlistName];
     localStorage.setItem("algorithm", wordlistName)
     generatePassphrase();
