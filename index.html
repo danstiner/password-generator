@@ -3,6 +3,7 @@
 
   <head>
     <meta charset='utf-8'>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-src 'none';">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Secure multi-word passphrases generated in your browser">
 
@@ -25,17 +26,7 @@
           <script type="text/javascript" src="javascripts/wordlists.js"></script>
           <script type="text/javascript" src="javascripts/crypto_random_generator.js"></script>
           <script type="text/javascript" src="javascripts/passphrase_generator.js"></script>
-          <script type="text/javascript">
-          //<![CDATA[
-          var onSelectWordCount = passphrase_generator.setWordCount;
-          var onSelectWordlist = passphrase_generator.setWordlist;
-          var selectNodeContents = passphrase_generator.selectNodeContents;
-
-          window.onload = () => {
-            passphrase_generator.run();
-          };
-          //]]>
-          </script>
+          <script type="text/javascript" src="javascripts/main.js"></script>
         </header>
     </div>
 
@@ -71,7 +62,7 @@
             <span>at ten billion guesses/sec</span>
           </span><br>
           <span id="generated_passphrase_entropy"></span><br>
-          <span id="passphrase_generation_error" class="alert alert-danger" style="display:none"></span>
+          <span id="passphrase_generation_error" class="alert alert-danger"></span>
         </div>
         <br>
         <div id="comic">
