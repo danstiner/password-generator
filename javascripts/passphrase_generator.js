@@ -1,18 +1,6 @@
 'use strict';
 (function(exports) {
   var generationAlgorithms = {
-    "common_passwords": {
-      description: "common words",
-      run: wordCount => crypto_random_generator.getRandomSymbolsFromFixedAlphabet(wordlists.common_passwords, wordCount)
-    },
-    "bip39": {
-      description: "bip39 words",
-      run: wordCount => crypto_random_generator.getRandomSymbolsFromFixedAlphabet(wordlists.bip39_english, wordCount)
-    },
-    "diceware": {
-      description: "<a href=\"http://www.diceware.com/\">Diceware</a> words",
-      run: wordCount => crypto_random_generator.getRandomSymbolsFromFixedAlphabet(wordlists.diceware, wordCount)
-    },
     "phrase": {
       description: "words in a phrase",
       run: wordCount => {
@@ -46,7 +34,7 @@
       }
     }
   };
-  var algorithm = generationAlgorithms[localStorage.getItem("algorithm")] || generationAlgorithms["phrase"];
+  var algorithm = generationAlgorithms["phrase"];
   var wordCount = parseInt(localStorage.getItem("wordCount")) || 4;
 
   function generatePassphrase() {
@@ -66,7 +54,6 @@
 
   var updateSelectors = () => {
     document.getElementById("passphrase_generation_symbol_count").innerHTML = Array.from(document.querySelectorAll("#passphrase_generation_symbol_counts a")).filter(elem => elem.dataset.value == wordCount)[0].innerHTML;
-    document.getElementById("passphrase_generation_wordlist").innerHTML = algorithm.description;
   };
 
   exports.selectNodeContents = function (element) {
@@ -139,15 +126,6 @@
     localStorage.setItem("wordCount", wordCount);
     generatePassphrase();
     document.getElementById("passphrase_generation_symbol_count").innerHTML = event.target.innerHTML;
-    return false;
-  };
-
-  exports.onChangeWordlist = event => {
-    var wordlistName = event.target.dataset.value;
-    algorithm = generationAlgorithms[wordlistName];
-    localStorage.setItem("algorithm", wordlistName)
-    generatePassphrase();
-    document.getElementById("passphrase_generation_wordlist").innerHTML = algorithm.description;
     return false;
   };
 

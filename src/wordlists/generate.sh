@@ -1,14 +1,15 @@
 #!/bin/bash
+
 set -e
 
-SOURCEDIR="$(dirname "${BASH_SOURCE[0]}")"
-WORDLISTS="$SOURCEDIR/lists"
-ROOTDIR="$SOURCEDIR/../../"
+DIR="$(dirname "${BASH_SOURCE[0]}")"
+WORDLISTS="$DIR/lists"
+ROOTDIR="$DIR/../../"
 TARGET="$ROOTDIR/javascripts/wordlists.js"
 MODULE_NAME="wordlists"
 
 clean() {
-	cat | grep -Fvx -f "$SOURCEDIR/swearWords.txt" -f "$SOURCEDIR/disallowed_words.txt" | grep -v -e '[[:upper:]]'
+	cat | grep -Fvx -f "$DIR/swearWords.txt" -f "$DIR/disallowed_words.txt" | grep -v -e '[[:upper:]]'
 }
 
 to_js_array_element()
@@ -19,54 +20,44 @@ to_js_array_element()
 
 write_wordlist()
 {
-	output=$1
-	exportName=$2
+	exportName=$1
 
 	echo "  exports[\"$exportName\"] =" >> "$TARGET"
 	read -r first_line
 	echo "$first_line" | to_js_array_element "    [ " >> "$TARGET"
-	cat | to_js_array_element "    , " >> "$TARGET";
+	cat | to_js_array_element "    , " >> "$TARGET"
 	echo "  ];" >> "$TARGET"
 }
 
 regenerate_common_password_based_lists()
 {
-	cat "$SOURCEDIR/10_million_password_list_top_10000.txt" \
-	  | comm -12 <(sort >()) <(sort "$SOURCEDIR/2+2+3cmn.txt") \
-	  > "$WORDLISTS/common_passwords.txt"
-
-	cat "$SOURCEDIR/10_million_password_list_top_100000.txt" \
-	  | comm -12 <(sort >()) <(sort "$WORDLISTS/googlebooks_ngram_adjectives.txt") \
+	cat "$DIR/10_million_password_list_top_100000.txt" \
+	  | comm -12 <(sort >()) <(sort "$DIR/googlebooks_ngram_adjectives.txt") \
 	  > "$WORDLISTS/common_password_adjectives.txt"
 
-	cat "$SOURCEDIR/10_million_password_list_top_100000.txt" \
-	  | comm -12 <(sort >()) <(sort "$WORDLISTS/googlebooks_ngram_nouns.txt") \
+	cat "$DIR/10_million_password_list_top_100000.txt" \
+	  | comm -12 <(sort >()) <(sort "$DIR/googlebooks_ngram_nouns.txt") \
 	  > "$WORDLISTS/common_password_nouns.txt"
 
-	cat "$SOURCEDIR/10_million_password_list_top_100000.txt" \
-	  | comm -12 <(sort >()) <(sort "$WORDLISTS/googlebooks_ngram_verbs.txt") \
+	cat "$DIR/10_million_password_list_top_100000.txt" \
+	  | comm -12 <(sort >()) <(sort "$DIR/googlebooks_ngram_verbs.txt") \
 	  > "$WORDLISTS/common_password_verbs.txt"
 }
 
 write_wordlists()
 {
-	output=$1
-	moduleName=$2
-	sourceDirectory=$3
-
-	echo "'use strict';" > "$output"
-	echo "(function(exports) {" >> "$output"
+	echo "'use strict';" > "$TARGET"
+	echo "(function(exports) {" >> "$TARGET"
 
 	# Write word lists as javascript variables
-	find "$sourceDirectory" -maxdepth 1 -type f -name "*.txt" | while read -r filePath;
+	find "$WORDLISTS" -maxdepth 1 -type f -name "*.txt" | while read -r filePath
 	do
 		fileName=$(basename "$filePath")
 		name=${fileName%.*}
-		cat $filePath | clean | write_wordlist "$output" "$name"
+		cat $filePath | clean | write_wordlist "$name"
 	done
 
-	echo "})(this.$moduleName = {});" >> "$output"
+	echo "})(this.$MODULE_NAME = {});" >> "$TARGET"
 }
-
 regenerate_common_password_based_lists
-write_wordlists "$TARGET" "$MODULE_NAME" "$WORDLISTS"
+write_wordlists
