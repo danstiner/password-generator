@@ -45,10 +45,10 @@
   
     var num_bits = Math.ceil(Math.log2(range));
     var bitmask = Math.pow(2, num_bits) - 1;
-    var randomArray = new Uint32Array(2);
     var randomValue;
 
     do {
+      var randomArray = new Uint32Array(2);
       window.crypto.getRandomValues(randomArray);
       // 21 upper bits + 32 lower bits = 53 bits (max safe integer)
       var upper_uint32 = randomArray[0] >> 11;
