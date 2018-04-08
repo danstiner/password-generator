@@ -1,6 +1,7 @@
 'use strict';
 (function(exports) {
-  var max_uint32 = 4294967295;
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER
+  var MAX_SAFE_INTEGER = 9007199254740991;
 
   if (!Array.prototype.fill) {
     Array.prototype.fill = function(value) {
@@ -20,22 +21,40 @@
   };
 
   function getRandomSymbol(alphabet) {
-    if (alphabet.length >= max_uint32) {
-      throw new RangeError("Symbol alphabet too large");
-    }
-    if(!window.crypto || !window.crypto.getRandomValues)
+    if (!window.crypto || !window.crypto.getRandomValues)
     {
       throw new Error("Browser does support secure randomness generation")
     }
 
-    var randomValues = new Uint32Array(1);
-    window.crypto.getRandomValues(randomValues);
+    var index = secureRandom(0, alphabet.length);
 
     return {
-      symbol: alphabet[randomValues[0] % alphabet.length],
+      symbol: alphabet[index],
       bitsOfEntropy: Math.log2(alphabet.length)
     };
   };
+
+  // Generate a random number in [min, max) using secure window.crypto.getRandomValues API
+  // For non-power-of-two ranges, rejection sampling is used to achieve an unbiased distribution
+  function secureRandom(min, max) {
+    var range = max - min;
+
+    if (max > MAX_SAFE_INTEGER || range > MAX_SAFE_INTEGER) {
+      throw new RangeError("Maximum or range of random value larger than safely representable in JavaScript");
+    }
+  
+    var num_bits = Math.ceil(Math.log2(range));
+    var bitmask = Math.pow(2, num_bits) - 1;
+    var array = new Uint32Array(1);
+    var randomValue;
+
+    do {
+      window.crypto.getRandomValues(array);
+      randomValue = array[0] & bitmask;
+    } while (randomValue > range)
+
+    return min + randomValue;
+  }
 
   exports.getRandomSymbolsFromFixedAlphabet = function(alphabet, count) {
       return concatRandomSymbols(Array(count).fill(alphabet).map(getRandomSymbol));
