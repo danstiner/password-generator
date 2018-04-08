@@ -37,6 +37,14 @@
     };
   };
 
+  exports.getRandomSymbolsFromFixedAlphabet = function(alphabet, count) {
+      return concatRandomSymbols(Array(count).fill(alphabet).map(getRandomSymbol));
+  };
+
+  exports.getRandomSymbolsFromAlphabets = function(alphabets) {
+      return concatRandomSymbols(alphabets.map(getRandomSymbol));
+  };
+
   function concatRandomSymbols(randomSymbols) {
     return randomSymbols.reduce(
       (previousValue, currentValue) => ({
@@ -44,14 +52,6 @@
         bitsOfEntropy: (previousValue.bitsOfEntropy + currentValue.bitsOfEntropy)
       }),
       {symbols: [], bitsOfEntropy: 0});
-  };
-
-  exports.getRandomSymbolsFromFixedAlphabet = function(alphabet, count) {
-      return concatRandomSymbols(Array(count).fill(alphabet).map(getRandomSymbol));
-  };
-
-  exports.getRandomSymbolsFromAlphabets = function(alphabets) {
-      return concatRandomSymbols(alphabets.map(getRandomSymbol));
   };
 
 })(this.crypto_random_generator = {});
