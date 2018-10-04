@@ -40,7 +40,7 @@
   function generatePassphrase() {
     try {
       var result = runGenerationAlgorithm(algorithm);
-      document.getElementById("generated_passphrase").textContent = concat_words(result.symbols);
+      document.getElementById("generated_passphrase").textContent = result.symbols.join(" ");
       displayPassphraseStrength(result.bitsOfEntropy);
     } catch (ex) {
       displayError(ex);
@@ -63,10 +63,6 @@
     selection.removeAllRanges();
     selection.addRange(range);
   };
-
-  function concat_words(words) {
-    return words.reduce((prev, cur) => prev + " " + cur);
-  }
 
   function displayPassphraseStrength(bitsOfEntropy) {
     var offlineElement = document.getElementById("time_to_guess_offline");
