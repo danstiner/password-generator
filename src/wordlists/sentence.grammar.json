@@ -77,8 +77,12 @@
         "SIMPLE-SENTENCE": {
             "options": [
                 [
-                    "NP",
-                    "VP"
+                    "NPsing",
+                    "VPsing"
+                ],
+                [
+                    "NPpl",
+                    "VPpl"
                 ]
             ]
         },
@@ -94,7 +98,7 @@
                 ]
             ]
         },
-        "VP": {
+        "VPsing": {
             "description": "Phrase structure rules: VP -> VP conj VP, VP -> V (NP) (PP) (Adv)",
             "options": [
                 [
@@ -105,7 +109,23 @@
                     "RBF"
                 ],
                 [
-                    "VBT",
+                    "VBTsing",
+                    "NP"
+                ]
+            ]
+        },
+        "VPpl": {
+            "description": "Phrase structure rules: VP -> VP conj VP, VP -> V (NP) (PP) (Adv)",
+            "options": [
+                [
+                    "VBI"
+                ],
+                [
+                    "VBI",
+                    "RBF"
+                ],
+                [
+                    "VBTpl",
                     "NP"
                 ]
             ]
