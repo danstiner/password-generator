@@ -1,0 +1,66 @@
+{
+    "id": "https://example.com/arrays.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A representation of a person, company, organization, or place",
+    "type": "object",
+    "properties": {
+        "rules": {
+            "$ref": "#/definitions/rulemap"
+        }
+    },
+    "definitions": {
+        "rule": {
+            "type": "object",
+            "required": [
+                "options"
+            ],
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "options": {
+                    "type": "array",
+                    "items": {
+                        "oneOf": [
+                            {
+                                "$ref": "#/definitions/ruleoption-array"
+                            },
+                            {
+                                "$ref": "#/definitions/ruleoption-string"
+                            },
+                            {
+                                "$ref": "#/definitions/ruleoption-object"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "ruleoption-array": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "ruleoption-string": {
+            "type": "string"
+        },
+        "ruleoption-object": {
+            "type": "object",
+            "required": [
+                "value"
+            ],
+            "properties": {
+                "value": {
+                    "type": "string"
+                }
+            }
+        },
+        "rulemap": {
+            "type": "object",
+            "additionalProperties": {
+                "$ref": "#/definitions/rule"
+            }
+        }
+    }
+}

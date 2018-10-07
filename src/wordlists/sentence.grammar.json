@@ -1,0 +1,114 @@
+{
+    "$schema": "./grammar.schema.json",
+    "description": "Context-Free grammar for generating English sentences. Based on phrase structure rules.",
+    "rules": {
+        "JJS*": {
+            "description": "Expand superlative adjectives",
+            "options": [
+                "JJS",
+                ["JJS", "JJS"]
+            ]
+        },
+        "JJScon*": {
+            "description": "Expand superlative adjectives",
+            "options": [
+                "JJScon",
+                ["JJScon", "JJS"]
+            ]
+        },
+        "JJSvow*": {
+            "description": "Expand superlative adjectives",
+            "options": [
+                "JJSvow",
+                ["JJSvow", "JJS"]
+            ]
+        },
+        "NP": {
+            "options": [
+                "NPpl",
+                "NPsing"
+            ]
+        },
+        "NPpl": {
+            "description": "Plural noun phrase, phrase structure rules: NP -> NP conj NP, NP -> NNS",
+            "options": [
+                "NNpl",
+                ["DETpl", "JJS*", "NNpl"],
+                ["DETpl", "NNpl"],
+                ["DETpl", "NNpl", "PP"],
+                ["DETpl", "NNpl", "PP"],
+                ["JJS*", "NNpl"],
+                ["JJS*", "NNpl", "PP"],
+                ["NNpl", "PP"]
+            ]
+        },
+        "NPsing": {
+            "description": "Singular noun phrase, phrase structure rule NP -> (Det) (Adj) N (PP)",
+            "options": [
+                "NN",
+                ["DETsing,con", "JJScon", "NN"],
+                ["DETsing,con", "NNcon"],
+                ["DETsing,con", "NNcon", "PP"],
+                ["DETsing,con", "NNcon", "PP"],
+                ["DETsing,vow", "JJSvow*", "NN"],
+                ["DETsing,vow", "NNvow"],
+                ["DETsing,vow", "NNvow", "PP"],
+                ["DETsing,vow", "NNvow", "PP"],
+                ["JJScon*", "NNcon"],
+                ["JJSvow*", "NNvow"],
+                ["JJScon*", "NNcon", "PP"],
+                ["JJScon*", "NNvow", "PP"],
+                ["NN", "PP"]
+            ]
+        },
+        "PP": {
+            "description": "PP -> P (NP)",
+            "options": [
+                ["P", "NP"]
+            ]
+        },
+        "SENTENCE": {
+            "description": "Phrase structure rule S -> NP (Aux) V",
+            "options": [
+                ["SIMPLE-SENTENCE"],
+                ["THERE-SENTENCE"]
+            ]
+        },
+        "SIMPLE-SENTENCE": {
+            "options": [
+                [
+                    "NP",
+                    "VP"
+                ]
+            ]
+        },
+        "THERE-SENTENCE": {
+            "options": [
+                [
+                    "there is",
+                    "NPsing"
+                ],
+                [
+                    "there are",
+                    "NPpl"
+                ]
+            ]
+        },
+        "VP": {
+            "description": "Phrase structure rules: VP -> VP conj VP, VP -> V (NP) (PP) (Adv)",
+            "options": [
+                [
+                    "VBI"
+                ],
+                [
+                    "VBI",
+                    "RBF"
+                ],
+                [
+                    "VBT",
+                    "NP"
+                ]
+            ]
+        }
+    }
+}

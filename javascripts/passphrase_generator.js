@@ -39,14 +39,61 @@
 
   function generatePassphrase() {
     try {
-      var result = runGenerationAlgorithm(algorithm);
-      document.getElementById("generated_passphrase").textContent = result.symbols.join(" ");
+      const result = runGenerationAlgorithm(algorithm);
+      const encoded = result.symbols.map((symbol, index) => construct_trie(result.alphabets[index]).encode(symbol));
+
+      document.getElementById("generated_passphrase").textContent =  encoded.join("") + " - " + encoded.join(" ") + " - " + result.symbols.join(" ");
       displayPassphraseStrength(result.bitsOfEntropy);
     } catch (ex) {
       displayError(ex);
       throw ex;
     } 
   };
+
+  function construct_trie(words) {
+    let root = new Map();
+
+    for (let word of words) {
+      var current = root;
+      for (let letter of word) {
+        if (!current.has(letter)) {
+          current.set(letter, new Map());
+        }
+        current = current.get(letter);
+      }
+      current.set("", word);
+    }
+
+    function size_recursive(trie) {
+      var size = 0;
+      for (let key of trie.keys()) {
+        if (key === "") {
+          size += 1;
+        } else {
+          size += size_recursive(trie.get(key));
+        }
+      }
+      return size;
+    }
+
+    return  {
+      encode: function (word) {
+        var current = root;
+        let prefix = [];
+        for (let letter of word) {
+          if (size_recursive(current) > 1) {
+            prefix.push(letter);
+          }
+          if (current.has(letter)) {
+            current = current.get(letter);
+          } else {
+            throw Error("Word not in trie: " + word);
+          }
+        }
+        return prefix.join("");
+      }
+    }
+  }
 
   function runGenerationAlgorithm(algorithm) {
     return algorithm.run(wordCount);

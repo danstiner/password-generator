@@ -29,6 +29,7 @@
     var index = secureRandom(0, alphabet.length);
 
     return {
+      alphabet: alphabet,
       symbol: alphabet[index],
       bitsOfEntropy: Math.log2(alphabet.length)
     };
@@ -70,10 +71,11 @@
   function concatRandomSymbols(randomSymbols) {
     return randomSymbols.reduce(
       (previousValue, currentValue) => ({
-        symbols: previousValue.symbols.concat(currentValue.symbol),
+        alphabets: previousValue.alphabets.concat([currentValue.alphabet]),
+        symbols: previousValue.symbols.concat([currentValue.symbol]),
         bitsOfEntropy: (previousValue.bitsOfEntropy + currentValue.bitsOfEntropy)
       }),
-      {symbols: [], bitsOfEntropy: 0});
+      {alphabets: [], symbols: [], bitsOfEntropy: 0});
   };
 
 })(this.crypto_random_generator = {});
