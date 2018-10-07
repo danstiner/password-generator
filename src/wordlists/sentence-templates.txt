@@ -1,0 +1,2280 @@
+NN VBI
+DETsing,con JJScon NN VBI
+DETsing,con NNcon VBI
+DETsing,con NNcon P NNpl VBI
+DETsing,con NNcon P DETpl JJS NNpl VBI
+DETsing,con NNcon P DETpl JJS JJS NNpl VBI
+DETsing,con NNcon P DETpl NNpl VBI
+DETsing,con NNcon P JJS NNpl VBI
+DETsing,con NNcon P JJS JJS NNpl VBI
+DETsing,con NNcon P NNpl VBI
+DETsing,con NNcon P DETpl JJS NNpl VBI
+DETsing,con NNcon P DETpl JJS JJS NNpl VBI
+DETsing,con NNcon P DETpl NNpl VBI
+DETsing,con NNcon P JJS NNpl VBI
+DETsing,con NNcon P JJS JJS NNpl VBI
+DETsing,vow JJSvow NN VBI
+DETsing,vow JJSvow JJS NN VBI
+DETsing,vow NNvow VBI
+DETsing,vow NNvow P NNpl VBI
+DETsing,vow NNvow P DETpl JJS NNpl VBI
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBI
+DETsing,vow NNvow P DETpl NNpl VBI
+DETsing,vow NNvow P JJS NNpl VBI
+DETsing,vow NNvow P JJS JJS NNpl VBI
+DETsing,vow NNvow P NNpl VBI
+DETsing,vow NNvow P DETpl JJS NNpl VBI
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBI
+DETsing,vow NNvow P DETpl NNpl VBI
+DETsing,vow NNvow P JJS NNpl VBI
+DETsing,vow NNvow P JJS JJS NNpl VBI
+JJScon NNcon VBI
+JJScon JJS NNcon VBI
+JJSvow NNvow VBI
+JJSvow JJS NNvow VBI
+JJScon NNcon P NNpl VBI
+JJScon JJS NNcon P NNpl VBI
+JJScon NNcon P DETpl JJS NNpl VBI
+JJScon JJS NNcon P DETpl JJS NNpl VBI
+JJScon NNcon P DETpl JJS JJS NNpl VBI
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBI
+JJScon NNcon P DETpl NNpl VBI
+JJScon JJS NNcon P DETpl NNpl VBI
+JJScon NNcon P JJS NNpl VBI
+JJScon JJS NNcon P JJS NNpl VBI
+JJScon NNcon P JJS JJS NNpl VBI
+JJScon JJS NNcon P JJS JJS NNpl VBI
+JJScon NNvow P NNpl VBI
+JJScon JJS NNvow P NNpl VBI
+JJScon NNvow P DETpl JJS NNpl VBI
+JJScon JJS NNvow P DETpl JJS NNpl VBI
+JJScon NNvow P DETpl JJS JJS NNpl VBI
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBI
+JJScon NNvow P DETpl NNpl VBI
+JJScon JJS NNvow P DETpl NNpl VBI
+JJScon NNvow P JJS NNpl VBI
+JJScon JJS NNvow P JJS NNpl VBI
+JJScon NNvow P JJS JJS NNpl VBI
+JJScon JJS NNvow P JJS JJS NNpl VBI
+NN P NNpl VBI
+NN P DETpl JJS NNpl VBI
+NN P DETpl JJS JJS NNpl VBI
+NN P DETpl NNpl VBI
+NN P JJS NNpl VBI
+NN P JJS JJS NNpl VBI
+NN VBI RBF
+DETsing,con JJScon NN VBI RBF
+DETsing,con NNcon VBI RBF
+DETsing,con NNcon P NNpl VBI RBF
+DETsing,con NNcon P DETpl JJS NNpl VBI RBF
+DETsing,con NNcon P DETpl JJS JJS NNpl VBI RBF
+DETsing,con NNcon P DETpl NNpl VBI RBF
+DETsing,con NNcon P JJS NNpl VBI RBF
+DETsing,con NNcon P JJS JJS NNpl VBI RBF
+DETsing,con NNcon P NNpl VBI RBF
+DETsing,con NNcon P DETpl JJS NNpl VBI RBF
+DETsing,con NNcon P DETpl JJS JJS NNpl VBI RBF
+DETsing,con NNcon P DETpl NNpl VBI RBF
+DETsing,con NNcon P JJS NNpl VBI RBF
+DETsing,con NNcon P JJS JJS NNpl VBI RBF
+DETsing,vow JJSvow NN VBI RBF
+DETsing,vow JJSvow JJS NN VBI RBF
+DETsing,vow NNvow VBI RBF
+DETsing,vow NNvow P NNpl VBI RBF
+DETsing,vow NNvow P DETpl JJS NNpl VBI RBF
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBI RBF
+DETsing,vow NNvow P DETpl NNpl VBI RBF
+DETsing,vow NNvow P JJS NNpl VBI RBF
+DETsing,vow NNvow P JJS JJS NNpl VBI RBF
+DETsing,vow NNvow P NNpl VBI RBF
+DETsing,vow NNvow P DETpl JJS NNpl VBI RBF
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBI RBF
+DETsing,vow NNvow P DETpl NNpl VBI RBF
+DETsing,vow NNvow P JJS NNpl VBI RBF
+DETsing,vow NNvow P JJS JJS NNpl VBI RBF
+JJScon NNcon VBI RBF
+JJScon JJS NNcon VBI RBF
+JJSvow NNvow VBI RBF
+JJSvow JJS NNvow VBI RBF
+JJScon NNcon P NNpl VBI RBF
+JJScon JJS NNcon P NNpl VBI RBF
+JJScon NNcon P DETpl JJS NNpl VBI RBF
+JJScon JJS NNcon P DETpl JJS NNpl VBI RBF
+JJScon NNcon P DETpl JJS JJS NNpl VBI RBF
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBI RBF
+JJScon NNcon P DETpl NNpl VBI RBF
+JJScon JJS NNcon P DETpl NNpl VBI RBF
+JJScon NNcon P JJS NNpl VBI RBF
+JJScon JJS NNcon P JJS NNpl VBI RBF
+JJScon NNcon P JJS JJS NNpl VBI RBF
+JJScon JJS NNcon P JJS JJS NNpl VBI RBF
+JJScon NNvow P NNpl VBI RBF
+JJScon JJS NNvow P NNpl VBI RBF
+JJScon NNvow P DETpl JJS NNpl VBI RBF
+JJScon JJS NNvow P DETpl JJS NNpl VBI RBF
+JJScon NNvow P DETpl JJS JJS NNpl VBI RBF
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBI RBF
+JJScon NNvow P DETpl NNpl VBI RBF
+JJScon JJS NNvow P DETpl NNpl VBI RBF
+JJScon NNvow P JJS NNpl VBI RBF
+JJScon JJS NNvow P JJS NNpl VBI RBF
+JJScon NNvow P JJS JJS NNpl VBI RBF
+JJScon JJS NNvow P JJS JJS NNpl VBI RBF
+NN P NNpl VBI RBF
+NN P DETpl JJS NNpl VBI RBF
+NN P DETpl JJS JJS NNpl VBI RBF
+NN P DETpl NNpl VBI RBF
+NN P JJS NNpl VBI RBF
+NN P JJS JJS NNpl VBI RBF
+NN VBTsing NNpl
+DETsing,con JJScon NN VBTsing NNpl
+DETsing,con NNcon VBTsing NNpl
+DETsing,con NNcon P NNpl VBTsing NNpl
+DETsing,con NNcon P DETpl JJS NNpl VBTsing NNpl
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing NNpl
+DETsing,con NNcon P DETpl NNpl VBTsing NNpl
+DETsing,con NNcon P JJS NNpl VBTsing NNpl
+DETsing,con NNcon P JJS JJS NNpl VBTsing NNpl
+DETsing,con NNcon P NNpl VBTsing NNpl
+DETsing,con NNcon P DETpl JJS NNpl VBTsing NNpl
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing NNpl
+DETsing,con NNcon P DETpl NNpl VBTsing NNpl
+DETsing,con NNcon P JJS NNpl VBTsing NNpl
+DETsing,con NNcon P JJS JJS NNpl VBTsing NNpl
+DETsing,vow JJSvow NN VBTsing NNpl
+DETsing,vow JJSvow JJS NN VBTsing NNpl
+DETsing,vow NNvow VBTsing NNpl
+DETsing,vow NNvow P NNpl VBTsing NNpl
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing NNpl
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing NNpl
+DETsing,vow NNvow P DETpl NNpl VBTsing NNpl
+DETsing,vow NNvow P JJS NNpl VBTsing NNpl
+DETsing,vow NNvow P JJS JJS NNpl VBTsing NNpl
+DETsing,vow NNvow P NNpl VBTsing NNpl
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing NNpl
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing NNpl
+DETsing,vow NNvow P DETpl NNpl VBTsing NNpl
+DETsing,vow NNvow P JJS NNpl VBTsing NNpl
+DETsing,vow NNvow P JJS JJS NNpl VBTsing NNpl
+JJScon NNcon VBTsing NNpl
+JJScon JJS NNcon VBTsing NNpl
+JJSvow NNvow VBTsing NNpl
+JJSvow JJS NNvow VBTsing NNpl
+JJScon NNcon P NNpl VBTsing NNpl
+JJScon JJS NNcon P NNpl VBTsing NNpl
+JJScon NNcon P DETpl JJS NNpl VBTsing NNpl
+JJScon JJS NNcon P DETpl JJS NNpl VBTsing NNpl
+JJScon NNcon P DETpl JJS JJS NNpl VBTsing NNpl
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBTsing NNpl
+JJScon NNcon P DETpl NNpl VBTsing NNpl
+JJScon JJS NNcon P DETpl NNpl VBTsing NNpl
+JJScon NNcon P JJS NNpl VBTsing NNpl
+JJScon JJS NNcon P JJS NNpl VBTsing NNpl
+JJScon NNcon P JJS JJS NNpl VBTsing NNpl
+JJScon JJS NNcon P JJS JJS NNpl VBTsing NNpl
+JJScon NNvow P NNpl VBTsing NNpl
+JJScon JJS NNvow P NNpl VBTsing NNpl
+JJScon NNvow P DETpl JJS NNpl VBTsing NNpl
+JJScon JJS NNvow P DETpl JJS NNpl VBTsing NNpl
+JJScon NNvow P DETpl JJS JJS NNpl VBTsing NNpl
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBTsing NNpl
+JJScon NNvow P DETpl NNpl VBTsing NNpl
+JJScon JJS NNvow P DETpl NNpl VBTsing NNpl
+JJScon NNvow P JJS NNpl VBTsing NNpl
+JJScon JJS NNvow P JJS NNpl VBTsing NNpl
+JJScon NNvow P JJS JJS NNpl VBTsing NNpl
+JJScon JJS NNvow P JJS JJS NNpl VBTsing NNpl
+NN P NNpl VBTsing NNpl
+NN P DETpl JJS NNpl VBTsing NNpl
+NN P DETpl JJS JJS NNpl VBTsing NNpl
+NN P DETpl NNpl VBTsing NNpl
+NN P JJS NNpl VBTsing NNpl
+NN P JJS JJS NNpl VBTsing NNpl
+NN VBTsing DETpl JJS NNpl
+DETsing,con JJScon NN VBTsing DETpl JJS NNpl
+DETsing,con NNcon VBTsing DETpl JJS NNpl
+DETsing,con NNcon P NNpl VBTsing DETpl JJS NNpl
+DETsing,con NNcon P DETpl JJS NNpl VBTsing DETpl JJS NNpl
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing DETpl JJS NNpl
+DETsing,con NNcon P DETpl NNpl VBTsing DETpl JJS NNpl
+DETsing,con NNcon P JJS NNpl VBTsing DETpl JJS NNpl
+DETsing,con NNcon P JJS JJS NNpl VBTsing DETpl JJS NNpl
+DETsing,con NNcon P NNpl VBTsing DETpl JJS NNpl
+DETsing,con NNcon P DETpl JJS NNpl VBTsing DETpl JJS NNpl
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing DETpl JJS NNpl
+DETsing,con NNcon P DETpl NNpl VBTsing DETpl JJS NNpl
+DETsing,con NNcon P JJS NNpl VBTsing DETpl JJS NNpl
+DETsing,con NNcon P JJS JJS NNpl VBTsing DETpl JJS NNpl
+DETsing,vow JJSvow NN VBTsing DETpl JJS NNpl
+DETsing,vow JJSvow JJS NN VBTsing DETpl JJS NNpl
+DETsing,vow NNvow VBTsing DETpl JJS NNpl
+DETsing,vow NNvow P NNpl VBTsing DETpl JJS NNpl
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing DETpl JJS NNpl
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing DETpl JJS NNpl
+DETsing,vow NNvow P DETpl NNpl VBTsing DETpl JJS NNpl
+DETsing,vow NNvow P JJS NNpl VBTsing DETpl JJS NNpl
+DETsing,vow NNvow P JJS JJS NNpl VBTsing DETpl JJS NNpl
+DETsing,vow NNvow P NNpl VBTsing DETpl JJS NNpl
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing DETpl JJS NNpl
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing DETpl JJS NNpl
+DETsing,vow NNvow P DETpl NNpl VBTsing DETpl JJS NNpl
+DETsing,vow NNvow P JJS NNpl VBTsing DETpl JJS NNpl
+DETsing,vow NNvow P JJS JJS NNpl VBTsing DETpl JJS NNpl
+JJScon NNcon VBTsing DETpl JJS NNpl
+JJScon JJS NNcon VBTsing DETpl JJS NNpl
+JJSvow NNvow VBTsing DETpl JJS NNpl
+JJSvow JJS NNvow VBTsing DETpl JJS NNpl
+JJScon NNcon P NNpl VBTsing DETpl JJS NNpl
+JJScon JJS NNcon P NNpl VBTsing DETpl JJS NNpl
+JJScon NNcon P DETpl JJS NNpl VBTsing DETpl JJS NNpl
+JJScon JJS NNcon P DETpl JJS NNpl VBTsing DETpl JJS NNpl
+JJScon NNcon P DETpl JJS JJS NNpl VBTsing DETpl JJS NNpl
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBTsing DETpl JJS NNpl
+JJScon NNcon P DETpl NNpl VBTsing DETpl JJS NNpl
+JJScon JJS NNcon P DETpl NNpl VBTsing DETpl JJS NNpl
+JJScon NNcon P JJS NNpl VBTsing DETpl JJS NNpl
+JJScon JJS NNcon P JJS NNpl VBTsing DETpl JJS NNpl
+JJScon NNcon P JJS JJS NNpl VBTsing DETpl JJS NNpl
+JJScon JJS NNcon P JJS JJS NNpl VBTsing DETpl JJS NNpl
+JJScon NNvow P NNpl VBTsing DETpl JJS NNpl
+JJScon JJS NNvow P NNpl VBTsing DETpl JJS NNpl
+JJScon NNvow P DETpl JJS NNpl VBTsing DETpl JJS NNpl
+JJScon JJS NNvow P DETpl JJS NNpl VBTsing DETpl JJS NNpl
+JJScon NNvow P DETpl JJS JJS NNpl VBTsing DETpl JJS NNpl
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBTsing DETpl JJS NNpl
+JJScon NNvow P DETpl NNpl VBTsing DETpl JJS NNpl
+JJScon JJS NNvow P DETpl NNpl VBTsing DETpl JJS NNpl
+JJScon NNvow P JJS NNpl VBTsing DETpl JJS NNpl
+JJScon JJS NNvow P JJS NNpl VBTsing DETpl JJS NNpl
+JJScon NNvow P JJS JJS NNpl VBTsing DETpl JJS NNpl
+JJScon JJS NNvow P JJS JJS NNpl VBTsing DETpl JJS NNpl
+NN P NNpl VBTsing DETpl JJS NNpl
+NN P DETpl JJS NNpl VBTsing DETpl JJS NNpl
+NN P DETpl JJS JJS NNpl VBTsing DETpl JJS NNpl
+NN P DETpl NNpl VBTsing DETpl JJS NNpl
+NN P JJS NNpl VBTsing DETpl JJS NNpl
+NN P JJS JJS NNpl VBTsing DETpl JJS NNpl
+NN VBTsing DETpl JJS JJS NNpl
+DETsing,con JJScon NN VBTsing DETpl JJS JJS NNpl
+DETsing,con NNcon VBTsing DETpl JJS JJS NNpl
+DETsing,con NNcon P NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,con NNcon P DETpl JJS NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,con NNcon P DETpl NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,con NNcon P JJS NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,con NNcon P JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,con NNcon P NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,con NNcon P DETpl JJS NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,con NNcon P DETpl NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,con NNcon P JJS NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,con NNcon P JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,vow JJSvow NN VBTsing DETpl JJS JJS NNpl
+DETsing,vow JJSvow JJS NN VBTsing DETpl JJS JJS NNpl
+DETsing,vow NNvow VBTsing DETpl JJS JJS NNpl
+DETsing,vow NNvow P NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,vow NNvow P DETpl NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,vow NNvow P JJS NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,vow NNvow P JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,vow NNvow P NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,vow NNvow P DETpl NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,vow NNvow P JJS NNpl VBTsing DETpl JJS JJS NNpl
+DETsing,vow NNvow P JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+JJScon NNcon VBTsing DETpl JJS JJS NNpl
+JJScon JJS NNcon VBTsing DETpl JJS JJS NNpl
+JJSvow NNvow VBTsing DETpl JJS JJS NNpl
+JJSvow JJS NNvow VBTsing DETpl JJS JJS NNpl
+JJScon NNcon P NNpl VBTsing DETpl JJS JJS NNpl
+JJScon JJS NNcon P NNpl VBTsing DETpl JJS JJS NNpl
+JJScon NNcon P DETpl JJS NNpl VBTsing DETpl JJS JJS NNpl
+JJScon JJS NNcon P DETpl JJS NNpl VBTsing DETpl JJS JJS NNpl
+JJScon NNcon P DETpl JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+JJScon NNcon P DETpl NNpl VBTsing DETpl JJS JJS NNpl
+JJScon JJS NNcon P DETpl NNpl VBTsing DETpl JJS JJS NNpl
+JJScon NNcon P JJS NNpl VBTsing DETpl JJS JJS NNpl
+JJScon JJS NNcon P JJS NNpl VBTsing DETpl JJS JJS NNpl
+JJScon NNcon P JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+JJScon JJS NNcon P JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+JJScon NNvow P NNpl VBTsing DETpl JJS JJS NNpl
+JJScon JJS NNvow P NNpl VBTsing DETpl JJS JJS NNpl
+JJScon NNvow P DETpl JJS NNpl VBTsing DETpl JJS JJS NNpl
+JJScon JJS NNvow P DETpl JJS NNpl VBTsing DETpl JJS JJS NNpl
+JJScon NNvow P DETpl JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+JJScon NNvow P DETpl NNpl VBTsing DETpl JJS JJS NNpl
+JJScon JJS NNvow P DETpl NNpl VBTsing DETpl JJS JJS NNpl
+JJScon NNvow P JJS NNpl VBTsing DETpl JJS JJS NNpl
+JJScon JJS NNvow P JJS NNpl VBTsing DETpl JJS JJS NNpl
+JJScon NNvow P JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+JJScon JJS NNvow P JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+NN P NNpl VBTsing DETpl JJS JJS NNpl
+NN P DETpl JJS NNpl VBTsing DETpl JJS JJS NNpl
+NN P DETpl JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+NN P DETpl NNpl VBTsing DETpl JJS JJS NNpl
+NN P JJS NNpl VBTsing DETpl JJS JJS NNpl
+NN P JJS JJS NNpl VBTsing DETpl JJS JJS NNpl
+NN VBTsing DETpl NNpl
+DETsing,con JJScon NN VBTsing DETpl NNpl
+DETsing,con NNcon VBTsing DETpl NNpl
+DETsing,con NNcon P NNpl VBTsing DETpl NNpl
+DETsing,con NNcon P DETpl JJS NNpl VBTsing DETpl NNpl
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing DETpl NNpl
+DETsing,con NNcon P DETpl NNpl VBTsing DETpl NNpl
+DETsing,con NNcon P JJS NNpl VBTsing DETpl NNpl
+DETsing,con NNcon P JJS JJS NNpl VBTsing DETpl NNpl
+DETsing,con NNcon P NNpl VBTsing DETpl NNpl
+DETsing,con NNcon P DETpl JJS NNpl VBTsing DETpl NNpl
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing DETpl NNpl
+DETsing,con NNcon P DETpl NNpl VBTsing DETpl NNpl
+DETsing,con NNcon P JJS NNpl VBTsing DETpl NNpl
+DETsing,con NNcon P JJS JJS NNpl VBTsing DETpl NNpl
+DETsing,vow JJSvow NN VBTsing DETpl NNpl
+DETsing,vow JJSvow JJS NN VBTsing DETpl NNpl
+DETsing,vow NNvow VBTsing DETpl NNpl
+DETsing,vow NNvow P NNpl VBTsing DETpl NNpl
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing DETpl NNpl
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing DETpl NNpl
+DETsing,vow NNvow P DETpl NNpl VBTsing DETpl NNpl
+DETsing,vow NNvow P JJS NNpl VBTsing DETpl NNpl
+DETsing,vow NNvow P JJS JJS NNpl VBTsing DETpl NNpl
+DETsing,vow NNvow P NNpl VBTsing DETpl NNpl
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing DETpl NNpl
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing DETpl NNpl
+DETsing,vow NNvow P DETpl NNpl VBTsing DETpl NNpl
+DETsing,vow NNvow P JJS NNpl VBTsing DETpl NNpl
+DETsing,vow NNvow P JJS JJS NNpl VBTsing DETpl NNpl
+JJScon NNcon VBTsing DETpl NNpl
+JJScon JJS NNcon VBTsing DETpl NNpl
+JJSvow NNvow VBTsing DETpl NNpl
+JJSvow JJS NNvow VBTsing DETpl NNpl
+JJScon NNcon P NNpl VBTsing DETpl NNpl
+JJScon JJS NNcon P NNpl VBTsing DETpl NNpl
+JJScon NNcon P DETpl JJS NNpl VBTsing DETpl NNpl
+JJScon JJS NNcon P DETpl JJS NNpl VBTsing DETpl NNpl
+JJScon NNcon P DETpl JJS JJS NNpl VBTsing DETpl NNpl
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBTsing DETpl NNpl
+JJScon NNcon P DETpl NNpl VBTsing DETpl NNpl
+JJScon JJS NNcon P DETpl NNpl VBTsing DETpl NNpl
+JJScon NNcon P JJS NNpl VBTsing DETpl NNpl
+JJScon JJS NNcon P JJS NNpl VBTsing DETpl NNpl
+JJScon NNcon P JJS JJS NNpl VBTsing DETpl NNpl
+JJScon JJS NNcon P JJS JJS NNpl VBTsing DETpl NNpl
+JJScon NNvow P NNpl VBTsing DETpl NNpl
+JJScon JJS NNvow P NNpl VBTsing DETpl NNpl
+JJScon NNvow P DETpl JJS NNpl VBTsing DETpl NNpl
+JJScon JJS NNvow P DETpl JJS NNpl VBTsing DETpl NNpl
+JJScon NNvow P DETpl JJS JJS NNpl VBTsing DETpl NNpl
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBTsing DETpl NNpl
+JJScon NNvow P DETpl NNpl VBTsing DETpl NNpl
+JJScon JJS NNvow P DETpl NNpl VBTsing DETpl NNpl
+JJScon NNvow P JJS NNpl VBTsing DETpl NNpl
+JJScon JJS NNvow P JJS NNpl VBTsing DETpl NNpl
+JJScon NNvow P JJS JJS NNpl VBTsing DETpl NNpl
+JJScon JJS NNvow P JJS JJS NNpl VBTsing DETpl NNpl
+NN P NNpl VBTsing DETpl NNpl
+NN P DETpl JJS NNpl VBTsing DETpl NNpl
+NN P DETpl JJS JJS NNpl VBTsing DETpl NNpl
+NN P DETpl NNpl VBTsing DETpl NNpl
+NN P JJS NNpl VBTsing DETpl NNpl
+NN P JJS JJS NNpl VBTsing DETpl NNpl
+NN VBTsing JJS NNpl
+DETsing,con JJScon NN VBTsing JJS NNpl
+DETsing,con NNcon VBTsing JJS NNpl
+DETsing,con NNcon P NNpl VBTsing JJS NNpl
+DETsing,con NNcon P DETpl JJS NNpl VBTsing JJS NNpl
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing JJS NNpl
+DETsing,con NNcon P DETpl NNpl VBTsing JJS NNpl
+DETsing,con NNcon P JJS NNpl VBTsing JJS NNpl
+DETsing,con NNcon P JJS JJS NNpl VBTsing JJS NNpl
+DETsing,con NNcon P NNpl VBTsing JJS NNpl
+DETsing,con NNcon P DETpl JJS NNpl VBTsing JJS NNpl
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing JJS NNpl
+DETsing,con NNcon P DETpl NNpl VBTsing JJS NNpl
+DETsing,con NNcon P JJS NNpl VBTsing JJS NNpl
+DETsing,con NNcon P JJS JJS NNpl VBTsing JJS NNpl
+DETsing,vow JJSvow NN VBTsing JJS NNpl
+DETsing,vow JJSvow JJS NN VBTsing JJS NNpl
+DETsing,vow NNvow VBTsing JJS NNpl
+DETsing,vow NNvow P NNpl VBTsing JJS NNpl
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing JJS NNpl
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing JJS NNpl
+DETsing,vow NNvow P DETpl NNpl VBTsing JJS NNpl
+DETsing,vow NNvow P JJS NNpl VBTsing JJS NNpl
+DETsing,vow NNvow P JJS JJS NNpl VBTsing JJS NNpl
+DETsing,vow NNvow P NNpl VBTsing JJS NNpl
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing JJS NNpl
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing JJS NNpl
+DETsing,vow NNvow P DETpl NNpl VBTsing JJS NNpl
+DETsing,vow NNvow P JJS NNpl VBTsing JJS NNpl
+DETsing,vow NNvow P JJS JJS NNpl VBTsing JJS NNpl
+JJScon NNcon VBTsing JJS NNpl
+JJScon JJS NNcon VBTsing JJS NNpl
+JJSvow NNvow VBTsing JJS NNpl
+JJSvow JJS NNvow VBTsing JJS NNpl
+JJScon NNcon P NNpl VBTsing JJS NNpl
+JJScon JJS NNcon P NNpl VBTsing JJS NNpl
+JJScon NNcon P DETpl JJS NNpl VBTsing JJS NNpl
+JJScon JJS NNcon P DETpl JJS NNpl VBTsing JJS NNpl
+JJScon NNcon P DETpl JJS JJS NNpl VBTsing JJS NNpl
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBTsing JJS NNpl
+JJScon NNcon P DETpl NNpl VBTsing JJS NNpl
+JJScon JJS NNcon P DETpl NNpl VBTsing JJS NNpl
+JJScon NNcon P JJS NNpl VBTsing JJS NNpl
+JJScon JJS NNcon P JJS NNpl VBTsing JJS NNpl
+JJScon NNcon P JJS JJS NNpl VBTsing JJS NNpl
+JJScon JJS NNcon P JJS JJS NNpl VBTsing JJS NNpl
+JJScon NNvow P NNpl VBTsing JJS NNpl
+JJScon JJS NNvow P NNpl VBTsing JJS NNpl
+JJScon NNvow P DETpl JJS NNpl VBTsing JJS NNpl
+JJScon JJS NNvow P DETpl JJS NNpl VBTsing JJS NNpl
+JJScon NNvow P DETpl JJS JJS NNpl VBTsing JJS NNpl
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBTsing JJS NNpl
+JJScon NNvow P DETpl NNpl VBTsing JJS NNpl
+JJScon JJS NNvow P DETpl NNpl VBTsing JJS NNpl
+JJScon NNvow P JJS NNpl VBTsing JJS NNpl
+JJScon JJS NNvow P JJS NNpl VBTsing JJS NNpl
+JJScon NNvow P JJS JJS NNpl VBTsing JJS NNpl
+JJScon JJS NNvow P JJS JJS NNpl VBTsing JJS NNpl
+NN P NNpl VBTsing JJS NNpl
+NN P DETpl JJS NNpl VBTsing JJS NNpl
+NN P DETpl JJS JJS NNpl VBTsing JJS NNpl
+NN P DETpl NNpl VBTsing JJS NNpl
+NN P JJS NNpl VBTsing JJS NNpl
+NN P JJS JJS NNpl VBTsing JJS NNpl
+NN VBTsing JJS JJS NNpl
+DETsing,con JJScon NN VBTsing JJS JJS NNpl
+DETsing,con NNcon VBTsing JJS JJS NNpl
+DETsing,con NNcon P NNpl VBTsing JJS JJS NNpl
+DETsing,con NNcon P DETpl JJS NNpl VBTsing JJS JJS NNpl
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing JJS JJS NNpl
+DETsing,con NNcon P DETpl NNpl VBTsing JJS JJS NNpl
+DETsing,con NNcon P JJS NNpl VBTsing JJS JJS NNpl
+DETsing,con NNcon P JJS JJS NNpl VBTsing JJS JJS NNpl
+DETsing,con NNcon P NNpl VBTsing JJS JJS NNpl
+DETsing,con NNcon P DETpl JJS NNpl VBTsing JJS JJS NNpl
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing JJS JJS NNpl
+DETsing,con NNcon P DETpl NNpl VBTsing JJS JJS NNpl
+DETsing,con NNcon P JJS NNpl VBTsing JJS JJS NNpl
+DETsing,con NNcon P JJS JJS NNpl VBTsing JJS JJS NNpl
+DETsing,vow JJSvow NN VBTsing JJS JJS NNpl
+DETsing,vow JJSvow JJS NN VBTsing JJS JJS NNpl
+DETsing,vow NNvow VBTsing JJS JJS NNpl
+DETsing,vow NNvow P NNpl VBTsing JJS JJS NNpl
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing JJS JJS NNpl
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing JJS JJS NNpl
+DETsing,vow NNvow P DETpl NNpl VBTsing JJS JJS NNpl
+DETsing,vow NNvow P JJS NNpl VBTsing JJS JJS NNpl
+DETsing,vow NNvow P JJS JJS NNpl VBTsing JJS JJS NNpl
+DETsing,vow NNvow P NNpl VBTsing JJS JJS NNpl
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing JJS JJS NNpl
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing JJS JJS NNpl
+DETsing,vow NNvow P DETpl NNpl VBTsing JJS JJS NNpl
+DETsing,vow NNvow P JJS NNpl VBTsing JJS JJS NNpl
+DETsing,vow NNvow P JJS JJS NNpl VBTsing JJS JJS NNpl
+JJScon NNcon VBTsing JJS JJS NNpl
+JJScon JJS NNcon VBTsing JJS JJS NNpl
+JJSvow NNvow VBTsing JJS JJS NNpl
+JJSvow JJS NNvow VBTsing JJS JJS NNpl
+JJScon NNcon P NNpl VBTsing JJS JJS NNpl
+JJScon JJS NNcon P NNpl VBTsing JJS JJS NNpl
+JJScon NNcon P DETpl JJS NNpl VBTsing JJS JJS NNpl
+JJScon JJS NNcon P DETpl JJS NNpl VBTsing JJS JJS NNpl
+JJScon NNcon P DETpl JJS JJS NNpl VBTsing JJS JJS NNpl
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBTsing JJS JJS NNpl
+JJScon NNcon P DETpl NNpl VBTsing JJS JJS NNpl
+JJScon JJS NNcon P DETpl NNpl VBTsing JJS JJS NNpl
+JJScon NNcon P JJS NNpl VBTsing JJS JJS NNpl
+JJScon JJS NNcon P JJS NNpl VBTsing JJS JJS NNpl
+JJScon NNcon P JJS JJS NNpl VBTsing JJS JJS NNpl
+JJScon JJS NNcon P JJS JJS NNpl VBTsing JJS JJS NNpl
+JJScon NNvow P NNpl VBTsing JJS JJS NNpl
+JJScon JJS NNvow P NNpl VBTsing JJS JJS NNpl
+JJScon NNvow P DETpl JJS NNpl VBTsing JJS JJS NNpl
+JJScon JJS NNvow P DETpl JJS NNpl VBTsing JJS JJS NNpl
+JJScon NNvow P DETpl JJS JJS NNpl VBTsing JJS JJS NNpl
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBTsing JJS JJS NNpl
+JJScon NNvow P DETpl NNpl VBTsing JJS JJS NNpl
+JJScon JJS NNvow P DETpl NNpl VBTsing JJS JJS NNpl
+JJScon NNvow P JJS NNpl VBTsing JJS JJS NNpl
+JJScon JJS NNvow P JJS NNpl VBTsing JJS JJS NNpl
+JJScon NNvow P JJS JJS NNpl VBTsing JJS JJS NNpl
+JJScon JJS NNvow P JJS JJS NNpl VBTsing JJS JJS NNpl
+NN P NNpl VBTsing JJS JJS NNpl
+NN P DETpl JJS NNpl VBTsing JJS JJS NNpl
+NN P DETpl JJS JJS NNpl VBTsing JJS JJS NNpl
+NN P DETpl NNpl VBTsing JJS JJS NNpl
+NN P JJS NNpl VBTsing JJS JJS NNpl
+NN P JJS JJS NNpl VBTsing JJS JJS NNpl
+NN VBTsing NN
+DETsing,con JJScon NN VBTsing NN
+DETsing,con NNcon VBTsing NN
+DETsing,con NNcon P NNpl VBTsing NN
+DETsing,con NNcon P DETpl JJS NNpl VBTsing NN
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing NN
+DETsing,con NNcon P DETpl NNpl VBTsing NN
+DETsing,con NNcon P JJS NNpl VBTsing NN
+DETsing,con NNcon P JJS JJS NNpl VBTsing NN
+DETsing,con NNcon P NNpl VBTsing NN
+DETsing,con NNcon P DETpl JJS NNpl VBTsing NN
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing NN
+DETsing,con NNcon P DETpl NNpl VBTsing NN
+DETsing,con NNcon P JJS NNpl VBTsing NN
+DETsing,con NNcon P JJS JJS NNpl VBTsing NN
+DETsing,vow JJSvow NN VBTsing NN
+DETsing,vow JJSvow JJS NN VBTsing NN
+DETsing,vow NNvow VBTsing NN
+DETsing,vow NNvow P NNpl VBTsing NN
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing NN
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing NN
+DETsing,vow NNvow P DETpl NNpl VBTsing NN
+DETsing,vow NNvow P JJS NNpl VBTsing NN
+DETsing,vow NNvow P JJS JJS NNpl VBTsing NN
+DETsing,vow NNvow P NNpl VBTsing NN
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing NN
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing NN
+DETsing,vow NNvow P DETpl NNpl VBTsing NN
+DETsing,vow NNvow P JJS NNpl VBTsing NN
+DETsing,vow NNvow P JJS JJS NNpl VBTsing NN
+JJScon NNcon VBTsing NN
+JJScon JJS NNcon VBTsing NN
+JJSvow NNvow VBTsing NN
+JJSvow JJS NNvow VBTsing NN
+JJScon NNcon P NNpl VBTsing NN
+JJScon JJS NNcon P NNpl VBTsing NN
+JJScon NNcon P DETpl JJS NNpl VBTsing NN
+JJScon JJS NNcon P DETpl JJS NNpl VBTsing NN
+JJScon NNcon P DETpl JJS JJS NNpl VBTsing NN
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBTsing NN
+JJScon NNcon P DETpl NNpl VBTsing NN
+JJScon JJS NNcon P DETpl NNpl VBTsing NN
+JJScon NNcon P JJS NNpl VBTsing NN
+JJScon JJS NNcon P JJS NNpl VBTsing NN
+JJScon NNcon P JJS JJS NNpl VBTsing NN
+JJScon JJS NNcon P JJS JJS NNpl VBTsing NN
+JJScon NNvow P NNpl VBTsing NN
+JJScon JJS NNvow P NNpl VBTsing NN
+JJScon NNvow P DETpl JJS NNpl VBTsing NN
+JJScon JJS NNvow P DETpl JJS NNpl VBTsing NN
+JJScon NNvow P DETpl JJS JJS NNpl VBTsing NN
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBTsing NN
+JJScon NNvow P DETpl NNpl VBTsing NN
+JJScon JJS NNvow P DETpl NNpl VBTsing NN
+JJScon NNvow P JJS NNpl VBTsing NN
+JJScon JJS NNvow P JJS NNpl VBTsing NN
+JJScon NNvow P JJS JJS NNpl VBTsing NN
+JJScon JJS NNvow P JJS JJS NNpl VBTsing NN
+NN P NNpl VBTsing NN
+NN P DETpl JJS NNpl VBTsing NN
+NN P DETpl JJS JJS NNpl VBTsing NN
+NN P DETpl NNpl VBTsing NN
+NN P JJS NNpl VBTsing NN
+NN P JJS JJS NNpl VBTsing NN
+NN VBTsing DETsing,con JJScon NN
+DETsing,con JJScon NN VBTsing DETsing,con JJScon NN
+DETsing,con NNcon VBTsing DETsing,con JJScon NN
+DETsing,con NNcon P NNpl VBTsing DETsing,con JJScon NN
+DETsing,con NNcon P DETpl JJS NNpl VBTsing DETsing,con JJScon NN
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing DETsing,con JJScon NN
+DETsing,con NNcon P DETpl NNpl VBTsing DETsing,con JJScon NN
+DETsing,con NNcon P JJS NNpl VBTsing DETsing,con JJScon NN
+DETsing,con NNcon P JJS JJS NNpl VBTsing DETsing,con JJScon NN
+DETsing,con NNcon P NNpl VBTsing DETsing,con JJScon NN
+DETsing,con NNcon P DETpl JJS NNpl VBTsing DETsing,con JJScon NN
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing DETsing,con JJScon NN
+DETsing,con NNcon P DETpl NNpl VBTsing DETsing,con JJScon NN
+DETsing,con NNcon P JJS NNpl VBTsing DETsing,con JJScon NN
+DETsing,con NNcon P JJS JJS NNpl VBTsing DETsing,con JJScon NN
+DETsing,vow JJSvow NN VBTsing DETsing,con JJScon NN
+DETsing,vow JJSvow JJS NN VBTsing DETsing,con JJScon NN
+DETsing,vow NNvow VBTsing DETsing,con JJScon NN
+DETsing,vow NNvow P NNpl VBTsing DETsing,con JJScon NN
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing DETsing,con JJScon NN
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing DETsing,con JJScon NN
+DETsing,vow NNvow P DETpl NNpl VBTsing DETsing,con JJScon NN
+DETsing,vow NNvow P JJS NNpl VBTsing DETsing,con JJScon NN
+DETsing,vow NNvow P JJS JJS NNpl VBTsing DETsing,con JJScon NN
+DETsing,vow NNvow P NNpl VBTsing DETsing,con JJScon NN
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing DETsing,con JJScon NN
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing DETsing,con JJScon NN
+DETsing,vow NNvow P DETpl NNpl VBTsing DETsing,con JJScon NN
+DETsing,vow NNvow P JJS NNpl VBTsing DETsing,con JJScon NN
+DETsing,vow NNvow P JJS JJS NNpl VBTsing DETsing,con JJScon NN
+JJScon NNcon VBTsing DETsing,con JJScon NN
+JJScon JJS NNcon VBTsing DETsing,con JJScon NN
+JJSvow NNvow VBTsing DETsing,con JJScon NN
+JJSvow JJS NNvow VBTsing DETsing,con JJScon NN
+JJScon NNcon P NNpl VBTsing DETsing,con JJScon NN
+JJScon JJS NNcon P NNpl VBTsing DETsing,con JJScon NN
+JJScon NNcon P DETpl JJS NNpl VBTsing DETsing,con JJScon NN
+JJScon JJS NNcon P DETpl JJS NNpl VBTsing DETsing,con JJScon NN
+JJScon NNcon P DETpl JJS JJS NNpl VBTsing DETsing,con JJScon NN
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBTsing DETsing,con JJScon NN
+JJScon NNcon P DETpl NNpl VBTsing DETsing,con JJScon NN
+JJScon JJS NNcon P DETpl NNpl VBTsing DETsing,con JJScon NN
+JJScon NNcon P JJS NNpl VBTsing DETsing,con JJScon NN
+JJScon JJS NNcon P JJS NNpl VBTsing DETsing,con JJScon NN
+JJScon NNcon P JJS JJS NNpl VBTsing DETsing,con JJScon NN
+JJScon JJS NNcon P JJS JJS NNpl VBTsing DETsing,con JJScon NN
+JJScon NNvow P NNpl VBTsing DETsing,con JJScon NN
+JJScon JJS NNvow P NNpl VBTsing DETsing,con JJScon NN
+JJScon NNvow P DETpl JJS NNpl VBTsing DETsing,con JJScon NN
+JJScon JJS NNvow P DETpl JJS NNpl VBTsing DETsing,con JJScon NN
+JJScon NNvow P DETpl JJS JJS NNpl VBTsing DETsing,con JJScon NN
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBTsing DETsing,con JJScon NN
+JJScon NNvow P DETpl NNpl VBTsing DETsing,con JJScon NN
+JJScon JJS NNvow P DETpl NNpl VBTsing DETsing,con JJScon NN
+JJScon NNvow P JJS NNpl VBTsing DETsing,con JJScon NN
+JJScon JJS NNvow P JJS NNpl VBTsing DETsing,con JJScon NN
+JJScon NNvow P JJS JJS NNpl VBTsing DETsing,con JJScon NN
+JJScon JJS NNvow P JJS JJS NNpl VBTsing DETsing,con JJScon NN
+NN P NNpl VBTsing DETsing,con JJScon NN
+NN P DETpl JJS NNpl VBTsing DETsing,con JJScon NN
+NN P DETpl JJS JJS NNpl VBTsing DETsing,con JJScon NN
+NN P DETpl NNpl VBTsing DETsing,con JJScon NN
+NN P JJS NNpl VBTsing DETsing,con JJScon NN
+NN P JJS JJS NNpl VBTsing DETsing,con JJScon NN
+NN VBTsing DETsing,con NNcon
+DETsing,con JJScon NN VBTsing DETsing,con NNcon
+DETsing,con NNcon VBTsing DETsing,con NNcon
+DETsing,con NNcon P NNpl VBTsing DETsing,con NNcon
+DETsing,con NNcon P DETpl JJS NNpl VBTsing DETsing,con NNcon
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing DETsing,con NNcon
+DETsing,con NNcon P DETpl NNpl VBTsing DETsing,con NNcon
+DETsing,con NNcon P JJS NNpl VBTsing DETsing,con NNcon
+DETsing,con NNcon P JJS JJS NNpl VBTsing DETsing,con NNcon
+DETsing,con NNcon P NNpl VBTsing DETsing,con NNcon
+DETsing,con NNcon P DETpl JJS NNpl VBTsing DETsing,con NNcon
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing DETsing,con NNcon
+DETsing,con NNcon P DETpl NNpl VBTsing DETsing,con NNcon
+DETsing,con NNcon P JJS NNpl VBTsing DETsing,con NNcon
+DETsing,con NNcon P JJS JJS NNpl VBTsing DETsing,con NNcon
+DETsing,vow JJSvow NN VBTsing DETsing,con NNcon
+DETsing,vow JJSvow JJS NN VBTsing DETsing,con NNcon
+DETsing,vow NNvow VBTsing DETsing,con NNcon
+DETsing,vow NNvow P NNpl VBTsing DETsing,con NNcon
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing DETsing,con NNcon
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing DETsing,con NNcon
+DETsing,vow NNvow P DETpl NNpl VBTsing DETsing,con NNcon
+DETsing,vow NNvow P JJS NNpl VBTsing DETsing,con NNcon
+DETsing,vow NNvow P JJS JJS NNpl VBTsing DETsing,con NNcon
+DETsing,vow NNvow P NNpl VBTsing DETsing,con NNcon
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing DETsing,con NNcon
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing DETsing,con NNcon
+DETsing,vow NNvow P DETpl NNpl VBTsing DETsing,con NNcon
+DETsing,vow NNvow P JJS NNpl VBTsing DETsing,con NNcon
+DETsing,vow NNvow P JJS JJS NNpl VBTsing DETsing,con NNcon
+JJScon NNcon VBTsing DETsing,con NNcon
+JJScon JJS NNcon VBTsing DETsing,con NNcon
+JJSvow NNvow VBTsing DETsing,con NNcon
+JJSvow JJS NNvow VBTsing DETsing,con NNcon
+JJScon NNcon P NNpl VBTsing DETsing,con NNcon
+JJScon JJS NNcon P NNpl VBTsing DETsing,con NNcon
+JJScon NNcon P DETpl JJS NNpl VBTsing DETsing,con NNcon
+JJScon JJS NNcon P DETpl JJS NNpl VBTsing DETsing,con NNcon
+JJScon NNcon P DETpl JJS JJS NNpl VBTsing DETsing,con NNcon
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBTsing DETsing,con NNcon
+JJScon NNcon P DETpl NNpl VBTsing DETsing,con NNcon
+JJScon JJS NNcon P DETpl NNpl VBTsing DETsing,con NNcon
+JJScon NNcon P JJS NNpl VBTsing DETsing,con NNcon
+JJScon JJS NNcon P JJS NNpl VBTsing DETsing,con NNcon
+JJScon NNcon P JJS JJS NNpl VBTsing DETsing,con NNcon
+JJScon JJS NNcon P JJS JJS NNpl VBTsing DETsing,con NNcon
+JJScon NNvow P NNpl VBTsing DETsing,con NNcon
+JJScon JJS NNvow P NNpl VBTsing DETsing,con NNcon
+JJScon NNvow P DETpl JJS NNpl VBTsing DETsing,con NNcon
+JJScon JJS NNvow P DETpl JJS NNpl VBTsing DETsing,con NNcon
+JJScon NNvow P DETpl JJS JJS NNpl VBTsing DETsing,con NNcon
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBTsing DETsing,con NNcon
+JJScon NNvow P DETpl NNpl VBTsing DETsing,con NNcon
+JJScon JJS NNvow P DETpl NNpl VBTsing DETsing,con NNcon
+JJScon NNvow P JJS NNpl VBTsing DETsing,con NNcon
+JJScon JJS NNvow P JJS NNpl VBTsing DETsing,con NNcon
+JJScon NNvow P JJS JJS NNpl VBTsing DETsing,con NNcon
+JJScon JJS NNvow P JJS JJS NNpl VBTsing DETsing,con NNcon
+NN P NNpl VBTsing DETsing,con NNcon
+NN P DETpl JJS NNpl VBTsing DETsing,con NNcon
+NN P DETpl JJS JJS NNpl VBTsing DETsing,con NNcon
+NN P DETpl NNpl VBTsing DETsing,con NNcon
+NN P JJS NNpl VBTsing DETsing,con NNcon
+NN P JJS JJS NNpl VBTsing DETsing,con NNcon
+NN VBTsing DETsing,vow JJSvow NN
+DETsing,con JJScon NN VBTsing DETsing,vow JJSvow NN
+DETsing,con NNcon VBTsing DETsing,vow JJSvow NN
+DETsing,con NNcon P NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,con NNcon P DETpl JJS NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,con NNcon P DETpl NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,con NNcon P JJS NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,con NNcon P JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,con NNcon P NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,con NNcon P DETpl JJS NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,con NNcon P DETpl NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,con NNcon P JJS NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,con NNcon P JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,vow JJSvow NN VBTsing DETsing,vow JJSvow NN
+DETsing,vow JJSvow JJS NN VBTsing DETsing,vow JJSvow NN
+DETsing,vow NNvow VBTsing DETsing,vow JJSvow NN
+DETsing,vow NNvow P NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,vow NNvow P DETpl NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,vow NNvow P JJS NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,vow NNvow P JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,vow NNvow P NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,vow NNvow P DETpl NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,vow NNvow P JJS NNpl VBTsing DETsing,vow JJSvow NN
+DETsing,vow NNvow P JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+JJScon NNcon VBTsing DETsing,vow JJSvow NN
+JJScon JJS NNcon VBTsing DETsing,vow JJSvow NN
+JJSvow NNvow VBTsing DETsing,vow JJSvow NN
+JJSvow JJS NNvow VBTsing DETsing,vow JJSvow NN
+JJScon NNcon P NNpl VBTsing DETsing,vow JJSvow NN
+JJScon JJS NNcon P NNpl VBTsing DETsing,vow JJSvow NN
+JJScon NNcon P DETpl JJS NNpl VBTsing DETsing,vow JJSvow NN
+JJScon JJS NNcon P DETpl JJS NNpl VBTsing DETsing,vow JJSvow NN
+JJScon NNcon P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+JJScon NNcon P DETpl NNpl VBTsing DETsing,vow JJSvow NN
+JJScon JJS NNcon P DETpl NNpl VBTsing DETsing,vow JJSvow NN
+JJScon NNcon P JJS NNpl VBTsing DETsing,vow JJSvow NN
+JJScon JJS NNcon P JJS NNpl VBTsing DETsing,vow JJSvow NN
+JJScon NNcon P JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+JJScon JJS NNcon P JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+JJScon NNvow P NNpl VBTsing DETsing,vow JJSvow NN
+JJScon JJS NNvow P NNpl VBTsing DETsing,vow JJSvow NN
+JJScon NNvow P DETpl JJS NNpl VBTsing DETsing,vow JJSvow NN
+JJScon JJS NNvow P DETpl JJS NNpl VBTsing DETsing,vow JJSvow NN
+JJScon NNvow P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+JJScon NNvow P DETpl NNpl VBTsing DETsing,vow JJSvow NN
+JJScon JJS NNvow P DETpl NNpl VBTsing DETsing,vow JJSvow NN
+JJScon NNvow P JJS NNpl VBTsing DETsing,vow JJSvow NN
+JJScon JJS NNvow P JJS NNpl VBTsing DETsing,vow JJSvow NN
+JJScon NNvow P JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+JJScon JJS NNvow P JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+NN P NNpl VBTsing DETsing,vow JJSvow NN
+NN P DETpl JJS NNpl VBTsing DETsing,vow JJSvow NN
+NN P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+NN P DETpl NNpl VBTsing DETsing,vow JJSvow NN
+NN P JJS NNpl VBTsing DETsing,vow JJSvow NN
+NN P JJS JJS NNpl VBTsing DETsing,vow JJSvow NN
+NN VBTsing DETsing,vow JJSvow JJS NN
+DETsing,con JJScon NN VBTsing DETsing,vow JJSvow JJS NN
+DETsing,con NNcon VBTsing DETsing,vow JJSvow JJS NN
+DETsing,con NNcon P NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,con NNcon P DETpl JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,con NNcon P DETpl NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,con NNcon P JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,con NNcon P JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,con NNcon P NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,con NNcon P DETpl JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,con NNcon P DETpl NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,con NNcon P JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,con NNcon P JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,vow JJSvow NN VBTsing DETsing,vow JJSvow JJS NN
+DETsing,vow JJSvow JJS NN VBTsing DETsing,vow JJSvow JJS NN
+DETsing,vow NNvow VBTsing DETsing,vow JJSvow JJS NN
+DETsing,vow NNvow P NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,vow NNvow P DETpl NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,vow NNvow P JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,vow NNvow P JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,vow NNvow P NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,vow NNvow P DETpl NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,vow NNvow P JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+DETsing,vow NNvow P JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon NNcon VBTsing DETsing,vow JJSvow JJS NN
+JJScon JJS NNcon VBTsing DETsing,vow JJSvow JJS NN
+JJSvow NNvow VBTsing DETsing,vow JJSvow JJS NN
+JJSvow JJS NNvow VBTsing DETsing,vow JJSvow JJS NN
+JJScon NNcon P NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon JJS NNcon P NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon NNcon P DETpl JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon JJS NNcon P DETpl JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon NNcon P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon NNcon P DETpl NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon JJS NNcon P DETpl NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon NNcon P JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon JJS NNcon P JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon NNcon P JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon JJS NNcon P JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon NNvow P NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon JJS NNvow P NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon NNvow P DETpl JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon JJS NNvow P DETpl JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon NNvow P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon NNvow P DETpl NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon JJS NNvow P DETpl NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon NNvow P JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon JJS NNvow P JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon NNvow P JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+JJScon JJS NNvow P JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+NN P NNpl VBTsing DETsing,vow JJSvow JJS NN
+NN P DETpl JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+NN P DETpl JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+NN P DETpl NNpl VBTsing DETsing,vow JJSvow JJS NN
+NN P JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+NN P JJS JJS NNpl VBTsing DETsing,vow JJSvow JJS NN
+NN VBTsing DETsing,vow NNvow
+DETsing,con JJScon NN VBTsing DETsing,vow NNvow
+DETsing,con NNcon VBTsing DETsing,vow NNvow
+DETsing,con NNcon P NNpl VBTsing DETsing,vow NNvow
+DETsing,con NNcon P DETpl JJS NNpl VBTsing DETsing,vow NNvow
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing DETsing,vow NNvow
+DETsing,con NNcon P DETpl NNpl VBTsing DETsing,vow NNvow
+DETsing,con NNcon P JJS NNpl VBTsing DETsing,vow NNvow
+DETsing,con NNcon P JJS JJS NNpl VBTsing DETsing,vow NNvow
+DETsing,con NNcon P NNpl VBTsing DETsing,vow NNvow
+DETsing,con NNcon P DETpl JJS NNpl VBTsing DETsing,vow NNvow
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing DETsing,vow NNvow
+DETsing,con NNcon P DETpl NNpl VBTsing DETsing,vow NNvow
+DETsing,con NNcon P JJS NNpl VBTsing DETsing,vow NNvow
+DETsing,con NNcon P JJS JJS NNpl VBTsing DETsing,vow NNvow
+DETsing,vow JJSvow NN VBTsing DETsing,vow NNvow
+DETsing,vow JJSvow JJS NN VBTsing DETsing,vow NNvow
+DETsing,vow NNvow VBTsing DETsing,vow NNvow
+DETsing,vow NNvow P NNpl VBTsing DETsing,vow NNvow
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing DETsing,vow NNvow
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing DETsing,vow NNvow
+DETsing,vow NNvow P DETpl NNpl VBTsing DETsing,vow NNvow
+DETsing,vow NNvow P JJS NNpl VBTsing DETsing,vow NNvow
+DETsing,vow NNvow P JJS JJS NNpl VBTsing DETsing,vow NNvow
+DETsing,vow NNvow P NNpl VBTsing DETsing,vow NNvow
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing DETsing,vow NNvow
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing DETsing,vow NNvow
+DETsing,vow NNvow P DETpl NNpl VBTsing DETsing,vow NNvow
+DETsing,vow NNvow P JJS NNpl VBTsing DETsing,vow NNvow
+DETsing,vow NNvow P JJS JJS NNpl VBTsing DETsing,vow NNvow
+JJScon NNcon VBTsing DETsing,vow NNvow
+JJScon JJS NNcon VBTsing DETsing,vow NNvow
+JJSvow NNvow VBTsing DETsing,vow NNvow
+JJSvow JJS NNvow VBTsing DETsing,vow NNvow
+JJScon NNcon P NNpl VBTsing DETsing,vow NNvow
+JJScon JJS NNcon P NNpl VBTsing DETsing,vow NNvow
+JJScon NNcon P DETpl JJS NNpl VBTsing DETsing,vow NNvow
+JJScon JJS NNcon P DETpl JJS NNpl VBTsing DETsing,vow NNvow
+JJScon NNcon P DETpl JJS JJS NNpl VBTsing DETsing,vow NNvow
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBTsing DETsing,vow NNvow
+JJScon NNcon P DETpl NNpl VBTsing DETsing,vow NNvow
+JJScon JJS NNcon P DETpl NNpl VBTsing DETsing,vow NNvow
+JJScon NNcon P JJS NNpl VBTsing DETsing,vow NNvow
+JJScon JJS NNcon P JJS NNpl VBTsing DETsing,vow NNvow
+JJScon NNcon P JJS JJS NNpl VBTsing DETsing,vow NNvow
+JJScon JJS NNcon P JJS JJS NNpl VBTsing DETsing,vow NNvow
+JJScon NNvow P NNpl VBTsing DETsing,vow NNvow
+JJScon JJS NNvow P NNpl VBTsing DETsing,vow NNvow
+JJScon NNvow P DETpl JJS NNpl VBTsing DETsing,vow NNvow
+JJScon JJS NNvow P DETpl JJS NNpl VBTsing DETsing,vow NNvow
+JJScon NNvow P DETpl JJS JJS NNpl VBTsing DETsing,vow NNvow
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBTsing DETsing,vow NNvow
+JJScon NNvow P DETpl NNpl VBTsing DETsing,vow NNvow
+JJScon JJS NNvow P DETpl NNpl VBTsing DETsing,vow NNvow
+JJScon NNvow P JJS NNpl VBTsing DETsing,vow NNvow
+JJScon JJS NNvow P JJS NNpl VBTsing DETsing,vow NNvow
+JJScon NNvow P JJS JJS NNpl VBTsing DETsing,vow NNvow
+JJScon JJS NNvow P JJS JJS NNpl VBTsing DETsing,vow NNvow
+NN P NNpl VBTsing DETsing,vow NNvow
+NN P DETpl JJS NNpl VBTsing DETsing,vow NNvow
+NN P DETpl JJS JJS NNpl VBTsing DETsing,vow NNvow
+NN P DETpl NNpl VBTsing DETsing,vow NNvow
+NN P JJS NNpl VBTsing DETsing,vow NNvow
+NN P JJS JJS NNpl VBTsing DETsing,vow NNvow
+NN VBTsing JJScon NNcon
+DETsing,con JJScon NN VBTsing JJScon NNcon
+DETsing,con NNcon VBTsing JJScon NNcon
+DETsing,con NNcon P NNpl VBTsing JJScon NNcon
+DETsing,con NNcon P DETpl JJS NNpl VBTsing JJScon NNcon
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing JJScon NNcon
+DETsing,con NNcon P DETpl NNpl VBTsing JJScon NNcon
+DETsing,con NNcon P JJS NNpl VBTsing JJScon NNcon
+DETsing,con NNcon P JJS JJS NNpl VBTsing JJScon NNcon
+DETsing,con NNcon P NNpl VBTsing JJScon NNcon
+DETsing,con NNcon P DETpl JJS NNpl VBTsing JJScon NNcon
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing JJScon NNcon
+DETsing,con NNcon P DETpl NNpl VBTsing JJScon NNcon
+DETsing,con NNcon P JJS NNpl VBTsing JJScon NNcon
+DETsing,con NNcon P JJS JJS NNpl VBTsing JJScon NNcon
+DETsing,vow JJSvow NN VBTsing JJScon NNcon
+DETsing,vow JJSvow JJS NN VBTsing JJScon NNcon
+DETsing,vow NNvow VBTsing JJScon NNcon
+DETsing,vow NNvow P NNpl VBTsing JJScon NNcon
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing JJScon NNcon
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing JJScon NNcon
+DETsing,vow NNvow P DETpl NNpl VBTsing JJScon NNcon
+DETsing,vow NNvow P JJS NNpl VBTsing JJScon NNcon
+DETsing,vow NNvow P JJS JJS NNpl VBTsing JJScon NNcon
+DETsing,vow NNvow P NNpl VBTsing JJScon NNcon
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing JJScon NNcon
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing JJScon NNcon
+DETsing,vow NNvow P DETpl NNpl VBTsing JJScon NNcon
+DETsing,vow NNvow P JJS NNpl VBTsing JJScon NNcon
+DETsing,vow NNvow P JJS JJS NNpl VBTsing JJScon NNcon
+JJScon NNcon VBTsing JJScon NNcon
+JJScon JJS NNcon VBTsing JJScon NNcon
+JJSvow NNvow VBTsing JJScon NNcon
+JJSvow JJS NNvow VBTsing JJScon NNcon
+JJScon NNcon P NNpl VBTsing JJScon NNcon
+JJScon JJS NNcon P NNpl VBTsing JJScon NNcon
+JJScon NNcon P DETpl JJS NNpl VBTsing JJScon NNcon
+JJScon JJS NNcon P DETpl JJS NNpl VBTsing JJScon NNcon
+JJScon NNcon P DETpl JJS JJS NNpl VBTsing JJScon NNcon
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBTsing JJScon NNcon
+JJScon NNcon P DETpl NNpl VBTsing JJScon NNcon
+JJScon JJS NNcon P DETpl NNpl VBTsing JJScon NNcon
+JJScon NNcon P JJS NNpl VBTsing JJScon NNcon
+JJScon JJS NNcon P JJS NNpl VBTsing JJScon NNcon
+JJScon NNcon P JJS JJS NNpl VBTsing JJScon NNcon
+JJScon JJS NNcon P JJS JJS NNpl VBTsing JJScon NNcon
+JJScon NNvow P NNpl VBTsing JJScon NNcon
+JJScon JJS NNvow P NNpl VBTsing JJScon NNcon
+JJScon NNvow P DETpl JJS NNpl VBTsing JJScon NNcon
+JJScon JJS NNvow P DETpl JJS NNpl VBTsing JJScon NNcon
+JJScon NNvow P DETpl JJS JJS NNpl VBTsing JJScon NNcon
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBTsing JJScon NNcon
+JJScon NNvow P DETpl NNpl VBTsing JJScon NNcon
+JJScon JJS NNvow P DETpl NNpl VBTsing JJScon NNcon
+JJScon NNvow P JJS NNpl VBTsing JJScon NNcon
+JJScon JJS NNvow P JJS NNpl VBTsing JJScon NNcon
+JJScon NNvow P JJS JJS NNpl VBTsing JJScon NNcon
+JJScon JJS NNvow P JJS JJS NNpl VBTsing JJScon NNcon
+NN P NNpl VBTsing JJScon NNcon
+NN P DETpl JJS NNpl VBTsing JJScon NNcon
+NN P DETpl JJS JJS NNpl VBTsing JJScon NNcon
+NN P DETpl NNpl VBTsing JJScon NNcon
+NN P JJS NNpl VBTsing JJScon NNcon
+NN P JJS JJS NNpl VBTsing JJScon NNcon
+NN VBTsing JJScon JJS NNcon
+DETsing,con JJScon NN VBTsing JJScon JJS NNcon
+DETsing,con NNcon VBTsing JJScon JJS NNcon
+DETsing,con NNcon P NNpl VBTsing JJScon JJS NNcon
+DETsing,con NNcon P DETpl JJS NNpl VBTsing JJScon JJS NNcon
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing JJScon JJS NNcon
+DETsing,con NNcon P DETpl NNpl VBTsing JJScon JJS NNcon
+DETsing,con NNcon P JJS NNpl VBTsing JJScon JJS NNcon
+DETsing,con NNcon P JJS JJS NNpl VBTsing JJScon JJS NNcon
+DETsing,con NNcon P NNpl VBTsing JJScon JJS NNcon
+DETsing,con NNcon P DETpl JJS NNpl VBTsing JJScon JJS NNcon
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing JJScon JJS NNcon
+DETsing,con NNcon P DETpl NNpl VBTsing JJScon JJS NNcon
+DETsing,con NNcon P JJS NNpl VBTsing JJScon JJS NNcon
+DETsing,con NNcon P JJS JJS NNpl VBTsing JJScon JJS NNcon
+DETsing,vow JJSvow NN VBTsing JJScon JJS NNcon
+DETsing,vow JJSvow JJS NN VBTsing JJScon JJS NNcon
+DETsing,vow NNvow VBTsing JJScon JJS NNcon
+DETsing,vow NNvow P NNpl VBTsing JJScon JJS NNcon
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing JJScon JJS NNcon
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing JJScon JJS NNcon
+DETsing,vow NNvow P DETpl NNpl VBTsing JJScon JJS NNcon
+DETsing,vow NNvow P JJS NNpl VBTsing JJScon JJS NNcon
+DETsing,vow NNvow P JJS JJS NNpl VBTsing JJScon JJS NNcon
+DETsing,vow NNvow P NNpl VBTsing JJScon JJS NNcon
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing JJScon JJS NNcon
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing JJScon JJS NNcon
+DETsing,vow NNvow P DETpl NNpl VBTsing JJScon JJS NNcon
+DETsing,vow NNvow P JJS NNpl VBTsing JJScon JJS NNcon
+DETsing,vow NNvow P JJS JJS NNpl VBTsing JJScon JJS NNcon
+JJScon NNcon VBTsing JJScon JJS NNcon
+JJScon JJS NNcon VBTsing JJScon JJS NNcon
+JJSvow NNvow VBTsing JJScon JJS NNcon
+JJSvow JJS NNvow VBTsing JJScon JJS NNcon
+JJScon NNcon P NNpl VBTsing JJScon JJS NNcon
+JJScon JJS NNcon P NNpl VBTsing JJScon JJS NNcon
+JJScon NNcon P DETpl JJS NNpl VBTsing JJScon JJS NNcon
+JJScon JJS NNcon P DETpl JJS NNpl VBTsing JJScon JJS NNcon
+JJScon NNcon P DETpl JJS JJS NNpl VBTsing JJScon JJS NNcon
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBTsing JJScon JJS NNcon
+JJScon NNcon P DETpl NNpl VBTsing JJScon JJS NNcon
+JJScon JJS NNcon P DETpl NNpl VBTsing JJScon JJS NNcon
+JJScon NNcon P JJS NNpl VBTsing JJScon JJS NNcon
+JJScon JJS NNcon P JJS NNpl VBTsing JJScon JJS NNcon
+JJScon NNcon P JJS JJS NNpl VBTsing JJScon JJS NNcon
+JJScon JJS NNcon P JJS JJS NNpl VBTsing JJScon JJS NNcon
+JJScon NNvow P NNpl VBTsing JJScon JJS NNcon
+JJScon JJS NNvow P NNpl VBTsing JJScon JJS NNcon
+JJScon NNvow P DETpl JJS NNpl VBTsing JJScon JJS NNcon
+JJScon JJS NNvow P DETpl JJS NNpl VBTsing JJScon JJS NNcon
+JJScon NNvow P DETpl JJS JJS NNpl VBTsing JJScon JJS NNcon
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBTsing JJScon JJS NNcon
+JJScon NNvow P DETpl NNpl VBTsing JJScon JJS NNcon
+JJScon JJS NNvow P DETpl NNpl VBTsing JJScon JJS NNcon
+JJScon NNvow P JJS NNpl VBTsing JJScon JJS NNcon
+JJScon JJS NNvow P JJS NNpl VBTsing JJScon JJS NNcon
+JJScon NNvow P JJS JJS NNpl VBTsing JJScon JJS NNcon
+JJScon JJS NNvow P JJS JJS NNpl VBTsing JJScon JJS NNcon
+NN P NNpl VBTsing JJScon JJS NNcon
+NN P DETpl JJS NNpl VBTsing JJScon JJS NNcon
+NN P DETpl JJS JJS NNpl VBTsing JJScon JJS NNcon
+NN P DETpl NNpl VBTsing JJScon JJS NNcon
+NN P JJS NNpl VBTsing JJScon JJS NNcon
+NN P JJS JJS NNpl VBTsing JJScon JJS NNcon
+NN VBTsing JJSvow NNvow
+DETsing,con JJScon NN VBTsing JJSvow NNvow
+DETsing,con NNcon VBTsing JJSvow NNvow
+DETsing,con NNcon P NNpl VBTsing JJSvow NNvow
+DETsing,con NNcon P DETpl JJS NNpl VBTsing JJSvow NNvow
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing JJSvow NNvow
+DETsing,con NNcon P DETpl NNpl VBTsing JJSvow NNvow
+DETsing,con NNcon P JJS NNpl VBTsing JJSvow NNvow
+DETsing,con NNcon P JJS JJS NNpl VBTsing JJSvow NNvow
+DETsing,con NNcon P NNpl VBTsing JJSvow NNvow
+DETsing,con NNcon P DETpl JJS NNpl VBTsing JJSvow NNvow
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing JJSvow NNvow
+DETsing,con NNcon P DETpl NNpl VBTsing JJSvow NNvow
+DETsing,con NNcon P JJS NNpl VBTsing JJSvow NNvow
+DETsing,con NNcon P JJS JJS NNpl VBTsing JJSvow NNvow
+DETsing,vow JJSvow NN VBTsing JJSvow NNvow
+DETsing,vow JJSvow JJS NN VBTsing JJSvow NNvow
+DETsing,vow NNvow VBTsing JJSvow NNvow
+DETsing,vow NNvow P NNpl VBTsing JJSvow NNvow
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing JJSvow NNvow
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing JJSvow NNvow
+DETsing,vow NNvow P DETpl NNpl VBTsing JJSvow NNvow
+DETsing,vow NNvow P JJS NNpl VBTsing JJSvow NNvow
+DETsing,vow NNvow P JJS JJS NNpl VBTsing JJSvow NNvow
+DETsing,vow NNvow P NNpl VBTsing JJSvow NNvow
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing JJSvow NNvow
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing JJSvow NNvow
+DETsing,vow NNvow P DETpl NNpl VBTsing JJSvow NNvow
+DETsing,vow NNvow P JJS NNpl VBTsing JJSvow NNvow
+DETsing,vow NNvow P JJS JJS NNpl VBTsing JJSvow NNvow
+JJScon NNcon VBTsing JJSvow NNvow
+JJScon JJS NNcon VBTsing JJSvow NNvow
+JJSvow NNvow VBTsing JJSvow NNvow
+JJSvow JJS NNvow VBTsing JJSvow NNvow
+JJScon NNcon P NNpl VBTsing JJSvow NNvow
+JJScon JJS NNcon P NNpl VBTsing JJSvow NNvow
+JJScon NNcon P DETpl JJS NNpl VBTsing JJSvow NNvow
+JJScon JJS NNcon P DETpl JJS NNpl VBTsing JJSvow NNvow
+JJScon NNcon P DETpl JJS JJS NNpl VBTsing JJSvow NNvow
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBTsing JJSvow NNvow
+JJScon NNcon P DETpl NNpl VBTsing JJSvow NNvow
+JJScon JJS NNcon P DETpl NNpl VBTsing JJSvow NNvow
+JJScon NNcon P JJS NNpl VBTsing JJSvow NNvow
+JJScon JJS NNcon P JJS NNpl VBTsing JJSvow NNvow
+JJScon NNcon P JJS JJS NNpl VBTsing JJSvow NNvow
+JJScon JJS NNcon P JJS JJS NNpl VBTsing JJSvow NNvow
+JJScon NNvow P NNpl VBTsing JJSvow NNvow
+JJScon JJS NNvow P NNpl VBTsing JJSvow NNvow
+JJScon NNvow P DETpl JJS NNpl VBTsing JJSvow NNvow
+JJScon JJS NNvow P DETpl JJS NNpl VBTsing JJSvow NNvow
+JJScon NNvow P DETpl JJS JJS NNpl VBTsing JJSvow NNvow
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBTsing JJSvow NNvow
+JJScon NNvow P DETpl NNpl VBTsing JJSvow NNvow
+JJScon JJS NNvow P DETpl NNpl VBTsing JJSvow NNvow
+JJScon NNvow P JJS NNpl VBTsing JJSvow NNvow
+JJScon JJS NNvow P JJS NNpl VBTsing JJSvow NNvow
+JJScon NNvow P JJS JJS NNpl VBTsing JJSvow NNvow
+JJScon JJS NNvow P JJS JJS NNpl VBTsing JJSvow NNvow
+NN P NNpl VBTsing JJSvow NNvow
+NN P DETpl JJS NNpl VBTsing JJSvow NNvow
+NN P DETpl JJS JJS NNpl VBTsing JJSvow NNvow
+NN P DETpl NNpl VBTsing JJSvow NNvow
+NN P JJS NNpl VBTsing JJSvow NNvow
+NN P JJS JJS NNpl VBTsing JJSvow NNvow
+NN VBTsing JJSvow JJS NNvow
+DETsing,con JJScon NN VBTsing JJSvow JJS NNvow
+DETsing,con NNcon VBTsing JJSvow JJS NNvow
+DETsing,con NNcon P NNpl VBTsing JJSvow JJS NNvow
+DETsing,con NNcon P DETpl JJS NNpl VBTsing JJSvow JJS NNvow
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing JJSvow JJS NNvow
+DETsing,con NNcon P DETpl NNpl VBTsing JJSvow JJS NNvow
+DETsing,con NNcon P JJS NNpl VBTsing JJSvow JJS NNvow
+DETsing,con NNcon P JJS JJS NNpl VBTsing JJSvow JJS NNvow
+DETsing,con NNcon P NNpl VBTsing JJSvow JJS NNvow
+DETsing,con NNcon P DETpl JJS NNpl VBTsing JJSvow JJS NNvow
+DETsing,con NNcon P DETpl JJS JJS NNpl VBTsing JJSvow JJS NNvow
+DETsing,con NNcon P DETpl NNpl VBTsing JJSvow JJS NNvow
+DETsing,con NNcon P JJS NNpl VBTsing JJSvow JJS NNvow
+DETsing,con NNcon P JJS JJS NNpl VBTsing JJSvow JJS NNvow
+DETsing,vow JJSvow NN VBTsing JJSvow JJS NNvow
+DETsing,vow JJSvow JJS NN VBTsing JJSvow JJS NNvow
+DETsing,vow NNvow VBTsing JJSvow JJS NNvow
+DETsing,vow NNvow P NNpl VBTsing JJSvow JJS NNvow
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing JJSvow JJS NNvow
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing JJSvow JJS NNvow
+DETsing,vow NNvow P DETpl NNpl VBTsing JJSvow JJS NNvow
+DETsing,vow NNvow P JJS NNpl VBTsing JJSvow JJS NNvow
+DETsing,vow NNvow P JJS JJS NNpl VBTsing JJSvow JJS NNvow
+DETsing,vow NNvow P NNpl VBTsing JJSvow JJS NNvow
+DETsing,vow NNvow P DETpl JJS NNpl VBTsing JJSvow JJS NNvow
+DETsing,vow NNvow P DETpl JJS JJS NNpl VBTsing JJSvow JJS NNvow
+DETsing,vow NNvow P DETpl NNpl VBTsing JJSvow JJS NNvow
+DETsing,vow NNvow P JJS NNpl VBTsing JJSvow JJS NNvow
+DETsing,vow NNvow P JJS JJS NNpl VBTsing JJSvow JJS NNvow
+JJScon NNcon VBTsing JJSvow JJS NNvow
+JJScon JJS NNcon VBTsing JJSvow JJS NNvow
+JJSvow NNvow VBTsing JJSvow JJS NNvow
+JJSvow JJS NNvow VBTsing JJSvow JJS NNvow
+JJScon NNcon P NNpl VBTsing JJSvow JJS NNvow
+JJScon JJS NNcon P NNpl VBTsing JJSvow JJS NNvow
+JJScon NNcon P DETpl JJS NNpl VBTsing JJSvow JJS NNvow
+JJScon JJS NNcon P DETpl JJS NNpl VBTsing JJSvow JJS NNvow
+JJScon NNcon P DETpl JJS JJS NNpl VBTsing JJSvow JJS NNvow
+JJScon JJS NNcon P DETpl JJS JJS NNpl VBTsing JJSvow JJS NNvow
+JJScon NNcon P DETpl NNpl VBTsing JJSvow JJS NNvow
+JJScon JJS NNcon P DETpl NNpl VBTsing JJSvow JJS NNvow
+JJScon NNcon P JJS NNpl VBTsing JJSvow JJS NNvow
+JJScon JJS NNcon P JJS NNpl VBTsing JJSvow JJS NNvow
+JJScon NNcon P JJS JJS NNpl VBTsing JJSvow JJS NNvow
+JJScon JJS NNcon P JJS JJS NNpl VBTsing JJSvow JJS NNvow
+JJScon NNvow P NNpl VBTsing JJSvow JJS NNvow
+JJScon JJS NNvow P NNpl VBTsing JJSvow JJS NNvow
+JJScon NNvow P DETpl JJS NNpl VBTsing JJSvow JJS NNvow
+JJScon JJS NNvow P DETpl JJS NNpl VBTsing JJSvow JJS NNvow
+JJScon NNvow P DETpl JJS JJS NNpl VBTsing JJSvow JJS NNvow
+JJScon JJS NNvow P DETpl JJS JJS NNpl VBTsing JJSvow JJS NNvow
+JJScon NNvow P DETpl NNpl VBTsing JJSvow JJS NNvow
+JJScon JJS NNvow P DETpl NNpl VBTsing JJSvow JJS NNvow
+JJScon NNvow P JJS NNpl VBTsing JJSvow JJS NNvow
+JJScon JJS NNvow P JJS NNpl VBTsing JJSvow JJS NNvow
+JJScon NNvow P JJS JJS NNpl VBTsing JJSvow JJS NNvow
+JJScon JJS NNvow P JJS JJS NNpl VBTsing JJSvow JJS NNvow
+NN P NNpl VBTsing JJSvow JJS NNvow
+NN P DETpl JJS NNpl VBTsing JJSvow JJS NNvow
+NN P DETpl JJS JJS NNpl VBTsing JJSvow JJS NNvow
+NN P DETpl NNpl VBTsing JJSvow JJS NNvow
+NN P JJS NNpl VBTsing JJSvow JJS NNvow
+NN P JJS JJS NNpl VBTsing JJSvow JJS NNvow
+NNpl VBI
+DETpl JJS NNpl VBI
+DETpl JJS JJS NNpl VBI
+DETpl NNpl VBI
+DETpl NNpl P NN VBI
+DETpl NNpl P DETsing,con JJScon NN VBI
+DETpl NNpl P DETsing,con NNcon VBI
+DETpl NNpl P DETsing,vow JJSvow NN VBI
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBI
+DETpl NNpl P DETsing,vow NNvow VBI
+DETpl NNpl P JJScon NNcon VBI
+DETpl NNpl P JJScon JJS NNcon VBI
+DETpl NNpl P JJSvow NNvow VBI
+DETpl NNpl P JJSvow JJS NNvow VBI
+DETpl NNpl P NN VBI
+DETpl NNpl P DETsing,con JJScon NN VBI
+DETpl NNpl P DETsing,con NNcon VBI
+DETpl NNpl P DETsing,vow JJSvow NN VBI
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBI
+DETpl NNpl P DETsing,vow NNvow VBI
+DETpl NNpl P JJScon NNcon VBI
+DETpl NNpl P JJScon JJS NNcon VBI
+DETpl NNpl P JJSvow NNvow VBI
+DETpl NNpl P JJSvow JJS NNvow VBI
+JJS NNpl VBI
+JJS JJS NNpl VBI
+JJS NNpl P NN VBI
+JJS JJS NNpl P NN VBI
+JJS NNpl P DETsing,con JJScon NN VBI
+JJS JJS NNpl P DETsing,con JJScon NN VBI
+JJS NNpl P DETsing,con NNcon VBI
+JJS JJS NNpl P DETsing,con NNcon VBI
+JJS NNpl P DETsing,vow JJSvow NN VBI
+JJS JJS NNpl P DETsing,vow JJSvow NN VBI
+JJS NNpl P DETsing,vow JJSvow JJS NN VBI
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBI
+JJS NNpl P DETsing,vow NNvow VBI
+JJS JJS NNpl P DETsing,vow NNvow VBI
+JJS NNpl P JJScon NNcon VBI
+JJS JJS NNpl P JJScon NNcon VBI
+JJS NNpl P JJScon JJS NNcon VBI
+JJS JJS NNpl P JJScon JJS NNcon VBI
+JJS NNpl P JJSvow NNvow VBI
+JJS JJS NNpl P JJSvow NNvow VBI
+JJS NNpl P JJSvow JJS NNvow VBI
+JJS JJS NNpl P JJSvow JJS NNvow VBI
+NNpl P NN VBI
+NNpl P DETsing,con JJScon NN VBI
+NNpl P DETsing,con NNcon VBI
+NNpl P DETsing,vow JJSvow NN VBI
+NNpl P DETsing,vow JJSvow JJS NN VBI
+NNpl P DETsing,vow NNvow VBI
+NNpl P JJScon NNcon VBI
+NNpl P JJScon JJS NNcon VBI
+NNpl P JJSvow NNvow VBI
+NNpl P JJSvow JJS NNvow VBI
+NNpl VBI RBF
+DETpl JJS NNpl VBI RBF
+DETpl JJS JJS NNpl VBI RBF
+DETpl NNpl VBI RBF
+DETpl NNpl P NN VBI RBF
+DETpl NNpl P DETsing,con JJScon NN VBI RBF
+DETpl NNpl P DETsing,con NNcon VBI RBF
+DETpl NNpl P DETsing,vow JJSvow NN VBI RBF
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBI RBF
+DETpl NNpl P DETsing,vow NNvow VBI RBF
+DETpl NNpl P JJScon NNcon VBI RBF
+DETpl NNpl P JJScon JJS NNcon VBI RBF
+DETpl NNpl P JJSvow NNvow VBI RBF
+DETpl NNpl P JJSvow JJS NNvow VBI RBF
+DETpl NNpl P NN VBI RBF
+DETpl NNpl P DETsing,con JJScon NN VBI RBF
+DETpl NNpl P DETsing,con NNcon VBI RBF
+DETpl NNpl P DETsing,vow JJSvow NN VBI RBF
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBI RBF
+DETpl NNpl P DETsing,vow NNvow VBI RBF
+DETpl NNpl P JJScon NNcon VBI RBF
+DETpl NNpl P JJScon JJS NNcon VBI RBF
+DETpl NNpl P JJSvow NNvow VBI RBF
+DETpl NNpl P JJSvow JJS NNvow VBI RBF
+JJS NNpl VBI RBF
+JJS JJS NNpl VBI RBF
+JJS NNpl P NN VBI RBF
+JJS JJS NNpl P NN VBI RBF
+JJS NNpl P DETsing,con JJScon NN VBI RBF
+JJS JJS NNpl P DETsing,con JJScon NN VBI RBF
+JJS NNpl P DETsing,con NNcon VBI RBF
+JJS JJS NNpl P DETsing,con NNcon VBI RBF
+JJS NNpl P DETsing,vow JJSvow NN VBI RBF
+JJS JJS NNpl P DETsing,vow JJSvow NN VBI RBF
+JJS NNpl P DETsing,vow JJSvow JJS NN VBI RBF
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBI RBF
+JJS NNpl P DETsing,vow NNvow VBI RBF
+JJS JJS NNpl P DETsing,vow NNvow VBI RBF
+JJS NNpl P JJScon NNcon VBI RBF
+JJS JJS NNpl P JJScon NNcon VBI RBF
+JJS NNpl P JJScon JJS NNcon VBI RBF
+JJS JJS NNpl P JJScon JJS NNcon VBI RBF
+JJS NNpl P JJSvow NNvow VBI RBF
+JJS JJS NNpl P JJSvow NNvow VBI RBF
+JJS NNpl P JJSvow JJS NNvow VBI RBF
+JJS JJS NNpl P JJSvow JJS NNvow VBI RBF
+NNpl P NN VBI RBF
+NNpl P DETsing,con JJScon NN VBI RBF
+NNpl P DETsing,con NNcon VBI RBF
+NNpl P DETsing,vow JJSvow NN VBI RBF
+NNpl P DETsing,vow JJSvow JJS NN VBI RBF
+NNpl P DETsing,vow NNvow VBI RBF
+NNpl P JJScon NNcon VBI RBF
+NNpl P JJScon JJS NNcon VBI RBF
+NNpl P JJSvow NNvow VBI RBF
+NNpl P JJSvow JJS NNvow VBI RBF
+NNpl VBTpl NNpl
+DETpl JJS NNpl VBTpl NNpl
+DETpl JJS JJS NNpl VBTpl NNpl
+DETpl NNpl VBTpl NNpl
+DETpl NNpl P NN VBTpl NNpl
+DETpl NNpl P DETsing,con JJScon NN VBTpl NNpl
+DETpl NNpl P DETsing,con NNcon VBTpl NNpl
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl NNpl
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl NNpl
+DETpl NNpl P DETsing,vow NNvow VBTpl NNpl
+DETpl NNpl P JJScon NNcon VBTpl NNpl
+DETpl NNpl P JJScon JJS NNcon VBTpl NNpl
+DETpl NNpl P JJSvow NNvow VBTpl NNpl
+DETpl NNpl P JJSvow JJS NNvow VBTpl NNpl
+DETpl NNpl P NN VBTpl NNpl
+DETpl NNpl P DETsing,con JJScon NN VBTpl NNpl
+DETpl NNpl P DETsing,con NNcon VBTpl NNpl
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl NNpl
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl NNpl
+DETpl NNpl P DETsing,vow NNvow VBTpl NNpl
+DETpl NNpl P JJScon NNcon VBTpl NNpl
+DETpl NNpl P JJScon JJS NNcon VBTpl NNpl
+DETpl NNpl P JJSvow NNvow VBTpl NNpl
+DETpl NNpl P JJSvow JJS NNvow VBTpl NNpl
+JJS NNpl VBTpl NNpl
+JJS JJS NNpl VBTpl NNpl
+JJS NNpl P NN VBTpl NNpl
+JJS JJS NNpl P NN VBTpl NNpl
+JJS NNpl P DETsing,con JJScon NN VBTpl NNpl
+JJS JJS NNpl P DETsing,con JJScon NN VBTpl NNpl
+JJS NNpl P DETsing,con NNcon VBTpl NNpl
+JJS JJS NNpl P DETsing,con NNcon VBTpl NNpl
+JJS NNpl P DETsing,vow JJSvow NN VBTpl NNpl
+JJS JJS NNpl P DETsing,vow JJSvow NN VBTpl NNpl
+JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl NNpl
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl NNpl
+JJS NNpl P DETsing,vow NNvow VBTpl NNpl
+JJS JJS NNpl P DETsing,vow NNvow VBTpl NNpl
+JJS NNpl P JJScon NNcon VBTpl NNpl
+JJS JJS NNpl P JJScon NNcon VBTpl NNpl
+JJS NNpl P JJScon JJS NNcon VBTpl NNpl
+JJS JJS NNpl P JJScon JJS NNcon VBTpl NNpl
+JJS NNpl P JJSvow NNvow VBTpl NNpl
+JJS JJS NNpl P JJSvow NNvow VBTpl NNpl
+JJS NNpl P JJSvow JJS NNvow VBTpl NNpl
+JJS JJS NNpl P JJSvow JJS NNvow VBTpl NNpl
+NNpl P NN VBTpl NNpl
+NNpl P DETsing,con JJScon NN VBTpl NNpl
+NNpl P DETsing,con NNcon VBTpl NNpl
+NNpl P DETsing,vow JJSvow NN VBTpl NNpl
+NNpl P DETsing,vow JJSvow JJS NN VBTpl NNpl
+NNpl P DETsing,vow NNvow VBTpl NNpl
+NNpl P JJScon NNcon VBTpl NNpl
+NNpl P JJScon JJS NNcon VBTpl NNpl
+NNpl P JJSvow NNvow VBTpl NNpl
+NNpl P JJSvow JJS NNvow VBTpl NNpl
+NNpl VBTpl DETpl JJS NNpl
+DETpl JJS NNpl VBTpl DETpl JJS NNpl
+DETpl JJS JJS NNpl VBTpl DETpl JJS NNpl
+DETpl NNpl VBTpl DETpl JJS NNpl
+DETpl NNpl P NN VBTpl DETpl JJS NNpl
+DETpl NNpl P DETsing,con JJScon NN VBTpl DETpl JJS NNpl
+DETpl NNpl P DETsing,con NNcon VBTpl DETpl JJS NNpl
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl DETpl JJS NNpl
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl DETpl JJS NNpl
+DETpl NNpl P DETsing,vow NNvow VBTpl DETpl JJS NNpl
+DETpl NNpl P JJScon NNcon VBTpl DETpl JJS NNpl
+DETpl NNpl P JJScon JJS NNcon VBTpl DETpl JJS NNpl
+DETpl NNpl P JJSvow NNvow VBTpl DETpl JJS NNpl
+DETpl NNpl P JJSvow JJS NNvow VBTpl DETpl JJS NNpl
+DETpl NNpl P NN VBTpl DETpl JJS NNpl
+DETpl NNpl P DETsing,con JJScon NN VBTpl DETpl JJS NNpl
+DETpl NNpl P DETsing,con NNcon VBTpl DETpl JJS NNpl
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl DETpl JJS NNpl
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl DETpl JJS NNpl
+DETpl NNpl P DETsing,vow NNvow VBTpl DETpl JJS NNpl
+DETpl NNpl P JJScon NNcon VBTpl DETpl JJS NNpl
+DETpl NNpl P JJScon JJS NNcon VBTpl DETpl JJS NNpl
+DETpl NNpl P JJSvow NNvow VBTpl DETpl JJS NNpl
+DETpl NNpl P JJSvow JJS NNvow VBTpl DETpl JJS NNpl
+JJS NNpl VBTpl DETpl JJS NNpl
+JJS JJS NNpl VBTpl DETpl JJS NNpl
+JJS NNpl P NN VBTpl DETpl JJS NNpl
+JJS JJS NNpl P NN VBTpl DETpl JJS NNpl
+JJS NNpl P DETsing,con JJScon NN VBTpl DETpl JJS NNpl
+JJS JJS NNpl P DETsing,con JJScon NN VBTpl DETpl JJS NNpl
+JJS NNpl P DETsing,con NNcon VBTpl DETpl JJS NNpl
+JJS JJS NNpl P DETsing,con NNcon VBTpl DETpl JJS NNpl
+JJS NNpl P DETsing,vow JJSvow NN VBTpl DETpl JJS NNpl
+JJS JJS NNpl P DETsing,vow JJSvow NN VBTpl DETpl JJS NNpl
+JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl DETpl JJS NNpl
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl DETpl JJS NNpl
+JJS NNpl P DETsing,vow NNvow VBTpl DETpl JJS NNpl
+JJS JJS NNpl P DETsing,vow NNvow VBTpl DETpl JJS NNpl
+JJS NNpl P JJScon NNcon VBTpl DETpl JJS NNpl
+JJS JJS NNpl P JJScon NNcon VBTpl DETpl JJS NNpl
+JJS NNpl P JJScon JJS NNcon VBTpl DETpl JJS NNpl
+JJS JJS NNpl P JJScon JJS NNcon VBTpl DETpl JJS NNpl
+JJS NNpl P JJSvow NNvow VBTpl DETpl JJS NNpl
+JJS JJS NNpl P JJSvow NNvow VBTpl DETpl JJS NNpl
+JJS NNpl P JJSvow JJS NNvow VBTpl DETpl JJS NNpl
+JJS JJS NNpl P JJSvow JJS NNvow VBTpl DETpl JJS NNpl
+NNpl P NN VBTpl DETpl JJS NNpl
+NNpl P DETsing,con JJScon NN VBTpl DETpl JJS NNpl
+NNpl P DETsing,con NNcon VBTpl DETpl JJS NNpl
+NNpl P DETsing,vow JJSvow NN VBTpl DETpl JJS NNpl
+NNpl P DETsing,vow JJSvow JJS NN VBTpl DETpl JJS NNpl
+NNpl P DETsing,vow NNvow VBTpl DETpl JJS NNpl
+NNpl P JJScon NNcon VBTpl DETpl JJS NNpl
+NNpl P JJScon JJS NNcon VBTpl DETpl JJS NNpl
+NNpl P JJSvow NNvow VBTpl DETpl JJS NNpl
+NNpl P JJSvow JJS NNvow VBTpl DETpl JJS NNpl
+NNpl VBTpl DETpl JJS JJS NNpl
+DETpl JJS NNpl VBTpl DETpl JJS JJS NNpl
+DETpl JJS JJS NNpl VBTpl DETpl JJS JJS NNpl
+DETpl NNpl VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P NN VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P DETsing,con JJScon NN VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P DETsing,con NNcon VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P DETsing,vow NNvow VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P JJScon NNcon VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P JJScon JJS NNcon VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P JJSvow NNvow VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P JJSvow JJS NNvow VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P NN VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P DETsing,con JJScon NN VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P DETsing,con NNcon VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P DETsing,vow NNvow VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P JJScon NNcon VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P JJScon JJS NNcon VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P JJSvow NNvow VBTpl DETpl JJS JJS NNpl
+DETpl NNpl P JJSvow JJS NNvow VBTpl DETpl JJS JJS NNpl
+JJS NNpl VBTpl DETpl JJS JJS NNpl
+JJS JJS NNpl VBTpl DETpl JJS JJS NNpl
+JJS NNpl P NN VBTpl DETpl JJS JJS NNpl
+JJS JJS NNpl P NN VBTpl DETpl JJS JJS NNpl
+JJS NNpl P DETsing,con JJScon NN VBTpl DETpl JJS JJS NNpl
+JJS JJS NNpl P DETsing,con JJScon NN VBTpl DETpl JJS JJS NNpl
+JJS NNpl P DETsing,con NNcon VBTpl DETpl JJS JJS NNpl
+JJS JJS NNpl P DETsing,con NNcon VBTpl DETpl JJS JJS NNpl
+JJS NNpl P DETsing,vow JJSvow NN VBTpl DETpl JJS JJS NNpl
+JJS JJS NNpl P DETsing,vow JJSvow NN VBTpl DETpl JJS JJS NNpl
+JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl DETpl JJS JJS NNpl
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl DETpl JJS JJS NNpl
+JJS NNpl P DETsing,vow NNvow VBTpl DETpl JJS JJS NNpl
+JJS JJS NNpl P DETsing,vow NNvow VBTpl DETpl JJS JJS NNpl
+JJS NNpl P JJScon NNcon VBTpl DETpl JJS JJS NNpl
+JJS JJS NNpl P JJScon NNcon VBTpl DETpl JJS JJS NNpl
+JJS NNpl P JJScon JJS NNcon VBTpl DETpl JJS JJS NNpl
+JJS JJS NNpl P JJScon JJS NNcon VBTpl DETpl JJS JJS NNpl
+JJS NNpl P JJSvow NNvow VBTpl DETpl JJS JJS NNpl
+JJS JJS NNpl P JJSvow NNvow VBTpl DETpl JJS JJS NNpl
+JJS NNpl P JJSvow JJS NNvow VBTpl DETpl JJS JJS NNpl
+JJS JJS NNpl P JJSvow JJS NNvow VBTpl DETpl JJS JJS NNpl
+NNpl P NN VBTpl DETpl JJS JJS NNpl
+NNpl P DETsing,con JJScon NN VBTpl DETpl JJS JJS NNpl
+NNpl P DETsing,con NNcon VBTpl DETpl JJS JJS NNpl
+NNpl P DETsing,vow JJSvow NN VBTpl DETpl JJS JJS NNpl
+NNpl P DETsing,vow JJSvow JJS NN VBTpl DETpl JJS JJS NNpl
+NNpl P DETsing,vow NNvow VBTpl DETpl JJS JJS NNpl
+NNpl P JJScon NNcon VBTpl DETpl JJS JJS NNpl
+NNpl P JJScon JJS NNcon VBTpl DETpl JJS JJS NNpl
+NNpl P JJSvow NNvow VBTpl DETpl JJS JJS NNpl
+NNpl P JJSvow JJS NNvow VBTpl DETpl JJS JJS NNpl
+NNpl VBTpl DETpl NNpl
+DETpl JJS NNpl VBTpl DETpl NNpl
+DETpl JJS JJS NNpl VBTpl DETpl NNpl
+DETpl NNpl VBTpl DETpl NNpl
+DETpl NNpl P NN VBTpl DETpl NNpl
+DETpl NNpl P DETsing,con JJScon NN VBTpl DETpl NNpl
+DETpl NNpl P DETsing,con NNcon VBTpl DETpl NNpl
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl DETpl NNpl
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl DETpl NNpl
+DETpl NNpl P DETsing,vow NNvow VBTpl DETpl NNpl
+DETpl NNpl P JJScon NNcon VBTpl DETpl NNpl
+DETpl NNpl P JJScon JJS NNcon VBTpl DETpl NNpl
+DETpl NNpl P JJSvow NNvow VBTpl DETpl NNpl
+DETpl NNpl P JJSvow JJS NNvow VBTpl DETpl NNpl
+DETpl NNpl P NN VBTpl DETpl NNpl
+DETpl NNpl P DETsing,con JJScon NN VBTpl DETpl NNpl
+DETpl NNpl P DETsing,con NNcon VBTpl DETpl NNpl
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl DETpl NNpl
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl DETpl NNpl
+DETpl NNpl P DETsing,vow NNvow VBTpl DETpl NNpl
+DETpl NNpl P JJScon NNcon VBTpl DETpl NNpl
+DETpl NNpl P JJScon JJS NNcon VBTpl DETpl NNpl
+DETpl NNpl P JJSvow NNvow VBTpl DETpl NNpl
+DETpl NNpl P JJSvow JJS NNvow VBTpl DETpl NNpl
+JJS NNpl VBTpl DETpl NNpl
+JJS JJS NNpl VBTpl DETpl NNpl
+JJS NNpl P NN VBTpl DETpl NNpl
+JJS JJS NNpl P NN VBTpl DETpl NNpl
+JJS NNpl P DETsing,con JJScon NN VBTpl DETpl NNpl
+JJS JJS NNpl P DETsing,con JJScon NN VBTpl DETpl NNpl
+JJS NNpl P DETsing,con NNcon VBTpl DETpl NNpl
+JJS JJS NNpl P DETsing,con NNcon VBTpl DETpl NNpl
+JJS NNpl P DETsing,vow JJSvow NN VBTpl DETpl NNpl
+JJS JJS NNpl P DETsing,vow JJSvow NN VBTpl DETpl NNpl
+JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl DETpl NNpl
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl DETpl NNpl
+JJS NNpl P DETsing,vow NNvow VBTpl DETpl NNpl
+JJS JJS NNpl P DETsing,vow NNvow VBTpl DETpl NNpl
+JJS NNpl P JJScon NNcon VBTpl DETpl NNpl
+JJS JJS NNpl P JJScon NNcon VBTpl DETpl NNpl
+JJS NNpl P JJScon JJS NNcon VBTpl DETpl NNpl
+JJS JJS NNpl P JJScon JJS NNcon VBTpl DETpl NNpl
+JJS NNpl P JJSvow NNvow VBTpl DETpl NNpl
+JJS JJS NNpl P JJSvow NNvow VBTpl DETpl NNpl
+JJS NNpl P JJSvow JJS NNvow VBTpl DETpl NNpl
+JJS JJS NNpl P JJSvow JJS NNvow VBTpl DETpl NNpl
+NNpl P NN VBTpl DETpl NNpl
+NNpl P DETsing,con JJScon NN VBTpl DETpl NNpl
+NNpl P DETsing,con NNcon VBTpl DETpl NNpl
+NNpl P DETsing,vow JJSvow NN VBTpl DETpl NNpl
+NNpl P DETsing,vow JJSvow JJS NN VBTpl DETpl NNpl
+NNpl P DETsing,vow NNvow VBTpl DETpl NNpl
+NNpl P JJScon NNcon VBTpl DETpl NNpl
+NNpl P JJScon JJS NNcon VBTpl DETpl NNpl
+NNpl P JJSvow NNvow VBTpl DETpl NNpl
+NNpl P JJSvow JJS NNvow VBTpl DETpl NNpl
+NNpl VBTpl JJS NNpl
+DETpl JJS NNpl VBTpl JJS NNpl
+DETpl JJS JJS NNpl VBTpl JJS NNpl
+DETpl NNpl VBTpl JJS NNpl
+DETpl NNpl P NN VBTpl JJS NNpl
+DETpl NNpl P DETsing,con JJScon NN VBTpl JJS NNpl
+DETpl NNpl P DETsing,con NNcon VBTpl JJS NNpl
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl JJS NNpl
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl JJS NNpl
+DETpl NNpl P DETsing,vow NNvow VBTpl JJS NNpl
+DETpl NNpl P JJScon NNcon VBTpl JJS NNpl
+DETpl NNpl P JJScon JJS NNcon VBTpl JJS NNpl
+DETpl NNpl P JJSvow NNvow VBTpl JJS NNpl
+DETpl NNpl P JJSvow JJS NNvow VBTpl JJS NNpl
+DETpl NNpl P NN VBTpl JJS NNpl
+DETpl NNpl P DETsing,con JJScon NN VBTpl JJS NNpl
+DETpl NNpl P DETsing,con NNcon VBTpl JJS NNpl
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl JJS NNpl
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl JJS NNpl
+DETpl NNpl P DETsing,vow NNvow VBTpl JJS NNpl
+DETpl NNpl P JJScon NNcon VBTpl JJS NNpl
+DETpl NNpl P JJScon JJS NNcon VBTpl JJS NNpl
+DETpl NNpl P JJSvow NNvow VBTpl JJS NNpl
+DETpl NNpl P JJSvow JJS NNvow VBTpl JJS NNpl
+JJS NNpl VBTpl JJS NNpl
+JJS JJS NNpl VBTpl JJS NNpl
+JJS NNpl P NN VBTpl JJS NNpl
+JJS JJS NNpl P NN VBTpl JJS NNpl
+JJS NNpl P DETsing,con JJScon NN VBTpl JJS NNpl
+JJS JJS NNpl P DETsing,con JJScon NN VBTpl JJS NNpl
+JJS NNpl P DETsing,con NNcon VBTpl JJS NNpl
+JJS JJS NNpl P DETsing,con NNcon VBTpl JJS NNpl
+JJS NNpl P DETsing,vow JJSvow NN VBTpl JJS NNpl
+JJS JJS NNpl P DETsing,vow JJSvow NN VBTpl JJS NNpl
+JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl JJS NNpl
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl JJS NNpl
+JJS NNpl P DETsing,vow NNvow VBTpl JJS NNpl
+JJS JJS NNpl P DETsing,vow NNvow VBTpl JJS NNpl
+JJS NNpl P JJScon NNcon VBTpl JJS NNpl
+JJS JJS NNpl P JJScon NNcon VBTpl JJS NNpl
+JJS NNpl P JJScon JJS NNcon VBTpl JJS NNpl
+JJS JJS NNpl P JJScon JJS NNcon VBTpl JJS NNpl
+JJS NNpl P JJSvow NNvow VBTpl JJS NNpl
+JJS JJS NNpl P JJSvow NNvow VBTpl JJS NNpl
+JJS NNpl P JJSvow JJS NNvow VBTpl JJS NNpl
+JJS JJS NNpl P JJSvow JJS NNvow VBTpl JJS NNpl
+NNpl P NN VBTpl JJS NNpl
+NNpl P DETsing,con JJScon NN VBTpl JJS NNpl
+NNpl P DETsing,con NNcon VBTpl JJS NNpl
+NNpl P DETsing,vow JJSvow NN VBTpl JJS NNpl
+NNpl P DETsing,vow JJSvow JJS NN VBTpl JJS NNpl
+NNpl P DETsing,vow NNvow VBTpl JJS NNpl
+NNpl P JJScon NNcon VBTpl JJS NNpl
+NNpl P JJScon JJS NNcon VBTpl JJS NNpl
+NNpl P JJSvow NNvow VBTpl JJS NNpl
+NNpl P JJSvow JJS NNvow VBTpl JJS NNpl
+NNpl VBTpl JJS JJS NNpl
+DETpl JJS NNpl VBTpl JJS JJS NNpl
+DETpl JJS JJS NNpl VBTpl JJS JJS NNpl
+DETpl NNpl VBTpl JJS JJS NNpl
+DETpl NNpl P NN VBTpl JJS JJS NNpl
+DETpl NNpl P DETsing,con JJScon NN VBTpl JJS JJS NNpl
+DETpl NNpl P DETsing,con NNcon VBTpl JJS JJS NNpl
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl JJS JJS NNpl
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl JJS JJS NNpl
+DETpl NNpl P DETsing,vow NNvow VBTpl JJS JJS NNpl
+DETpl NNpl P JJScon NNcon VBTpl JJS JJS NNpl
+DETpl NNpl P JJScon JJS NNcon VBTpl JJS JJS NNpl
+DETpl NNpl P JJSvow NNvow VBTpl JJS JJS NNpl
+DETpl NNpl P JJSvow JJS NNvow VBTpl JJS JJS NNpl
+DETpl NNpl P NN VBTpl JJS JJS NNpl
+DETpl NNpl P DETsing,con JJScon NN VBTpl JJS JJS NNpl
+DETpl NNpl P DETsing,con NNcon VBTpl JJS JJS NNpl
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl JJS JJS NNpl
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl JJS JJS NNpl
+DETpl NNpl P DETsing,vow NNvow VBTpl JJS JJS NNpl
+DETpl NNpl P JJScon NNcon VBTpl JJS JJS NNpl
+DETpl NNpl P JJScon JJS NNcon VBTpl JJS JJS NNpl
+DETpl NNpl P JJSvow NNvow VBTpl JJS JJS NNpl
+DETpl NNpl P JJSvow JJS NNvow VBTpl JJS JJS NNpl
+JJS NNpl VBTpl JJS JJS NNpl
+JJS JJS NNpl VBTpl JJS JJS NNpl
+JJS NNpl P NN VBTpl JJS JJS NNpl
+JJS JJS NNpl P NN VBTpl JJS JJS NNpl
+JJS NNpl P DETsing,con JJScon NN VBTpl JJS JJS NNpl
+JJS JJS NNpl P DETsing,con JJScon NN VBTpl JJS JJS NNpl
+JJS NNpl P DETsing,con NNcon VBTpl JJS JJS NNpl
+JJS JJS NNpl P DETsing,con NNcon VBTpl JJS JJS NNpl
+JJS NNpl P DETsing,vow JJSvow NN VBTpl JJS JJS NNpl
+JJS JJS NNpl P DETsing,vow JJSvow NN VBTpl JJS JJS NNpl
+JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl JJS JJS NNpl
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl JJS JJS NNpl
+JJS NNpl P DETsing,vow NNvow VBTpl JJS JJS NNpl
+JJS JJS NNpl P DETsing,vow NNvow VBTpl JJS JJS NNpl
+JJS NNpl P JJScon NNcon VBTpl JJS JJS NNpl
+JJS JJS NNpl P JJScon NNcon VBTpl JJS JJS NNpl
+JJS NNpl P JJScon JJS NNcon VBTpl JJS JJS NNpl
+JJS JJS NNpl P JJScon JJS NNcon VBTpl JJS JJS NNpl
+JJS NNpl P JJSvow NNvow VBTpl JJS JJS NNpl
+JJS JJS NNpl P JJSvow NNvow VBTpl JJS JJS NNpl
+JJS NNpl P JJSvow JJS NNvow VBTpl JJS JJS NNpl
+JJS JJS NNpl P JJSvow JJS NNvow VBTpl JJS JJS NNpl
+NNpl P NN VBTpl JJS JJS NNpl
+NNpl P DETsing,con JJScon NN VBTpl JJS JJS NNpl
+NNpl P DETsing,con NNcon VBTpl JJS JJS NNpl
+NNpl P DETsing,vow JJSvow NN VBTpl JJS JJS NNpl
+NNpl P DETsing,vow JJSvow JJS NN VBTpl JJS JJS NNpl
+NNpl P DETsing,vow NNvow VBTpl JJS JJS NNpl
+NNpl P JJScon NNcon VBTpl JJS JJS NNpl
+NNpl P JJScon JJS NNcon VBTpl JJS JJS NNpl
+NNpl P JJSvow NNvow VBTpl JJS JJS NNpl
+NNpl P JJSvow JJS NNvow VBTpl JJS JJS NNpl
+NNpl VBTpl NN
+DETpl JJS NNpl VBTpl NN
+DETpl JJS JJS NNpl VBTpl NN
+DETpl NNpl VBTpl NN
+DETpl NNpl P NN VBTpl NN
+DETpl NNpl P DETsing,con JJScon NN VBTpl NN
+DETpl NNpl P DETsing,con NNcon VBTpl NN
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl NN
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl NN
+DETpl NNpl P DETsing,vow NNvow VBTpl NN
+DETpl NNpl P JJScon NNcon VBTpl NN
+DETpl NNpl P JJScon JJS NNcon VBTpl NN
+DETpl NNpl P JJSvow NNvow VBTpl NN
+DETpl NNpl P JJSvow JJS NNvow VBTpl NN
+DETpl NNpl P NN VBTpl NN
+DETpl NNpl P DETsing,con JJScon NN VBTpl NN
+DETpl NNpl P DETsing,con NNcon VBTpl NN
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl NN
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl NN
+DETpl NNpl P DETsing,vow NNvow VBTpl NN
+DETpl NNpl P JJScon NNcon VBTpl NN
+DETpl NNpl P JJScon JJS NNcon VBTpl NN
+DETpl NNpl P JJSvow NNvow VBTpl NN
+DETpl NNpl P JJSvow JJS NNvow VBTpl NN
+JJS NNpl VBTpl NN
+JJS JJS NNpl VBTpl NN
+JJS NNpl P NN VBTpl NN
+JJS JJS NNpl P NN VBTpl NN
+JJS NNpl P DETsing,con JJScon NN VBTpl NN
+JJS JJS NNpl P DETsing,con JJScon NN VBTpl NN
+JJS NNpl P DETsing,con NNcon VBTpl NN
+JJS JJS NNpl P DETsing,con NNcon VBTpl NN
+JJS NNpl P DETsing,vow JJSvow NN VBTpl NN
+JJS JJS NNpl P DETsing,vow JJSvow NN VBTpl NN
+JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl NN
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl NN
+JJS NNpl P DETsing,vow NNvow VBTpl NN
+JJS JJS NNpl P DETsing,vow NNvow VBTpl NN
+JJS NNpl P JJScon NNcon VBTpl NN
+JJS JJS NNpl P JJScon NNcon VBTpl NN
+JJS NNpl P JJScon JJS NNcon VBTpl NN
+JJS JJS NNpl P JJScon JJS NNcon VBTpl NN
+JJS NNpl P JJSvow NNvow VBTpl NN
+JJS JJS NNpl P JJSvow NNvow VBTpl NN
+JJS NNpl P JJSvow JJS NNvow VBTpl NN
+JJS JJS NNpl P JJSvow JJS NNvow VBTpl NN
+NNpl P NN VBTpl NN
+NNpl P DETsing,con JJScon NN VBTpl NN
+NNpl P DETsing,con NNcon VBTpl NN
+NNpl P DETsing,vow JJSvow NN VBTpl NN
+NNpl P DETsing,vow JJSvow JJS NN VBTpl NN
+NNpl P DETsing,vow NNvow VBTpl NN
+NNpl P JJScon NNcon VBTpl NN
+NNpl P JJScon JJS NNcon VBTpl NN
+NNpl P JJSvow NNvow VBTpl NN
+NNpl P JJSvow JJS NNvow VBTpl NN
+NNpl VBTpl DETsing,con JJScon NN
+DETpl JJS NNpl VBTpl DETsing,con JJScon NN
+DETpl JJS JJS NNpl VBTpl DETsing,con JJScon NN
+DETpl NNpl VBTpl DETsing,con JJScon NN
+DETpl NNpl P NN VBTpl DETsing,con JJScon NN
+DETpl NNpl P DETsing,con JJScon NN VBTpl DETsing,con JJScon NN
+DETpl NNpl P DETsing,con NNcon VBTpl DETsing,con JJScon NN
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl DETsing,con JJScon NN
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,con JJScon NN
+DETpl NNpl P DETsing,vow NNvow VBTpl DETsing,con JJScon NN
+DETpl NNpl P JJScon NNcon VBTpl DETsing,con JJScon NN
+DETpl NNpl P JJScon JJS NNcon VBTpl DETsing,con JJScon NN
+DETpl NNpl P JJSvow NNvow VBTpl DETsing,con JJScon NN
+DETpl NNpl P JJSvow JJS NNvow VBTpl DETsing,con JJScon NN
+DETpl NNpl P NN VBTpl DETsing,con JJScon NN
+DETpl NNpl P DETsing,con JJScon NN VBTpl DETsing,con JJScon NN
+DETpl NNpl P DETsing,con NNcon VBTpl DETsing,con JJScon NN
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl DETsing,con JJScon NN
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,con JJScon NN
+DETpl NNpl P DETsing,vow NNvow VBTpl DETsing,con JJScon NN
+DETpl NNpl P JJScon NNcon VBTpl DETsing,con JJScon NN
+DETpl NNpl P JJScon JJS NNcon VBTpl DETsing,con JJScon NN
+DETpl NNpl P JJSvow NNvow VBTpl DETsing,con JJScon NN
+DETpl NNpl P JJSvow JJS NNvow VBTpl DETsing,con JJScon NN
+JJS NNpl VBTpl DETsing,con JJScon NN
+JJS JJS NNpl VBTpl DETsing,con JJScon NN
+JJS NNpl P NN VBTpl DETsing,con JJScon NN
+JJS JJS NNpl P NN VBTpl DETsing,con JJScon NN
+JJS NNpl P DETsing,con JJScon NN VBTpl DETsing,con JJScon NN
+JJS JJS NNpl P DETsing,con JJScon NN VBTpl DETsing,con JJScon NN
+JJS NNpl P DETsing,con NNcon VBTpl DETsing,con JJScon NN
+JJS JJS NNpl P DETsing,con NNcon VBTpl DETsing,con JJScon NN
+JJS NNpl P DETsing,vow JJSvow NN VBTpl DETsing,con JJScon NN
+JJS JJS NNpl P DETsing,vow JJSvow NN VBTpl DETsing,con JJScon NN
+JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,con JJScon NN
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,con JJScon NN
+JJS NNpl P DETsing,vow NNvow VBTpl DETsing,con JJScon NN
+JJS JJS NNpl P DETsing,vow NNvow VBTpl DETsing,con JJScon NN
+JJS NNpl P JJScon NNcon VBTpl DETsing,con JJScon NN
+JJS JJS NNpl P JJScon NNcon VBTpl DETsing,con JJScon NN
+JJS NNpl P JJScon JJS NNcon VBTpl DETsing,con JJScon NN
+JJS JJS NNpl P JJScon JJS NNcon VBTpl DETsing,con JJScon NN
+JJS NNpl P JJSvow NNvow VBTpl DETsing,con JJScon NN
+JJS JJS NNpl P JJSvow NNvow VBTpl DETsing,con JJScon NN
+JJS NNpl P JJSvow JJS NNvow VBTpl DETsing,con JJScon NN
+JJS JJS NNpl P JJSvow JJS NNvow VBTpl DETsing,con JJScon NN
+NNpl P NN VBTpl DETsing,con JJScon NN
+NNpl P DETsing,con JJScon NN VBTpl DETsing,con JJScon NN
+NNpl P DETsing,con NNcon VBTpl DETsing,con JJScon NN
+NNpl P DETsing,vow JJSvow NN VBTpl DETsing,con JJScon NN
+NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,con JJScon NN
+NNpl P DETsing,vow NNvow VBTpl DETsing,con JJScon NN
+NNpl P JJScon NNcon VBTpl DETsing,con JJScon NN
+NNpl P JJScon JJS NNcon VBTpl DETsing,con JJScon NN
+NNpl P JJSvow NNvow VBTpl DETsing,con JJScon NN
+NNpl P JJSvow JJS NNvow VBTpl DETsing,con JJScon NN
+NNpl VBTpl DETsing,con NNcon
+DETpl JJS NNpl VBTpl DETsing,con NNcon
+DETpl JJS JJS NNpl VBTpl DETsing,con NNcon
+DETpl NNpl VBTpl DETsing,con NNcon
+DETpl NNpl P NN VBTpl DETsing,con NNcon
+DETpl NNpl P DETsing,con JJScon NN VBTpl DETsing,con NNcon
+DETpl NNpl P DETsing,con NNcon VBTpl DETsing,con NNcon
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl DETsing,con NNcon
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,con NNcon
+DETpl NNpl P DETsing,vow NNvow VBTpl DETsing,con NNcon
+DETpl NNpl P JJScon NNcon VBTpl DETsing,con NNcon
+DETpl NNpl P JJScon JJS NNcon VBTpl DETsing,con NNcon
+DETpl NNpl P JJSvow NNvow VBTpl DETsing,con NNcon
+DETpl NNpl P JJSvow JJS NNvow VBTpl DETsing,con NNcon
+DETpl NNpl P NN VBTpl DETsing,con NNcon
+DETpl NNpl P DETsing,con JJScon NN VBTpl DETsing,con NNcon
+DETpl NNpl P DETsing,con NNcon VBTpl DETsing,con NNcon
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl DETsing,con NNcon
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,con NNcon
+DETpl NNpl P DETsing,vow NNvow VBTpl DETsing,con NNcon
+DETpl NNpl P JJScon NNcon VBTpl DETsing,con NNcon
+DETpl NNpl P JJScon JJS NNcon VBTpl DETsing,con NNcon
+DETpl NNpl P JJSvow NNvow VBTpl DETsing,con NNcon
+DETpl NNpl P JJSvow JJS NNvow VBTpl DETsing,con NNcon
+JJS NNpl VBTpl DETsing,con NNcon
+JJS JJS NNpl VBTpl DETsing,con NNcon
+JJS NNpl P NN VBTpl DETsing,con NNcon
+JJS JJS NNpl P NN VBTpl DETsing,con NNcon
+JJS NNpl P DETsing,con JJScon NN VBTpl DETsing,con NNcon
+JJS JJS NNpl P DETsing,con JJScon NN VBTpl DETsing,con NNcon
+JJS NNpl P DETsing,con NNcon VBTpl DETsing,con NNcon
+JJS JJS NNpl P DETsing,con NNcon VBTpl DETsing,con NNcon
+JJS NNpl P DETsing,vow JJSvow NN VBTpl DETsing,con NNcon
+JJS JJS NNpl P DETsing,vow JJSvow NN VBTpl DETsing,con NNcon
+JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,con NNcon
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,con NNcon
+JJS NNpl P DETsing,vow NNvow VBTpl DETsing,con NNcon
+JJS JJS NNpl P DETsing,vow NNvow VBTpl DETsing,con NNcon
+JJS NNpl P JJScon NNcon VBTpl DETsing,con NNcon
+JJS JJS NNpl P JJScon NNcon VBTpl DETsing,con NNcon
+JJS NNpl P JJScon JJS NNcon VBTpl DETsing,con NNcon
+JJS JJS NNpl P JJScon JJS NNcon VBTpl DETsing,con NNcon
+JJS NNpl P JJSvow NNvow VBTpl DETsing,con NNcon
+JJS JJS NNpl P JJSvow NNvow VBTpl DETsing,con NNcon
+JJS NNpl P JJSvow JJS NNvow VBTpl DETsing,con NNcon
+JJS JJS NNpl P JJSvow JJS NNvow VBTpl DETsing,con NNcon
+NNpl P NN VBTpl DETsing,con NNcon
+NNpl P DETsing,con JJScon NN VBTpl DETsing,con NNcon
+NNpl P DETsing,con NNcon VBTpl DETsing,con NNcon
+NNpl P DETsing,vow JJSvow NN VBTpl DETsing,con NNcon
+NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,con NNcon
+NNpl P DETsing,vow NNvow VBTpl DETsing,con NNcon
+NNpl P JJScon NNcon VBTpl DETsing,con NNcon
+NNpl P JJScon JJS NNcon VBTpl DETsing,con NNcon
+NNpl P JJSvow NNvow VBTpl DETsing,con NNcon
+NNpl P JJSvow JJS NNvow VBTpl DETsing,con NNcon
+NNpl VBTpl DETsing,vow JJSvow NN
+DETpl JJS NNpl VBTpl DETsing,vow JJSvow NN
+DETpl JJS JJS NNpl VBTpl DETsing,vow JJSvow NN
+DETpl NNpl VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P NN VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P DETsing,con JJScon NN VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P DETsing,con NNcon VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P DETsing,vow NNvow VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P JJScon NNcon VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P JJScon JJS NNcon VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P JJSvow NNvow VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P JJSvow JJS NNvow VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P NN VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P DETsing,con JJScon NN VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P DETsing,con NNcon VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P DETsing,vow NNvow VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P JJScon NNcon VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P JJScon JJS NNcon VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P JJSvow NNvow VBTpl DETsing,vow JJSvow NN
+DETpl NNpl P JJSvow JJS NNvow VBTpl DETsing,vow JJSvow NN
+JJS NNpl VBTpl DETsing,vow JJSvow NN
+JJS JJS NNpl VBTpl DETsing,vow JJSvow NN
+JJS NNpl P NN VBTpl DETsing,vow JJSvow NN
+JJS JJS NNpl P NN VBTpl DETsing,vow JJSvow NN
+JJS NNpl P DETsing,con JJScon NN VBTpl DETsing,vow JJSvow NN
+JJS JJS NNpl P DETsing,con JJScon NN VBTpl DETsing,vow JJSvow NN
+JJS NNpl P DETsing,con NNcon VBTpl DETsing,vow JJSvow NN
+JJS JJS NNpl P DETsing,con NNcon VBTpl DETsing,vow JJSvow NN
+JJS NNpl P DETsing,vow JJSvow NN VBTpl DETsing,vow JJSvow NN
+JJS JJS NNpl P DETsing,vow JJSvow NN VBTpl DETsing,vow JJSvow NN
+JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,vow JJSvow NN
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,vow JJSvow NN
+JJS NNpl P DETsing,vow NNvow VBTpl DETsing,vow JJSvow NN
+JJS JJS NNpl P DETsing,vow NNvow VBTpl DETsing,vow JJSvow NN
+JJS NNpl P JJScon NNcon VBTpl DETsing,vow JJSvow NN
+JJS JJS NNpl P JJScon NNcon VBTpl DETsing,vow JJSvow NN
+JJS NNpl P JJScon JJS NNcon VBTpl DETsing,vow JJSvow NN
+JJS JJS NNpl P JJScon JJS NNcon VBTpl DETsing,vow JJSvow NN
+JJS NNpl P JJSvow NNvow VBTpl DETsing,vow JJSvow NN
+JJS JJS NNpl P JJSvow NNvow VBTpl DETsing,vow JJSvow NN
+JJS NNpl P JJSvow JJS NNvow VBTpl DETsing,vow JJSvow NN
+JJS JJS NNpl P JJSvow JJS NNvow VBTpl DETsing,vow JJSvow NN
+NNpl P NN VBTpl DETsing,vow JJSvow NN
+NNpl P DETsing,con JJScon NN VBTpl DETsing,vow JJSvow NN
+NNpl P DETsing,con NNcon VBTpl DETsing,vow JJSvow NN
+NNpl P DETsing,vow JJSvow NN VBTpl DETsing,vow JJSvow NN
+NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,vow JJSvow NN
+NNpl P DETsing,vow NNvow VBTpl DETsing,vow JJSvow NN
+NNpl P JJScon NNcon VBTpl DETsing,vow JJSvow NN
+NNpl P JJScon JJS NNcon VBTpl DETsing,vow JJSvow NN
+NNpl P JJSvow NNvow VBTpl DETsing,vow JJSvow NN
+NNpl P JJSvow JJS NNvow VBTpl DETsing,vow JJSvow NN
+NNpl VBTpl DETsing,vow JJSvow JJS NN
+DETpl JJS NNpl VBTpl DETsing,vow JJSvow JJS NN
+DETpl JJS JJS NNpl VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P NN VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P DETsing,con JJScon NN VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P DETsing,con NNcon VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P DETsing,vow NNvow VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P JJScon NNcon VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P JJScon JJS NNcon VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P JJSvow NNvow VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P JJSvow JJS NNvow VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P NN VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P DETsing,con JJScon NN VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P DETsing,con NNcon VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P DETsing,vow NNvow VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P JJScon NNcon VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P JJScon JJS NNcon VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P JJSvow NNvow VBTpl DETsing,vow JJSvow JJS NN
+DETpl NNpl P JJSvow JJS NNvow VBTpl DETsing,vow JJSvow JJS NN
+JJS NNpl VBTpl DETsing,vow JJSvow JJS NN
+JJS JJS NNpl VBTpl DETsing,vow JJSvow JJS NN
+JJS NNpl P NN VBTpl DETsing,vow JJSvow JJS NN
+JJS JJS NNpl P NN VBTpl DETsing,vow JJSvow JJS NN
+JJS NNpl P DETsing,con JJScon NN VBTpl DETsing,vow JJSvow JJS NN
+JJS JJS NNpl P DETsing,con JJScon NN VBTpl DETsing,vow JJSvow JJS NN
+JJS NNpl P DETsing,con NNcon VBTpl DETsing,vow JJSvow JJS NN
+JJS JJS NNpl P DETsing,con NNcon VBTpl DETsing,vow JJSvow JJS NN
+JJS NNpl P DETsing,vow JJSvow NN VBTpl DETsing,vow JJSvow JJS NN
+JJS JJS NNpl P DETsing,vow JJSvow NN VBTpl DETsing,vow JJSvow JJS NN
+JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,vow JJSvow JJS NN
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,vow JJSvow JJS NN
+JJS NNpl P DETsing,vow NNvow VBTpl DETsing,vow JJSvow JJS NN
+JJS JJS NNpl P DETsing,vow NNvow VBTpl DETsing,vow JJSvow JJS NN
+JJS NNpl P JJScon NNcon VBTpl DETsing,vow JJSvow JJS NN
+JJS JJS NNpl P JJScon NNcon VBTpl DETsing,vow JJSvow JJS NN
+JJS NNpl P JJScon JJS NNcon VBTpl DETsing,vow JJSvow JJS NN
+JJS JJS NNpl P JJScon JJS NNcon VBTpl DETsing,vow JJSvow JJS NN
+JJS NNpl P JJSvow NNvow VBTpl DETsing,vow JJSvow JJS NN
+JJS JJS NNpl P JJSvow NNvow VBTpl DETsing,vow JJSvow JJS NN
+JJS NNpl P JJSvow JJS NNvow VBTpl DETsing,vow JJSvow JJS NN
+JJS JJS NNpl P JJSvow JJS NNvow VBTpl DETsing,vow JJSvow JJS NN
+NNpl P NN VBTpl DETsing,vow JJSvow JJS NN
+NNpl P DETsing,con JJScon NN VBTpl DETsing,vow JJSvow JJS NN
+NNpl P DETsing,con NNcon VBTpl DETsing,vow JJSvow JJS NN
+NNpl P DETsing,vow JJSvow NN VBTpl DETsing,vow JJSvow JJS NN
+NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,vow JJSvow JJS NN
+NNpl P DETsing,vow NNvow VBTpl DETsing,vow JJSvow JJS NN
+NNpl P JJScon NNcon VBTpl DETsing,vow JJSvow JJS NN
+NNpl P JJScon JJS NNcon VBTpl DETsing,vow JJSvow JJS NN
+NNpl P JJSvow NNvow VBTpl DETsing,vow JJSvow JJS NN
+NNpl P JJSvow JJS NNvow VBTpl DETsing,vow JJSvow JJS NN
+NNpl VBTpl DETsing,vow NNvow
+DETpl JJS NNpl VBTpl DETsing,vow NNvow
+DETpl JJS JJS NNpl VBTpl DETsing,vow NNvow
+DETpl NNpl VBTpl DETsing,vow NNvow
+DETpl NNpl P NN VBTpl DETsing,vow NNvow
+DETpl NNpl P DETsing,con JJScon NN VBTpl DETsing,vow NNvow
+DETpl NNpl P DETsing,con NNcon VBTpl DETsing,vow NNvow
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl DETsing,vow NNvow
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,vow NNvow
+DETpl NNpl P DETsing,vow NNvow VBTpl DETsing,vow NNvow
+DETpl NNpl P JJScon NNcon VBTpl DETsing,vow NNvow
+DETpl NNpl P JJScon JJS NNcon VBTpl DETsing,vow NNvow
+DETpl NNpl P JJSvow NNvow VBTpl DETsing,vow NNvow
+DETpl NNpl P JJSvow JJS NNvow VBTpl DETsing,vow NNvow
+DETpl NNpl P NN VBTpl DETsing,vow NNvow
+DETpl NNpl P DETsing,con JJScon NN VBTpl DETsing,vow NNvow
+DETpl NNpl P DETsing,con NNcon VBTpl DETsing,vow NNvow
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl DETsing,vow NNvow
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,vow NNvow
+DETpl NNpl P DETsing,vow NNvow VBTpl DETsing,vow NNvow
+DETpl NNpl P JJScon NNcon VBTpl DETsing,vow NNvow
+DETpl NNpl P JJScon JJS NNcon VBTpl DETsing,vow NNvow
+DETpl NNpl P JJSvow NNvow VBTpl DETsing,vow NNvow
+DETpl NNpl P JJSvow JJS NNvow VBTpl DETsing,vow NNvow
+JJS NNpl VBTpl DETsing,vow NNvow
+JJS JJS NNpl VBTpl DETsing,vow NNvow
+JJS NNpl P NN VBTpl DETsing,vow NNvow
+JJS JJS NNpl P NN VBTpl DETsing,vow NNvow
+JJS NNpl P DETsing,con JJScon NN VBTpl DETsing,vow NNvow
+JJS JJS NNpl P DETsing,con JJScon NN VBTpl DETsing,vow NNvow
+JJS NNpl P DETsing,con NNcon VBTpl DETsing,vow NNvow
+JJS JJS NNpl P DETsing,con NNcon VBTpl DETsing,vow NNvow
+JJS NNpl P DETsing,vow JJSvow NN VBTpl DETsing,vow NNvow
+JJS JJS NNpl P DETsing,vow JJSvow NN VBTpl DETsing,vow NNvow
+JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,vow NNvow
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,vow NNvow
+JJS NNpl P DETsing,vow NNvow VBTpl DETsing,vow NNvow
+JJS JJS NNpl P DETsing,vow NNvow VBTpl DETsing,vow NNvow
+JJS NNpl P JJScon NNcon VBTpl DETsing,vow NNvow
+JJS JJS NNpl P JJScon NNcon VBTpl DETsing,vow NNvow
+JJS NNpl P JJScon JJS NNcon VBTpl DETsing,vow NNvow
+JJS JJS NNpl P JJScon JJS NNcon VBTpl DETsing,vow NNvow
+JJS NNpl P JJSvow NNvow VBTpl DETsing,vow NNvow
+JJS JJS NNpl P JJSvow NNvow VBTpl DETsing,vow NNvow
+JJS NNpl P JJSvow JJS NNvow VBTpl DETsing,vow NNvow
+JJS JJS NNpl P JJSvow JJS NNvow VBTpl DETsing,vow NNvow
+NNpl P NN VBTpl DETsing,vow NNvow
+NNpl P DETsing,con JJScon NN VBTpl DETsing,vow NNvow
+NNpl P DETsing,con NNcon VBTpl DETsing,vow NNvow
+NNpl P DETsing,vow JJSvow NN VBTpl DETsing,vow NNvow
+NNpl P DETsing,vow JJSvow JJS NN VBTpl DETsing,vow NNvow
+NNpl P DETsing,vow NNvow VBTpl DETsing,vow NNvow
+NNpl P JJScon NNcon VBTpl DETsing,vow NNvow
+NNpl P JJScon JJS NNcon VBTpl DETsing,vow NNvow
+NNpl P JJSvow NNvow VBTpl DETsing,vow NNvow
+NNpl P JJSvow JJS NNvow VBTpl DETsing,vow NNvow
+NNpl VBTpl JJScon NNcon
+DETpl JJS NNpl VBTpl JJScon NNcon
+DETpl JJS JJS NNpl VBTpl JJScon NNcon
+DETpl NNpl VBTpl JJScon NNcon
+DETpl NNpl P NN VBTpl JJScon NNcon
+DETpl NNpl P DETsing,con JJScon NN VBTpl JJScon NNcon
+DETpl NNpl P DETsing,con NNcon VBTpl JJScon NNcon
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl JJScon NNcon
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl JJScon NNcon
+DETpl NNpl P DETsing,vow NNvow VBTpl JJScon NNcon
+DETpl NNpl P JJScon NNcon VBTpl JJScon NNcon
+DETpl NNpl P JJScon JJS NNcon VBTpl JJScon NNcon
+DETpl NNpl P JJSvow NNvow VBTpl JJScon NNcon
+DETpl NNpl P JJSvow JJS NNvow VBTpl JJScon NNcon
+DETpl NNpl P NN VBTpl JJScon NNcon
+DETpl NNpl P DETsing,con JJScon NN VBTpl JJScon NNcon
+DETpl NNpl P DETsing,con NNcon VBTpl JJScon NNcon
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl JJScon NNcon
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl JJScon NNcon
+DETpl NNpl P DETsing,vow NNvow VBTpl JJScon NNcon
+DETpl NNpl P JJScon NNcon VBTpl JJScon NNcon
+DETpl NNpl P JJScon JJS NNcon VBTpl JJScon NNcon
+DETpl NNpl P JJSvow NNvow VBTpl JJScon NNcon
+DETpl NNpl P JJSvow JJS NNvow VBTpl JJScon NNcon
+JJS NNpl VBTpl JJScon NNcon
+JJS JJS NNpl VBTpl JJScon NNcon
+JJS NNpl P NN VBTpl JJScon NNcon
+JJS JJS NNpl P NN VBTpl JJScon NNcon
+JJS NNpl P DETsing,con JJScon NN VBTpl JJScon NNcon
+JJS JJS NNpl P DETsing,con JJScon NN VBTpl JJScon NNcon
+JJS NNpl P DETsing,con NNcon VBTpl JJScon NNcon
+JJS JJS NNpl P DETsing,con NNcon VBTpl JJScon NNcon
+JJS NNpl P DETsing,vow JJSvow NN VBTpl JJScon NNcon
+JJS JJS NNpl P DETsing,vow JJSvow NN VBTpl JJScon NNcon
+JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl JJScon NNcon
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl JJScon NNcon
+JJS NNpl P DETsing,vow NNvow VBTpl JJScon NNcon
+JJS JJS NNpl P DETsing,vow NNvow VBTpl JJScon NNcon
+JJS NNpl P JJScon NNcon VBTpl JJScon NNcon
+JJS JJS NNpl P JJScon NNcon VBTpl JJScon NNcon
+JJS NNpl P JJScon JJS NNcon VBTpl JJScon NNcon
+JJS JJS NNpl P JJScon JJS NNcon VBTpl JJScon NNcon
+JJS NNpl P JJSvow NNvow VBTpl JJScon NNcon
+JJS JJS NNpl P JJSvow NNvow VBTpl JJScon NNcon
+JJS NNpl P JJSvow JJS NNvow VBTpl JJScon NNcon
+JJS JJS NNpl P JJSvow JJS NNvow VBTpl JJScon NNcon
+NNpl P NN VBTpl JJScon NNcon
+NNpl P DETsing,con JJScon NN VBTpl JJScon NNcon
+NNpl P DETsing,con NNcon VBTpl JJScon NNcon
+NNpl P DETsing,vow JJSvow NN VBTpl JJScon NNcon
+NNpl P DETsing,vow JJSvow JJS NN VBTpl JJScon NNcon
+NNpl P DETsing,vow NNvow VBTpl JJScon NNcon
+NNpl P JJScon NNcon VBTpl JJScon NNcon
+NNpl P JJScon JJS NNcon VBTpl JJScon NNcon
+NNpl P JJSvow NNvow VBTpl JJScon NNcon
+NNpl P JJSvow JJS NNvow VBTpl JJScon NNcon
+NNpl VBTpl JJScon JJS NNcon
+DETpl JJS NNpl VBTpl JJScon JJS NNcon
+DETpl JJS JJS NNpl VBTpl JJScon JJS NNcon
+DETpl NNpl VBTpl JJScon JJS NNcon
+DETpl NNpl P NN VBTpl JJScon JJS NNcon
+DETpl NNpl P DETsing,con JJScon NN VBTpl JJScon JJS NNcon
+DETpl NNpl P DETsing,con NNcon VBTpl JJScon JJS NNcon
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl JJScon JJS NNcon
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl JJScon JJS NNcon
+DETpl NNpl P DETsing,vow NNvow VBTpl JJScon JJS NNcon
+DETpl NNpl P JJScon NNcon VBTpl JJScon JJS NNcon
+DETpl NNpl P JJScon JJS NNcon VBTpl JJScon JJS NNcon
+DETpl NNpl P JJSvow NNvow VBTpl JJScon JJS NNcon
+DETpl NNpl P JJSvow JJS NNvow VBTpl JJScon JJS NNcon
+DETpl NNpl P NN VBTpl JJScon JJS NNcon
+DETpl NNpl P DETsing,con JJScon NN VBTpl JJScon JJS NNcon
+DETpl NNpl P DETsing,con NNcon VBTpl JJScon JJS NNcon
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl JJScon JJS NNcon
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl JJScon JJS NNcon
+DETpl NNpl P DETsing,vow NNvow VBTpl JJScon JJS NNcon
+DETpl NNpl P JJScon NNcon VBTpl JJScon JJS NNcon
+DETpl NNpl P JJScon JJS NNcon VBTpl JJScon JJS NNcon
+DETpl NNpl P JJSvow NNvow VBTpl JJScon JJS NNcon
+DETpl NNpl P JJSvow JJS NNvow VBTpl JJScon JJS NNcon
+JJS NNpl VBTpl JJScon JJS NNcon
+JJS JJS NNpl VBTpl JJScon JJS NNcon
+JJS NNpl P NN VBTpl JJScon JJS NNcon
+JJS JJS NNpl P NN VBTpl JJScon JJS NNcon
+JJS NNpl P DETsing,con JJScon NN VBTpl JJScon JJS NNcon
+JJS JJS NNpl P DETsing,con JJScon NN VBTpl JJScon JJS NNcon
+JJS NNpl P DETsing,con NNcon VBTpl JJScon JJS NNcon
+JJS JJS NNpl P DETsing,con NNcon VBTpl JJScon JJS NNcon
+JJS NNpl P DETsing,vow JJSvow NN VBTpl JJScon JJS NNcon
+JJS JJS NNpl P DETsing,vow JJSvow NN VBTpl JJScon JJS NNcon
+JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl JJScon JJS NNcon
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl JJScon JJS NNcon
+JJS NNpl P DETsing,vow NNvow VBTpl JJScon JJS NNcon
+JJS JJS NNpl P DETsing,vow NNvow VBTpl JJScon JJS NNcon
+JJS NNpl P JJScon NNcon VBTpl JJScon JJS NNcon
+JJS JJS NNpl P JJScon NNcon VBTpl JJScon JJS NNcon
+JJS NNpl P JJScon JJS NNcon VBTpl JJScon JJS NNcon
+JJS JJS NNpl P JJScon JJS NNcon VBTpl JJScon JJS NNcon
+JJS NNpl P JJSvow NNvow VBTpl JJScon JJS NNcon
+JJS JJS NNpl P JJSvow NNvow VBTpl JJScon JJS NNcon
+JJS NNpl P JJSvow JJS NNvow VBTpl JJScon JJS NNcon
+JJS JJS NNpl P JJSvow JJS NNvow VBTpl JJScon JJS NNcon
+NNpl P NN VBTpl JJScon JJS NNcon
+NNpl P DETsing,con JJScon NN VBTpl JJScon JJS NNcon
+NNpl P DETsing,con NNcon VBTpl JJScon JJS NNcon
+NNpl P DETsing,vow JJSvow NN VBTpl JJScon JJS NNcon
+NNpl P DETsing,vow JJSvow JJS NN VBTpl JJScon JJS NNcon
+NNpl P DETsing,vow NNvow VBTpl JJScon JJS NNcon
+NNpl P JJScon NNcon VBTpl JJScon JJS NNcon
+NNpl P JJScon JJS NNcon VBTpl JJScon JJS NNcon
+NNpl P JJSvow NNvow VBTpl JJScon JJS NNcon
+NNpl P JJSvow JJS NNvow VBTpl JJScon JJS NNcon
+NNpl VBTpl JJSvow NNvow
+DETpl JJS NNpl VBTpl JJSvow NNvow
+DETpl JJS JJS NNpl VBTpl JJSvow NNvow
+DETpl NNpl VBTpl JJSvow NNvow
+DETpl NNpl P NN VBTpl JJSvow NNvow
+DETpl NNpl P DETsing,con JJScon NN VBTpl JJSvow NNvow
+DETpl NNpl P DETsing,con NNcon VBTpl JJSvow NNvow
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl JJSvow NNvow
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl JJSvow NNvow
+DETpl NNpl P DETsing,vow NNvow VBTpl JJSvow NNvow
+DETpl NNpl P JJScon NNcon VBTpl JJSvow NNvow
+DETpl NNpl P JJScon JJS NNcon VBTpl JJSvow NNvow
+DETpl NNpl P JJSvow NNvow VBTpl JJSvow NNvow
+DETpl NNpl P JJSvow JJS NNvow VBTpl JJSvow NNvow
+DETpl NNpl P NN VBTpl JJSvow NNvow
+DETpl NNpl P DETsing,con JJScon NN VBTpl JJSvow NNvow
+DETpl NNpl P DETsing,con NNcon VBTpl JJSvow NNvow
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl JJSvow NNvow
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl JJSvow NNvow
+DETpl NNpl P DETsing,vow NNvow VBTpl JJSvow NNvow
+DETpl NNpl P JJScon NNcon VBTpl JJSvow NNvow
+DETpl NNpl P JJScon JJS NNcon VBTpl JJSvow NNvow
+DETpl NNpl P JJSvow NNvow VBTpl JJSvow NNvow
+DETpl NNpl P JJSvow JJS NNvow VBTpl JJSvow NNvow
+JJS NNpl VBTpl JJSvow NNvow
+JJS JJS NNpl VBTpl JJSvow NNvow
+JJS NNpl P NN VBTpl JJSvow NNvow
+JJS JJS NNpl P NN VBTpl JJSvow NNvow
+JJS NNpl P DETsing,con JJScon NN VBTpl JJSvow NNvow
+JJS JJS NNpl P DETsing,con JJScon NN VBTpl JJSvow NNvow
+JJS NNpl P DETsing,con NNcon VBTpl JJSvow NNvow
+JJS JJS NNpl P DETsing,con NNcon VBTpl JJSvow NNvow
+JJS NNpl P DETsing,vow JJSvow NN VBTpl JJSvow NNvow
+JJS JJS NNpl P DETsing,vow JJSvow NN VBTpl JJSvow NNvow
+JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl JJSvow NNvow
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl JJSvow NNvow
+JJS NNpl P DETsing,vow NNvow VBTpl JJSvow NNvow
+JJS JJS NNpl P DETsing,vow NNvow VBTpl JJSvow NNvow
+JJS NNpl P JJScon NNcon VBTpl JJSvow NNvow
+JJS JJS NNpl P JJScon NNcon VBTpl JJSvow NNvow
+JJS NNpl P JJScon JJS NNcon VBTpl JJSvow NNvow
+JJS JJS NNpl P JJScon JJS NNcon VBTpl JJSvow NNvow
+JJS NNpl P JJSvow NNvow VBTpl JJSvow NNvow
+JJS JJS NNpl P JJSvow NNvow VBTpl JJSvow NNvow
+JJS NNpl P JJSvow JJS NNvow VBTpl JJSvow NNvow
+JJS JJS NNpl P JJSvow JJS NNvow VBTpl JJSvow NNvow
+NNpl P NN VBTpl JJSvow NNvow
+NNpl P DETsing,con JJScon NN VBTpl JJSvow NNvow
+NNpl P DETsing,con NNcon VBTpl JJSvow NNvow
+NNpl P DETsing,vow JJSvow NN VBTpl JJSvow NNvow
+NNpl P DETsing,vow JJSvow JJS NN VBTpl JJSvow NNvow
+NNpl P DETsing,vow NNvow VBTpl JJSvow NNvow
+NNpl P JJScon NNcon VBTpl JJSvow NNvow
+NNpl P JJScon JJS NNcon VBTpl JJSvow NNvow
+NNpl P JJSvow NNvow VBTpl JJSvow NNvow
+NNpl P JJSvow JJS NNvow VBTpl JJSvow NNvow
+NNpl VBTpl JJSvow JJS NNvow
+DETpl JJS NNpl VBTpl JJSvow JJS NNvow
+DETpl JJS JJS NNpl VBTpl JJSvow JJS NNvow
+DETpl NNpl VBTpl JJSvow JJS NNvow
+DETpl NNpl P NN VBTpl JJSvow JJS NNvow
+DETpl NNpl P DETsing,con JJScon NN VBTpl JJSvow JJS NNvow
+DETpl NNpl P DETsing,con NNcon VBTpl JJSvow JJS NNvow
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl JJSvow JJS NNvow
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl JJSvow JJS NNvow
+DETpl NNpl P DETsing,vow NNvow VBTpl JJSvow JJS NNvow
+DETpl NNpl P JJScon NNcon VBTpl JJSvow JJS NNvow
+DETpl NNpl P JJScon JJS NNcon VBTpl JJSvow JJS NNvow
+DETpl NNpl P JJSvow NNvow VBTpl JJSvow JJS NNvow
+DETpl NNpl P JJSvow JJS NNvow VBTpl JJSvow JJS NNvow
+DETpl NNpl P NN VBTpl JJSvow JJS NNvow
+DETpl NNpl P DETsing,con JJScon NN VBTpl JJSvow JJS NNvow
+DETpl NNpl P DETsing,con NNcon VBTpl JJSvow JJS NNvow
+DETpl NNpl P DETsing,vow JJSvow NN VBTpl JJSvow JJS NNvow
+DETpl NNpl P DETsing,vow JJSvow JJS NN VBTpl JJSvow JJS NNvow
+DETpl NNpl P DETsing,vow NNvow VBTpl JJSvow JJS NNvow
+DETpl NNpl P JJScon NNcon VBTpl JJSvow JJS NNvow
+DETpl NNpl P JJScon JJS NNcon VBTpl JJSvow JJS NNvow
+DETpl NNpl P JJSvow NNvow VBTpl JJSvow JJS NNvow
+DETpl NNpl P JJSvow JJS NNvow VBTpl JJSvow JJS NNvow
+JJS NNpl VBTpl JJSvow JJS NNvow
+JJS JJS NNpl VBTpl JJSvow JJS NNvow
+JJS NNpl P NN VBTpl JJSvow JJS NNvow
+JJS JJS NNpl P NN VBTpl JJSvow JJS NNvow
+JJS NNpl P DETsing,con JJScon NN VBTpl JJSvow JJS NNvow
+JJS JJS NNpl P DETsing,con JJScon NN VBTpl JJSvow JJS NNvow
+JJS NNpl P DETsing,con NNcon VBTpl JJSvow JJS NNvow
+JJS JJS NNpl P DETsing,con NNcon VBTpl JJSvow JJS NNvow
+JJS NNpl P DETsing,vow JJSvow NN VBTpl JJSvow JJS NNvow
+JJS JJS NNpl P DETsing,vow JJSvow NN VBTpl JJSvow JJS NNvow
+JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl JJSvow JJS NNvow
+JJS JJS NNpl P DETsing,vow JJSvow JJS NN VBTpl JJSvow JJS NNvow
+JJS NNpl P DETsing,vow NNvow VBTpl JJSvow JJS NNvow
+JJS JJS NNpl P DETsing,vow NNvow VBTpl JJSvow JJS NNvow
+JJS NNpl P JJScon NNcon VBTpl JJSvow JJS NNvow
+JJS JJS NNpl P JJScon NNcon VBTpl JJSvow JJS NNvow
+JJS NNpl P JJScon JJS NNcon VBTpl JJSvow JJS NNvow
+JJS JJS NNpl P JJScon JJS NNcon VBTpl JJSvow JJS NNvow
+JJS NNpl P JJSvow NNvow VBTpl JJSvow JJS NNvow
+JJS JJS NNpl P JJSvow NNvow VBTpl JJSvow JJS NNvow
+JJS NNpl P JJSvow JJS NNvow VBTpl JJSvow JJS NNvow
+JJS JJS NNpl P JJSvow JJS NNvow VBTpl JJSvow JJS NNvow
+NNpl P NN VBTpl JJSvow JJS NNvow
+NNpl P DETsing,con JJScon NN VBTpl JJSvow JJS NNvow
+NNpl P DETsing,con NNcon VBTpl JJSvow JJS NNvow
+NNpl P DETsing,vow JJSvow NN VBTpl JJSvow JJS NNvow
+NNpl P DETsing,vow JJSvow JJS NN VBTpl JJSvow JJS NNvow
+NNpl P DETsing,vow NNvow VBTpl JJSvow JJS NNvow
+NNpl P JJScon NNcon VBTpl JJSvow JJS NNvow
+NNpl P JJScon JJS NNcon VBTpl JJSvow JJS NNvow
+NNpl P JJSvow NNvow VBTpl JJSvow JJS NNvow
+NNpl P JJSvow JJS NNvow VBTpl JJSvow JJS NNvow
+THERE-IS NN
+THERE-IS DETsing,con JJScon NN
+THERE-IS DETsing,con NNcon
+THERE-IS DETsing,con NNcon P NNpl
+THERE-IS DETsing,con NNcon P DETpl JJS NNpl
+THERE-IS DETsing,con NNcon P DETpl JJS JJS NNpl
+THERE-IS DETsing,con NNcon P DETpl NNpl
+THERE-IS DETsing,con NNcon P JJS NNpl
+THERE-IS DETsing,con NNcon P JJS JJS NNpl
+THERE-IS DETsing,con NNcon P NNpl
+THERE-IS DETsing,con NNcon P DETpl JJS NNpl
+THERE-IS DETsing,con NNcon P DETpl JJS JJS NNpl
+THERE-IS DETsing,con NNcon P DETpl NNpl
+THERE-IS DETsing,con NNcon P JJS NNpl
+THERE-IS DETsing,con NNcon P JJS JJS NNpl
+THERE-IS DETsing,vow JJSvow NN
+THERE-IS DETsing,vow JJSvow JJS NN
+THERE-IS DETsing,vow NNvow
+THERE-IS DETsing,vow NNvow P NNpl
+THERE-IS DETsing,vow NNvow P DETpl JJS NNpl
+THERE-IS DETsing,vow NNvow P DETpl JJS JJS NNpl
+THERE-IS DETsing,vow NNvow P DETpl NNpl
+THERE-IS DETsing,vow NNvow P JJS NNpl
+THERE-IS DETsing,vow NNvow P JJS JJS NNpl
+THERE-IS DETsing,vow NNvow P NNpl
+THERE-IS DETsing,vow NNvow P DETpl JJS NNpl
+THERE-IS DETsing,vow NNvow P DETpl JJS JJS NNpl
+THERE-IS DETsing,vow NNvow P DETpl NNpl
+THERE-IS DETsing,vow NNvow P JJS NNpl
+THERE-IS DETsing,vow NNvow P JJS JJS NNpl
+THERE-IS JJScon NNcon
+THERE-IS JJScon JJS NNcon
+THERE-IS JJSvow NNvow
+THERE-IS JJSvow JJS NNvow
+THERE-IS JJScon NNcon P NNpl
+THERE-IS JJScon JJS NNcon P NNpl
+THERE-IS JJScon NNcon P DETpl JJS NNpl
+THERE-IS JJScon JJS NNcon P DETpl JJS NNpl
+THERE-IS JJScon NNcon P DETpl JJS JJS NNpl
+THERE-IS JJScon JJS NNcon P DETpl JJS JJS NNpl
+THERE-IS JJScon NNcon P DETpl NNpl
+THERE-IS JJScon JJS NNcon P DETpl NNpl
+THERE-IS JJScon NNcon P JJS NNpl
+THERE-IS JJScon JJS NNcon P JJS NNpl
+THERE-IS JJScon NNcon P JJS JJS NNpl
+THERE-IS JJScon JJS NNcon P JJS JJS NNpl
+THERE-IS JJScon NNvow P NNpl
+THERE-IS JJScon JJS NNvow P NNpl
+THERE-IS JJScon NNvow P DETpl JJS NNpl
+THERE-IS JJScon JJS NNvow P DETpl JJS NNpl
+THERE-IS JJScon NNvow P DETpl JJS JJS NNpl
+THERE-IS JJScon JJS NNvow P DETpl JJS JJS NNpl
+THERE-IS JJScon NNvow P DETpl NNpl
+THERE-IS JJScon JJS NNvow P DETpl NNpl
+THERE-IS JJScon NNvow P JJS NNpl
+THERE-IS JJScon JJS NNvow P JJS NNpl
+THERE-IS JJScon NNvow P JJS JJS NNpl
+THERE-IS JJScon JJS NNvow P JJS JJS NNpl
+THERE-IS NN P NNpl
+THERE-IS NN P DETpl JJS NNpl
+THERE-IS NN P DETpl JJS JJS NNpl
+THERE-IS NN P DETpl NNpl
+THERE-IS NN P JJS NNpl
+THERE-IS NN P JJS JJS NNpl
+THERE-ARE NNpl
+THERE-ARE DETpl JJS NNpl
+THERE-ARE DETpl JJS JJS NNpl
+THERE-ARE DETpl NNpl
+THERE-ARE DETpl NNpl P NN
+THERE-ARE DETpl NNpl P DETsing,con JJScon NN
+THERE-ARE DETpl NNpl P DETsing,con NNcon
+THERE-ARE DETpl NNpl P DETsing,vow JJSvow NN
+THERE-ARE DETpl NNpl P DETsing,vow JJSvow JJS NN
+THERE-ARE DETpl NNpl P DETsing,vow NNvow
+THERE-ARE DETpl NNpl P JJScon NNcon
+THERE-ARE DETpl NNpl P JJScon JJS NNcon
+THERE-ARE DETpl NNpl P JJSvow NNvow
+THERE-ARE DETpl NNpl P JJSvow JJS NNvow
+THERE-ARE DETpl NNpl P NN
+THERE-ARE DETpl NNpl P DETsing,con JJScon NN
+THERE-ARE DETpl NNpl P DETsing,con NNcon
+THERE-ARE DETpl NNpl P DETsing,vow JJSvow NN
+THERE-ARE DETpl NNpl P DETsing,vow JJSvow JJS NN
+THERE-ARE DETpl NNpl P DETsing,vow NNvow
+THERE-ARE DETpl NNpl P JJScon NNcon
+THERE-ARE DETpl NNpl P JJScon JJS NNcon
+THERE-ARE DETpl NNpl P JJSvow NNvow
+THERE-ARE DETpl NNpl P JJSvow JJS NNvow
+THERE-ARE JJS NNpl
+THERE-ARE JJS JJS NNpl
+THERE-ARE JJS NNpl P NN
+THERE-ARE JJS JJS NNpl P NN
+THERE-ARE JJS NNpl P DETsing,con JJScon NN
+THERE-ARE JJS JJS NNpl P DETsing,con JJScon NN
+THERE-ARE JJS NNpl P DETsing,con NNcon
+THERE-ARE JJS JJS NNpl P DETsing,con NNcon
+THERE-ARE JJS NNpl P DETsing,vow JJSvow NN
+THERE-ARE JJS JJS NNpl P DETsing,vow JJSvow NN
+THERE-ARE JJS NNpl P DETsing,vow JJSvow JJS NN
+THERE-ARE JJS JJS NNpl P DETsing,vow JJSvow JJS NN
+THERE-ARE JJS NNpl P DETsing,vow NNvow
+THERE-ARE JJS JJS NNpl P DETsing,vow NNvow
+THERE-ARE JJS NNpl P JJScon NNcon
+THERE-ARE JJS JJS NNpl P JJScon NNcon
+THERE-ARE JJS NNpl P JJScon JJS NNcon
+THERE-ARE JJS JJS NNpl P JJScon JJS NNcon
+THERE-ARE JJS NNpl P JJSvow NNvow
+THERE-ARE JJS JJS NNpl P JJSvow NNvow
+THERE-ARE JJS NNpl P JJSvow JJS NNvow
+THERE-ARE JJS JJS NNpl P JJSvow JJS NNvow
+THERE-ARE NNpl P NN
+THERE-ARE NNpl P DETsing,con JJScon NN
+THERE-ARE NNpl P DETsing,con NNcon
+THERE-ARE NNpl P DETsing,vow JJSvow NN
+THERE-ARE NNpl P DETsing,vow JJSvow JJS NN
+THERE-ARE NNpl P DETsing,vow NNvow
+THERE-ARE NNpl P JJScon NNcon
+THERE-ARE NNpl P JJScon JJS NNcon
+THERE-ARE NNpl P JJSvow NNvow
+THERE-ARE NNpl P JJSvow JJS NNvow
