@@ -85,11 +85,11 @@
         "THERE-SENTENCE": {
             "options": [
                 [
-                    "there is",
+                    "THERE-IS",
                     "NPsing"
                 ],
                 [
-                    "there are",
+                    "THERE-ARE",
                     "NPpl"
                 ]
             ]
