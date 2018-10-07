@@ -44,6 +44,7 @@
         "JJSvow": {
             "description": "Adjective, superlative",
             "options": [
+                "amateur",
                 {
                     "abbreviation": "Qa",
                     "value": "aquamarine"
@@ -87,7 +88,10 @@
                 {
                     "abbreviation": "agbr",
                     "value": "algebra"
-                }
+                },
+                "alien",
+                "alley",
+                "alumni"
             ]
         },
         "NNpl": {
@@ -107,7 +111,61 @@
         "P": {
             "description": "Preposition",
             "options": [
-                "in"
+                "about",
+                "below",
+                "toward",
+                "above",
+                "beneath",
+                "for",
+                "on",
+                "under",
+                "across",
+                "from",
+                "onto",
+                "underneath",
+                "after",
+                "between",
+                "in",
+                "out",
+                "until",
+                "against",
+                "beyond",
+                "in front of",
+                "outside",
+                "up",
+                "along",
+                "but",
+                "inside",
+                "over",
+                "upon",
+                "among",
+                "by",
+                "in spite of",
+                "past",
+                "up to",
+                "around",
+                "concerning",
+                "instead of",
+                "regarding",
+                "with",
+                "at",
+                "despite",
+                "into",
+                "since",
+                "within",
+                "because of",
+                "down",
+                "like",
+                "through",
+                "without",
+                "before",
+                "during",
+                "near",
+                "throughout",
+                "behind",
+                "except",
+                "of",
+                "to"
             ]
         },
         "RBF": {
@@ -134,6 +192,16 @@
                 },
                 "soon",
                 "yesterday"
+            ]
+        },
+        "THERE-ARE": {
+            "options": [
+                "there are"
+            ]
+        },
+        "THERE-IS": {
+            "options": [
+                "there is"
             ]
         },
         "VBI": {
@@ -175,11 +243,6 @@
         "33. WDT Wh-determiner",
         "34. WP Wh-pronoun",
         "35. WP$ Possessive wh-pronoun",
-        "36. WRB Wh-adverb",
-        "",
-        "alien",
-        "alley",
-        "alumni",
-        "amateur"
+        "36. WRB Wh-adverb"
     ]
 }
