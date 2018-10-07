@@ -19,12 +19,18 @@
                 "this"
             ]
         },
-        "DETpl,vow": {
-            "description": "Determiner for plural noun starting with a vowel",
+        "DETpl": {
+            "description": "Determiner for plural noun",
             "options": [
                 "my",
                 "the",
                 "these"
+            ]
+        },
+        "JJS": {
+            "options": [
+                "JJScon",
+                "JJSvow"
             ]
         },
         "JJScon": {
@@ -54,23 +60,18 @@
         "NN": {
             "description": "Noun, singular or mass",
             "options": [
-                "NNcons",
+                "NNcon",
                 "NNvow"
             ]
         },
-        "NNcons": {
+        "NNcon": {
             "description": "Noun, singular or mass, starts with a consonant",
             "options": [
                 {
                     "abbreviation": "py",
                     "value": "python"
                 },
-                "rain",
-                {
-                    "abbreviation": "Fj",
-                    "value": "Mount Fuji"
-                },
-                "Paris"
+                "rain"
             ]
         },
         "NNvow": {
@@ -106,6 +107,16 @@
             "options": [
                 "cats",
                 "dogs"
+            ]
+        },
+        "NNP": {
+            "description": "Proper noun, singular",
+            "options": [
+                {
+                    "abbreviation": "Fj",
+                    "value": "Mount Fuji"
+                },
+                "Paris"
             ]
         },
         "P": {
@@ -209,6 +220,22 @@
             "options": [
                 "flys",
                 "rains"
+            ]
+        },
+        "VBTsing": {
+            "description": "Transitive verb",
+            "options": [
+                "eats",
+                "kicks",
+                "paints"
+            ]
+        },
+        "VBTpl": {
+            "description": "Transitive verb",
+            "options": [
+                "eat",
+                "kick",
+                "paint"
             ]
         }
     },
