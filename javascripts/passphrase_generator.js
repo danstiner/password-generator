@@ -159,6 +159,25 @@
     element.style.display = "";
   }
 
+  function getJSON(url, onSuccess, onError) {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+          if (onSuccess) {
+            onSuccess(JSON.parse(xhr.responseText));
+          }
+        } else {
+          if (onError) {
+            onError(xhr);
+          }
+        }
+      }
+    };
+    xhr.open("GET", url, true);
+    xhr.send();
+  }
+
   exports.run = function() {
     updateSelectors();
     generatePassphrase();
