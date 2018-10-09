@@ -5,29 +5,8 @@ set -e
 DIR="$(dirname "${BASH_SOURCE[0]}")"
 WORDLISTS="$DIR/lists"
 ROOTDIR="$DIR/../../"
-TARGET="$ROOTDIR/javascripts/wordlists.js"
+TARGET="$ROOTDIR/data.json"
 MODULE_NAME="wordlists"
-
-clean() {
-	cat | grep -Fvx -f "$DIR/swearWords.txt" -f "$DIR/disallowed_words.txt" | grep -v -e '[[:upper:]]'
-}
-
-to_js_array_element()
-{
-	prefix=$1
-	while read -r string; do echo "$prefix\"${string/\"/\\\"}\""; done
-}
-
-write_wordlist()
-{
-	exportName=$1
-
-	echo "  exports[\"$exportName\"] =" >> "$TARGET"
-	read -r first_line
-	echo "$first_line" | to_js_array_element "    [ " >> "$TARGET"
-	cat | to_js_array_element "    , " >> "$TARGET"
-	echo "  ];" >> "$TARGET"
-}
 
 regenerate_common_password_based_lists()
 {
@@ -46,10 +25,8 @@ regenerate_common_password_based_lists()
 
 write_wordlists()
 {
-	echo "'use strict';" > "$TARGET"
-	echo "(function(exports) {" >> "$TARGET"
+	echo '{' > "$TARGET"
 
-	# Write word lists as javascript variables
 	find "$WORDLISTS" -maxdepth 1 -type f -name "*.txt" | while read -r filePath
 	do
 		fileName=$(basename "$filePath")
@@ -57,7 +34,23 @@ write_wordlists()
 		cat $filePath | clean | write_wordlist "$name"
 	done
 
-	echo "})(this.$MODULE_NAME = {});" >> "$TARGET"
+	echo '  "": []' >> "$TARGET"
+	echo '}' >> "$TARGET"
+	echo '' >> "$TARGET"
 }
+
+clean() {
+	cat | grep -Fvx -f "$DIR/swearWords.txt" -f "$DIR/disallowed_words.txt" | grep -v -e '[[:upper:]]'
+}
+
+write_wordlist()
+{
+	exportName=$1
+
+	echo "  \"$exportName\": [" >> "$TARGET"
+	cat | while read -r line; do echo "    \"${line/\"/\\\"}\","; done | sed '$s/,/ /' >> "$TARGET"
+	echo '  ],' >> "$TARGET"
+}
+
 regenerate_common_password_based_lists
 write_wordlists
