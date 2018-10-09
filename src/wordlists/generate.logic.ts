@@ -13,9 +13,7 @@ interface Rule {
     options: Option[]
 }
 
-type Option = string | string[] | {
-    value: string[]
-}
+type Option = string | string[] | { value: string }
 
 type Tree<T> = Node<T>
 type Node<T> = AllOf<T> | Alternatives<T> | Leaf<T>
@@ -68,13 +66,7 @@ function expandOption(context: Context, option: Option): Node<string> | null {
             each: expansion
         }
     } else if ('value' in option) {
-        const expansion = expandOptionArray(context, option.value)
-        if (expansion === null) {
-            return null
-        }
-        return {
-            each: expansion
-        }
+        return expandRule(context, option.value)
     } else {
         throw Error(`Unknown option type: ${typeof option}`)
     }

@@ -19,7 +19,17 @@ describe("expandRule", () => {
         expect(expandRule(emptyContext, 'non-existant')).toEqual({ value: 'non-existant' })
     })
 
-    it('should expand simple rule', () => {
+    it('should expand rule with string option', () => {
+        const context = { ...emptyContext }
+        context.rules['S'] = {
+            options: [
+                'option'
+            ]
+        }
+        expect(expandRule(context, 'S')).toEqual({"alternatives": [{"value": "option"}]})
+    })
+
+    it('should expand rule with array option', () => {
         const context = { ...emptyContext }
         context.rules['S'] = {
             options: [
@@ -27,6 +37,18 @@ describe("expandRule", () => {
             ]
         }
         expect(expandRule(context, 'S')).toEqual({"alternatives": [{"each": [{"value": "NP"}, {"value": "VP"}]}]})
+    })
+
+    it('should expand rule with option object', () => {
+        const context = { ...emptyContext }
+        context.rules['S'] = {
+            options: [
+                {
+                    value: 'option'
+                }
+            ]
+        }
+        expect(expandRule(context, 'S')).toEqual({"alternatives": [{"value": "option"}]})
     })
 })
 
