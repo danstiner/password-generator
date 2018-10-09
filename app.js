@@ -82,6 +82,7 @@
 })(this.crypto_random_generator = {});
 
 (function(exports) {
+  var wordlists;
   var generationAlgorithms = {
     "phrase": {
       description: "words in a phrase",
@@ -261,8 +262,14 @@
   }
 
   exports.run = function() {
-    updateSelectors();
-    generatePassphrase();
+    getJSON('./data.json', function onSuccess(json) {
+      wordlists = json;
+      updateSelectors();
+      generatePassphrase();
+    }, function onError(xhr) {
+      displayError("Failed to load data");
+    })
+    
   };
 
   exports.onChangeWordCount = event => {
