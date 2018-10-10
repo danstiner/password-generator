@@ -9,6 +9,7 @@
     "typescript": "^3.1.1"
   },
   "scripts": {
+    "build": "tsc --project src/browser",
     "start": "http-server . -a localhost",
     "test": "jest"
   }
