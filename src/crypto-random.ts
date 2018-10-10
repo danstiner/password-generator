@@ -4,7 +4,7 @@ const MAX_RANDOM_INTEGER = 4294967295;
 
 // Generate a random integer in [0, max)
 function randomInt(max: number): number {
-    if (max < 0) {
+    if (max <= 0) {
         throw new RangeError("")
     }
 
