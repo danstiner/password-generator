@@ -59,8 +59,8 @@
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
   },
   "files": [
-    "crypto-random.ts",
-    "../crypto-random.ts",
+    "random-uint32.ts",
+    "../random-int.ts",
     "app.ts"
   ]
 }
