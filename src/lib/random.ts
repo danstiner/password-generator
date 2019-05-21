@@ -1,9 +1,10 @@
+import { randomUint32 } from 'platform/random'
 
 // 2^32-1
 const MAX_RANDOM_INTEGER = 4294967295;
 
-// Generate a random integer in [0, max)
-function randomInt(max: number): number {
+/** Generate a random integer in [0, max)  */
+export function randomInt(max: number): number {
     if (max <= 0) {
         throw new RangeError("")
     }

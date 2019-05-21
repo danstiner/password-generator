@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "preserveConstEnums": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "strict": true,
+        "target": "es6",
+        "baseUrl": "src",
+        "paths": {
+            "platform/*": [
+                "platform/node/*"
+            ],
+        },
+    },
+    "include": [
+        "src/node/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+    ]
+}
