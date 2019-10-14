@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "module": "system",
+        "module": "esnext",
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
@@ -9,6 +9,7 @@
         "baseUrl": "src",
         "paths": {
             "platform/*": ["platform/web/*"],
+            "lib/*": ["lib/*"],
         },
     },
     "include": [

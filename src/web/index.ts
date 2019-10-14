@@ -1,8 +1,3 @@
-import { randomUint32 } from 'platform/random'
-import { randomInt } from 'lib/random'
-
-console.log(randomInt(1));
-
 // (function(exports) {
 //   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER
 //   var MAX_SAFE_INTEGER = 9007199254740991;

@@ -22,15 +22,14 @@ const webConfig = {
   },
   output: {
     filename: 'bundle.web.js',
-    path: path.resolve(__dirname, '.')
+    path: path.resolve(__dirname, 'dist')
   },
   devServer: {
     host: '0.0.0.0',
-    publicPath: '/assets/',
-    contentBase: path.resolve(__dirname, "dist"),
+    publicPath: '/dist/',
+    contentBase: path.resolve(__dirname, "src"),
     watchContentBase: true,
-    compress: true,
-    port: 9001
+    port: 8080
   },
   devtool: 'inline-source-map',
 };
