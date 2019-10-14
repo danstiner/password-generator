@@ -2,6 +2,8 @@ var path = require('path');
 
 module.exports = {
     entry: './src/index',
+    devtool: 'source-map',
+    mode: 'development',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'app.bundle.js'
@@ -16,6 +18,6 @@ module.exports = {
             exclude: /node_modules/,
             loader: 'babel-loader',
         }],
-    }
+    },
 };
 
