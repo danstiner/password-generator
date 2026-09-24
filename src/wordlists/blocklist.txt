@@ -1,0 +1,50 @@
+# Words excluded from the derived word lists, separated by whitespace. See scripts/derive-wordlists.js.
+# Anything after # is a comment. Grouped by reason; keep each group sorted.
+
+# Sexual, intimate or crude
+anal anus ass bisexual bra breast brothel bum butt cleavage cock condom consensual crotch cunt
+dildo douche ejaculate erect erection excrement fart fondle fucking genital groin hickey hooker
+horny impregnate lingerie lovemaking menstrual mistress monogamous naked nipple nude nudity
+ovarian pantyhose pecker penetrate pimp poop porn prenuptial prostate prostitute pubic puss
+pussy pussycat rectal screw semen sex sexy shit shitty snot spanking sperm stripper suck
+testicle testicular thong tit topless turd undress undressed urinary urinate urine uterus
+vagina vaginal vibrator voluptuous whore whorehouse womb
+
+# Slurs, identity, religion and politics
+afghan afro albino bible capitalist catholic communist crucifix dwarf dyke extremist gay geisha
+gypsy heathen homophobic lesbian midget militant negro oriental pagan pope protestant rabbi
+racist rosary schoolgirl slave socialist soviet thug
+
+# Disability, illness, bodily conditions and life circumstances
+anorexic asthmatic autistic bipolar blind catatonic childbirth childless comatose crippling
+deaf deformed disabled diseased epileptic fat fetal fetus geriatric gimpy homeless illiterate
+inoperable jobless lame malignant motherless mute obese orphan orphanage orphaned overweight
+paraplegic pregnancy pregnant prenatal retarded smallpox spastic tumor ugly ulcer unborn
+underage unemployed widow widowed
+
+# Violence against people, gore and death
+amputate assassin attacker autopsy bloody cadaver carcass carjack castrate choke corpse cremate
+crucify decapitate deceased detonator drown firearm grenade grisly gruesome gunfight gunfire
+gunman gunshot handgun hangman hostage kidnapper kill lacerated laceration massacre mutilate
+mutilated noose rapist shoot shooter smother sniper stab strangle suffocate
+
+# Drugs
+anthrax bong cocaine coke cyanide hash heroin marijuana valium
+
+# Spelling variants, which are easy to mistype (gray/grey, theater/theatre)
+advisor aluminum armor auntie axe banister barbecue blonde bony brooch canister carousel
+catalog catalogue chili color colored counselor cozy curb diarrhea disc disk donut doughnut
+dryer favorite fiber flier flyer gauge granddad gray grey guerrilla harbor jeweler jewelry
+ketchup license liter mama mantle marshal meter millimeter mold moldy moustache mustache
+neighbor omelet pajama parlor pinkie plow racket scrabble sizable sulfur theater traveler
+whiskey whisky woolen woolly yogurt
+
+# Plural nouns, which would break subject-verb agreement ("men eats")
+bacteria cattle dice men people police teeth
+
+# Verbs that read as past tense (saw, fell) or need a preposition before the object (cling to)
+barge bask bound can cater cling collide commute cry dispose fall fell felt graduate hover lie
+listen live mingle reside sag saw sit spat talk tamper trespass
+
+# Not usable as an adjective on its own
+mid
