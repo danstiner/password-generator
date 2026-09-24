@@ -8,7 +8,11 @@
   },
   "scripts": {
     "build:wordlists": "node scripts/build-wordlists.js",
+    "derive:wordlists": "node scripts/derive-wordlists.js",
     "start": "node scripts/serve.js",
     "test": "node --test"
+  },
+  "devDependencies": {
+    "wordnet-db": "3.1.14"
   }
 }
