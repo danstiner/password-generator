@@ -4,10 +4,11 @@
   "description": "Secure multi-word passphrases generated in your browser",
   "type": "module",
   "engines": {
-    "node": ">=22"
+    "node": ">=24.3"
   },
   "scripts": {
     "build:wordlists": "node scripts/build-wordlists.js",
+    "start": "node scripts/serve.js",
     "test": "node --test"
   }
 }
