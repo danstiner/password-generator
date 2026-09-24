@@ -1,7 +1,7 @@
 'use strict';
 (function(exports) {
-  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER
-  var MAX_SAFE_INTEGER = 9007199254740991;
+  // Number of distinct values a Uint32 can hold
+  var UINT32_RANGE = 4294967296;
 
   if (!Array.prototype.fill) {
     Array.prototype.fill = function(value) {
@@ -34,29 +34,25 @@
     };
   };
 
-  // Generate a random number in [min, max) using secure window.crypto.getRandomValues API
-  // For non-power-of-two ranges, rejection sampling is used to achieve an unbiased distribution
+  // Generate a uniformly distributed integer in [min, max) using the secure window.crypto.getRandomValues API.
+  // A 32-bit value is drawn and values at or above the largest multiple of the range that fits in 32 bits
+  // are rejected, so every result is equally likely. Bitwise operators are avoided because JavaScript
+  // truncates their operands to 32 bits (e.g. `x << 32` is a no-op).
   function secureRandom(min, max) {
     var range = max - min;
 
-    if (max > MAX_SAFE_INTEGER || range > MAX_SAFE_INTEGER) {
-      throw new RangeError("Maximum or range of random value larger than safely representable in JavaScript");
+    if (!Number.isInteger(range) || range < 1 || range > UINT32_RANGE) {
+      throw new RangeError("Random value range must be an integer between 1 and 2^32");
     }
-  
-    var num_bits = Math.ceil(Math.log2(range));
-    var bitmask = Math.pow(2, num_bits) - 1;
-    var randomValue;
+
+    var limit = UINT32_RANGE - (UINT32_RANGE % range);
+    var randomArray = new Uint32Array(1);
 
     do {
-      var randomArray = new Uint32Array(2);
       window.crypto.getRandomValues(randomArray);
-      // 21 upper bits + 32 lower bits = 53 bits (max safe integer)
-      var upper_uint32 = randomArray[0] >> 11;
-      var lower_uint32 = randomArray[1];
-      randomValue = (upper_uint32 << 32 | lower_uint32) & bitmask;
-    } while (randomValue > range)
+    } while (randomArray[0] >= limit);
 
-    return min + randomValue;
+    return min + (randomArray[0] % range);
   }
 
   exports.getRandomSymbolsFromFixedAlphabet = function(alphabet, count) {
