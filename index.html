@@ -45,7 +45,7 @@
           <span><span id="generated_passphrase"></span><br>
           <span>
             <span id="time_to_guess_offline" data-rate=10000000000></span>
-            <span>at ten billion guesses/sec</span>
+            <span>on average to guess at ten billion guesses/sec</span>
           </span><br>
           <span id="generated_passphrase_entropy"></span><br>
           <span id="passphrase_generation_error" class="alert alert-danger"></span>
@@ -63,8 +63,8 @@
             <li>Check if your existing passwords have been compromised at <a href="https://haveibeenpwned.com/">haveibeenpwned.com</a></li>
             <li>All computation is done locally in your browser using javascript, no passphrase data is sent or received from any server</li>
             <li>The randomness comes from the cryptographically secure <a href="https://developer.mozilla.org/en-US/docs/Web/API/RandomSource/getRandomValues">getRandomValues</a> function</li>
-            <li>Time to guess estimate assumes offline cracking a weak hash of the passphrase at ten billion guesses per second. This is conservative, but is plausible given how often password data breaches happen and the doubling of computer speed each year.</li>
-            <li>Common word list contains 2075 words, derived from the <a href="https://github.com/danielmiessler/SecLists/tree/gmaster/Passwords">10,000 most common passwords</a> which were words in <a href="http://wordlist.aspell.net/12dicts-readme/#223cmn">a dictionary</a> but not <a href="http://www.bannedwordlist.com/">swear words</a> or proper nouns.</li>
+            <li>Time to guess is the average time to find the passphrase by trying every possibility, assuming offline cracking of a weak hash of the passphrase at ten billion guesses per second. This is plausible given how often password data breaches happen and how fast computers keep getting.</li>
+            <li>Words are drawn from lists of <span id="adjective_count"></span> adjectives, <span id="noun_count"></span> nouns and <span id="verb_count"></span> verbs, derived from the <a href="https://github.com/danielmiessler/SecLists/tree/master/Passwords">100,000 most common passwords</a> that are tagged as that part of speech in <a href="https://books.google.com/ngrams">Google Books n-grams</a>, excluding <a href="http://www.bannedwordlist.com/">swear words</a> and proper nouns.</li>
             <li>View the <a href="https://github.com/danstiner/password-generator">source code on GitHub</a>. It is purposefully simple to allow easy verification.</li>
             <li>Donations accepted via Bitcoin: <a href="bitcoin:1FZcTQUjxDhnbA658GuoLEzqTan9VtiUP8">1FZcTQUjxDhnbA658GuoLEzqTan9VtiUP8</a></li>
           </ul>

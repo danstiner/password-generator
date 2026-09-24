@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { generatePassphrase, phraseShapes } from "../javascripts/passphrase_generator.js";
+import { generatePassphrase, getTimeToCrackText, phraseShapes } from "../javascripts/passphrase_generator.js";
 
 test("generates one word from the expected list for each position", () => {
   for (const [wordCount, shape] of Object.entries(phraseShapes)) {
@@ -16,4 +16,11 @@ test("rejects unsupported word counts", () => {
   for (const wordCount of [0, 3, 7, NaN]) {
     assert.throws(() => generatePassphrase(wordCount), RangeError);
   }
+});
+
+test("time to crack uses the expected number of guesses, half the keyspace", () => {
+  const rate = 1e10;
+  assert.equal(getTimeToCrackText(rate, Math.log2(2 * rate)), "1 second");
+  assert.equal(getTimeToCrackText(rate, Math.log2(2 * rate * 3600 * 5)), "5 hours");
+  assert.equal(getTimeToCrackText(rate, Math.log2(2 * rate * 31556940 * 2900)), "2,900 years");
 });
