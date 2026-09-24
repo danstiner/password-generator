@@ -1,84 +1,110 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-src 'none';">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Secure multi-word passphrases generated in your browser">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script type="module" src="javascripts/main.js"></script>
-
+    <meta name="description" content="Secure, memorable passphrases generated in your browser">
     <title>Passphrase Generator</title>
+    <link rel="stylesheet" href="stylesheets/stylesheet.css">
+    <script type="module" src="javascripts/main.js"></script>
   </head>
 
   <body>
+    <main class="wrap">
+      <p class="eyebrow">csprng · concrete words · grammar as scaffolding</p>
+      <h1>Passphrase Generator</h1>
+      <p class="sub">
+        Memorable because it paints a picture; strong because every highlighted word is drawn
+        uniformly by your browser's cryptographic random number generator. The grammar around
+        them is fixed and public, so it adds no secret bits and can be rebuilt from the words alone.
+      </p>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/danstiner/password-generator">View on GitHub</a>
-          <h1 id="project_title">Passphrase Generator</h1>
-          <h2 id="project_tagline">Secure multi-word passphrases generated in your browser</h2>
-        </header>
-    </div>
+      <section class="stage">
+        <p class="phrase" id="phrase" aria-live="polite"></p>
+        <p class="error" id="error" hidden></p>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>
-          This phrase consists of
-          <span class="dropdown">
-            <span id="passphrase_generation_symbol_count" class="text-decoration-underline-dotted">four</span>
-            <span class="dropdown-content" id="passphrase_generation_symbol_counts">
-              <a href="#" data-value=4>four</a>
-              <a href="#" data-value=5>five</a>
-              <a href="#" data-value=6>six</a>
-            </span>
-          </span> 
-          random words in a phrase. It should be easy to remember but hard to guess, making it a good password.
-        </p>
-        <div class="passphrase_block">
-          <span><span id="generated_passphrase"></span><br>
-          <span>
-            <span id="time_to_guess_offline" data-rate=10000000000></span>
-            <span>on average to guess at ten billion guesses/sec</span>
-          </span><br>
-          <span id="generated_passphrase_entropy"></span><br>
-          <span id="passphrase_generation_error" class="alert alert-danger"></span>
+        <div class="meta">
+          <span class="bits"><span class="num" id="bits">—</span> bits</span>
+          <span>as hard to guess as a random <b id="digits">—</b>-digit number</span>
+          <span>≈ <b id="diceware">—</b> Diceware words</span>
         </div>
-        <br>
-        <div id="comic">
-          <span>Inspired by the following <a href="https://xkcd.com">xkcd</a> comic strip:</span>
-          <a href="https://xkcd.com/936/">
-            <img class="containwidth" src="images/password_strength.png" title="To anyone who understands information theory and security and is in an infuriating argument with someone who does not (possibly involving mixed case), I sincerely apologize." alt="Password Strength">
+
+        <div class="controls">
+          <button class="primary" id="generate" type="button">↻ Generate</button>
+          <button id="copy" type="button">⧉ Copy</button>
+          <span class="counts" role="group" aria-label="Number of random words">
+            <button type="button" data-words="4">4 words</button>
+            <button type="button" data-words="5">5 words</button>
+            <button type="button" data-words="6">6 words</button>
+          </span>
+        </div>
+      </section>
+
+      <details>
+        <summary>How long would it take to guess?</summary>
+        <div class="panel">
+          <p>
+            Websites and password managers store a hash of your password. If that hash is stolen, an
+            attacker can guess offline as fast as their hardware allows, so the hashing algorithm sets
+            the real cost of each guess. Average time to guess this passphrase:
+          </p>
+          <dl class="crack" id="crack"></dl>
+          <p class="warn">
+            For a password manager's master password, use Argon2id with plenty of memory and at
+            least 5 words. Passwords stored <i>inside</i> the manager can be shorter.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How the bits are counted</summary>
+        <div class="panel">
+          <p>
+            Assume the attacker has this page: the word lists and sentence structure are public.
+            Only the random word choices are secret, and each is drawn uniformly:
+          </p>
+          <table class="ledger" id="ledger"></table>
+          <p>
+            The whole sentence is one uniform draw over every possible sentence, so its strength is
+            exactly <code>log₂(number of sentences)</code>, the sum of the bits above.
+          </p>
+          <p>
+            Words are chosen to be easy to picture and spell: concrete, well known and common in the
+            <a href="https://doi.org/10.3758/s13428-013-0403-5">Brysbaert et al. (2014) concreteness
+            ratings</a>, in base form according to <a href="https://wordnet.princeton.edu/">WordNet</a>,
+            and screened by hand for offensive words.
+          </p>
+          <p>
+            <b>Re-rolling</b> until you like a sentence costs very little. Generating a big batch and
+            hand-picking a favorite is worse, because people's favorites are easier to predict.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>More information</summary>
+        <div class="panel">
+          <ul>
+            <li>Nothing leaves your browser. The randomness comes from
+              <a href="https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues">crypto.getRandomValues</a>.</li>
+            <li>Check whether your existing passwords have been leaked at
+              <a href="https://haveibeenpwned.com/">haveibeenpwned.com</a>.</li>
+            <li>The <a href="https://github.com/danstiner/password-generator">source code</a> is
+              purposefully simple to allow easy verification.</li>
+            <li>Donations accepted via Bitcoin:
+              <a href="bitcoin:1FZcTQUjxDhnbA658GuoLEzqTan9VtiUP8">1FZcTQUjxDhnbA658GuoLEzqTan9VtiUP8</a></li>
+          </ul>
+          <a class="comic" href="https://xkcd.com/936/">
+            <img src="images/password_strength.png" alt="xkcd 936: Password Strength"
+              title="To anyone who understands information theory and security and is in an infuriating argument with someone who does not (possibly involving mixed case), I sincerely apologize.">
           </a>
         </div>
-        <p>
-          <h2>More information</h2>
-          <ul>
-            <li>Check if your existing passwords have been compromised at <a href="https://haveibeenpwned.com/">haveibeenpwned.com</a></li>
-            <li>All computation is done locally in your browser using javascript, no passphrase data is sent or received from any server</li>
-            <li>The randomness comes from the cryptographically secure <a href="https://developer.mozilla.org/en-US/docs/Web/API/RandomSource/getRandomValues">getRandomValues</a> function</li>
-            <li>Time to guess is the average time to find the passphrase by trying every possibility, assuming offline cracking of a weak hash of the passphrase at ten billion guesses per second. This is plausible given how often password data breaches happen and how fast computers keep getting.</li>
-            <li>Words are drawn from lists of <span id="adjective_count"></span> adjectives, <span id="noun_count"></span> nouns and <span id="verb_count"></span> verbs, derived from the <a href="https://github.com/danielmiessler/SecLists/tree/master/Passwords">100,000 most common passwords</a> that are tagged as that part of speech in <a href="https://books.google.com/ngrams">Google Books n-grams</a>, excluding <a href="http://www.bannedwordlist.com/">swear words</a> and proper nouns.</li>
-            <li>View the <a href="https://github.com/danstiner/password-generator">source code on GitHub</a>. It is purposefully simple to allow easy verification.</li>
-            <li>Donations accepted via Bitcoin: <a href="bitcoin:1FZcTQUjxDhnbA658GuoLEzqTan9VtiUP8">1FZcTQUjxDhnbA658GuoLEzqTan9VtiUP8</a></li>
-          </ul>
-        </p>
-      </section>
-    </div>
+      </details>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Passphrase Generator maintained by <a href="//danielstiner.com">Daniel Stiner</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        Space bar re-rolls. Maintained by <a href="https://danielstiner.com">Daniel Stiner</a>.
       </footer>
-    </div>
-
+    </main>
   </body>
 </html>
