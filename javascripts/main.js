@@ -1,18 +1,17 @@
-import { generatePassphrase, getTimeToCrackText, phraseShapes } from "./passphrase_generator.js";
-import {
-  common_password_adjectives as adjectives,
-  common_password_nouns as nouns,
-  common_password_verbs as verbs,
-} from "./wordlists.js";
+import { generateSentence, templates } from "./sentence.js";
+import { adjectives, nouns, verbs } from "./vocabulary.js";
+import { attackers, equivalentDicewareWords, equivalentDigits, formatDuration, secondsToCrack } from "./strength.js";
 
 const defaultWordCount = 4;
+const $ = (id) => document.getElementById(id);
 let wordCount = loadWordCount();
+let current = null;
 
 // localStorage access throws when storage is disabled, and saved values may be stale or tampered with.
 function loadWordCount() {
   try {
     const saved = Number(localStorage.getItem("wordCount"));
-    if (saved in phraseShapes) return saved;
+    if (saved in templates) return saved;
   } catch {
     // Fall back to the default below
   }
@@ -27,66 +26,76 @@ function saveWordCount() {
   }
 }
 
-function showPassphrase() {
+function element(tag, text, className) {
+  const node = document.createElement(tag);
+  node.textContent = text;
+  if (className) node.className = className;
+  return node;
+}
+
+function render() {
   try {
-    const result = generatePassphrase(wordCount);
-    document.getElementById("generated_passphrase").textContent = result.symbols.join(" ");
-    displayPassphraseStrength(result.bitsOfEntropy);
-  } catch (ex) {
-    displayError(ex);
-    throw ex;
+    current = generateSentence(wordCount);
+  } catch (error) {
+    $("error").textContent = "Error: " + error.message;
+    $("error").hidden = false;
+    throw error;
+  }
+
+  // Secret words are highlighted; the fixed words around them are dimmed.
+  $("phrase").replaceChildren(...current.parts.flatMap((part, i) => [
+    ...(i > 0 ? [" "] : []),
+    element("span", part.text, part.secret ? "word" : "glue"),
+  ]));
+  $("bits").textContent = current.bits.toFixed(1);
+  $("digits").textContent = equivalentDigits(current.bits);
+  $("diceware").textContent = equivalentDicewareWords(current.bits).toFixed(1);
+  $("crack").replaceChildren(...attackers.flatMap(({ label, guessesPerSecond }) => [
+    element("dt", formatDuration(secondsToCrack(current.bits, guessesPerSecond))),
+    element("dd", `${label}, 10^${Math.log10(guessesPerSecond)} guesses/s`),
+  ]));
+  for (const button of document.querySelectorAll("[data-words]")) {
+    button.setAttribute("aria-pressed", String(Number(button.dataset.words) === wordCount));
+  }
+  $("copy").textContent = "⧉ Copy";
+  $("copy").classList.remove("copied");
+}
+
+function renderLedger() {
+  $("ledger").replaceChildren(...Object.entries({ adjectives, nouns, verbs }).map(([name, words]) => {
+    const row = document.createElement("tr");
+    row.append(element("td", name), element("td", `${words.length.toLocaleString("en-US")} words → ${Math.log2(words.length).toFixed(2)} bits each`));
+    return row;
+  }));
+}
+
+async function copy() {
+  if (!current) return;
+  try {
+    await navigator.clipboard.writeText(current.text);
+    $("copy").textContent = "✓ Copied";
+    $("copy").classList.add("copied");
+  } catch {
+    $("copy").textContent = "Select and copy manually";
   }
 }
 
-function updateSelectors() {
-  const selected = document.querySelector(`#passphrase_generation_symbol_counts a[data-value="${wordCount}"]`);
-  document.getElementById("passphrase_generation_symbol_count").textContent = selected.textContent;
+$("generate").addEventListener("click", render);
+$("copy").addEventListener("click", copy);
+for (const button of document.querySelectorAll("[data-words]")) {
+  button.addEventListener("click", () => {
+    wordCount = Number(button.dataset.words);
+    saveWordCount();
+    render();
+  });
 }
-
-function showWordListSizes() {
-  const sizes = { adjective_count: adjectives, noun_count: nouns, verb_count: verbs };
-  for (const [id, list] of Object.entries(sizes)) {
-    document.getElementById(id).textContent = list.length.toLocaleString("en-US");
+// Space re-rolls unless a control has focus, so it never hijacks buttons or <summary>.
+document.addEventListener("keydown", (event) => {
+  if (event.key === " " && event.target === document.body) {
+    event.preventDefault();
+    render();
   }
-}
+});
 
-function selectNodeContents(event) {
-  const range = document.createRange();
-  range.selectNodeContents(event.currentTarget);
-  const selection = window.getSelection();
-  selection.removeAllRanges();
-  selection.addRange(range);
-}
-
-function displayPassphraseStrength(bitsOfEntropy) {
-  const offlineElement = document.getElementById("time_to_guess_offline");
-  const entropyElement = document.getElementById("generated_passphrase_entropy");
-
-  entropyElement.textContent = "~" + Math.floor(bitsOfEntropy) + " bits of entropy";
-  offlineElement.textContent = getTimeToCrackText(Number(offlineElement.dataset.rate), bitsOfEntropy);
-}
-
-function displayError(exception) {
-  const element = document.getElementById("passphrase_generation_error");
-  const label = document.createElement("strong");
-  label.textContent = "Error";
-  element.replaceChildren(label, ": " + exception.message);
-  element.style.display = "inline-block";
-}
-
-function onChangeWordCount(event) {
-  event.preventDefault();
-  wordCount = Number(event.target.dataset.value);
-  saveWordCount();
-  updateSelectors();
-  showPassphrase();
-}
-
-for (const elem of document.querySelectorAll("#passphrase_generation_symbol_counts a")) {
-  elem.addEventListener("click", onChangeWordCount);
-}
-document.getElementById("generated_passphrase").addEventListener("click", selectNodeContents);
-
-updateSelectors();
-showWordListSizes();
-showPassphrase();
+renderLedger();
+render();
