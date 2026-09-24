@@ -1,0 +1,61 @@
+// Builds javascripts/wordlists.js from the source word lists in src/wordlists.
+//
+// 1. Intersect the 100,000 most common passwords with Google Books n-gram words of each part
+//    of speech, writing src/wordlists/lists/common_password_<pos>.txt.
+// 2. Drop swear words, disallowed words and words containing uppercase letters, then write each
+//    list as a JavaScript array.
+import { readFileSync, writeFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+
+const root = fileURLToPath(new URL("..", import.meta.url));
+const sourceDir = `${root}src/wordlists/`;
+const listsDir = `${sourceDir}lists/`;
+const target = `${root}javascripts/wordlists.js`;
+const moduleName = "wordlists";
+
+// Output order is fixed so the build is reproducible.
+const partsOfSpeech = ["adjectives", "verbs", "nouns"];
+
+function readLines(path) {
+  const text = readFileSync(path, "utf8");
+  return text.split("\n").slice(0, text.endsWith("\n") ? -1 : undefined);
+}
+
+function writeLines(path, lines) {
+  writeFileSync(path, lines.map((line) => line + "\n").join(""));
+}
+
+function commonPasswordWords(partOfSpeech) {
+  const posWords = new Set(readLines(`${sourceDir}googlebooks_ngram_${partOfSpeech}.txt`));
+  const passwords = new Set(readLines(`${sourceDir}10_million_password_list_top_100000.txt`));
+  return [...passwords].filter((word) => posWords.has(word)).sort();
+}
+
+function clean(words) {
+  const excluded = new Set([
+    ...readLines(`${sourceDir}swearWords.txt`),
+    ...readLines(`${sourceDir}disallowed_words.txt`),
+  ]);
+  return words.filter((word) => !excluded.has(word) && !/[A-Z]/.test(word));
+}
+
+function toJavaScript(lists) {
+  const out = ["'use strict';", "(function(exports) {"];
+  for (const [name, words] of lists) {
+    out.push(`  exports[${JSON.stringify(name)}] =`);
+    words.forEach((word, i) => out.push(`    ${i === 0 ? "[" : ","} ${JSON.stringify(word)}`));
+    out.push("  ];");
+  }
+  out.push(`})(this.${moduleName} = {});`);
+  return out.map((line) => line + "\n").join("");
+}
+
+const lists = partsOfSpeech.map((partOfSpeech) => {
+  const name = `common_password_${partOfSpeech}`;
+  const words = commonPasswordWords(partOfSpeech);
+  writeLines(`${listsDir}${name}.txt`, words);
+  return [name, clean(words)];
+});
+
+writeFileSync(target, toJavaScript(lists));
+for (const [name, words] of lists) console.log(`${name}: ${words.length} words`);
