@@ -1,0 +1,2 @@
+# Third-party data, kept byte-for-byte as published; see scripts/data/NOTICE.md
+scripts/data/*.txt -text -diff
