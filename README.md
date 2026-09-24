@@ -5,12 +5,22 @@ Secure, memorable passphrases generated in your browser, served at
 
 > Fuzzy goat juggles the rusty anvil
 
-Each passphrase is a short sentence. The highlighted words are drawn uniformly from lists of concrete,
-familiar adjectives, nouns and verbs using `crypto.getRandomValues`. The sentence structure is fixed and
-public, so the strength is exactly `log2(number of possible sentences)`: about 41.5 bits for 4 words,
-51.4 for 5 and 62.7 for 6.
+Each passphrase is a short sentence: the words form one picturable scene, and the grammar around
+them is scaffolding that costs no strength.
+The highlighted words are drawn uniformly from lists of concrete, familiar adjectives, nouns and
+verbs, so the strength is exactly `log2(number of possible sentences)`: about 41.5 bits for
+4 words, 51.4 for 5 and 62.7 for 6.
 
-## How it works
+## Usage
+
+Open the site, or serve it locally (below). The page shows a passphrase with its strength in bits,
+an equivalent number of random digits and Diceware words, and the average time to guess it against
+a fast hash and against Argon2id. Choose 4, 5 or 6 words; the choice is remembered in `localStorage`.
+Generate or the space bar re-rolls, Copy puts the sentence on the clipboard. Re-rolling until you
+like one costs very little; picking a favorite from a large batch is worse, because favorites are
+predictable. Nothing leaves the browser: no server, no analytics, no requests to other origins.
+
+## Architecture
 
 | File | Purpose |
 |------|---------|
@@ -21,9 +31,26 @@ public, so the strength is exactly `log2(number of possible sentences)`: about 4
 | `javascripts/main.js` | Page wiring |
 | `src/wordlists/blocklist.txt` | Words excluded from the lists, reviewed by hand |
 
-The word lists come from the [Brysbaert et al. (2014) concreteness ratings](https://doi.org/10.3758/s13428-013-0403-5)
-(concreteness, SUBTLEX-US frequency and part of speech) and [WordNet](https://wordnet.princeton.edu/)
-(base forms, and verbs that take an object). See `scripts/derive-wordlists.js` for the thresholds.
+**One draw per sentence.** Each word count has a template of fixed words and slots, each slot filled
+from one word list. `randomBigIntBelow` reads bytes from `crypto.getRandomValues`, masks them to
+the bound's bit length and rejects values out of range, giving one uniform BigInt below the total
+number of sentences. `sentenceAt` decodes it mixed-radix into one word index per slot, so every
+sentence is equally likely and the reported bits are exactly `log2(total)`.
+
+**Only the content words are secret.** The structure ("the", "with the", the verb's `-s` ending)
+is fixed and public per word count, adds no bits, and can be rebuilt from the content words, since
+people remember a sentence's gist far better than its function words. `templates` accepts several
+templates per word count if grammar variants are ever wanted; the draw then also picks the
+template, weighted by capacity so uniformity is preserved.
+
+**Word lists are built offline.** `npm run derive:wordlists` writes `javascripts/vocabulary.js`
+from the [Brysbaert et al. (2014) concreteness ratings](https://doi.org/10.3758/s13428-013-0403-5)
+(concreteness, SUBTLEX-US frequency and part of speech), [WordNet](https://wordnet.princeton.edu/)
+(base forms, and verbs that take an object) and the blocklist. To change the lists, edit the
+blocklist or the thresholds in the script and rerun it; nothing is derived at runtime.
+
+**No dependencies, no server.** The site is static ES modules with a Content Security Policy of
+`default-src 'self'`.
 
 ## Development
 
