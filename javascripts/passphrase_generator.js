@@ -21,11 +21,12 @@ export function generatePassphrase(wordCount) {
   return getRandomSymbolsFromAlphabets(shape);
 }
 
+// Expected time for an attacker to guess the passphrase: on average half of all
+// possible passphrases must be tried before finding the right one.
 export function getTimeToCrackText(guessesPerSecond, bitsOfEntropy) {
-  const log2GuessRate = Math.log2(guessesPerSecond);
-  const secondsToCrack = (bitsOfEntropy < log2GuessRate) ? 0 : Math.pow(2, bitsOfEntropy - log2GuessRate);
-  const timeToCrack = secondsToTimeWithUnit(secondsToCrack);
-  return timeToCrack.value + " " + timeToCrack.unit;
+  const expectedGuesses = Math.pow(2, bitsOfEntropy - 1);
+  const timeToCrack = secondsToTimeWithUnit(expectedGuesses / guessesPerSecond);
+  return timeToCrack.value.toLocaleString("en-US") + " " + timeToCrack.unit;
 }
 
 function secondsToTimeWithUnit(seconds) {

@@ -1,6 +1,31 @@
-import { generatePassphrase, getTimeToCrackText } from "./passphrase_generator.js";
+import { generatePassphrase, getTimeToCrackText, phraseShapes } from "./passphrase_generator.js";
+import {
+  common_password_adjectives as adjectives,
+  common_password_nouns as nouns,
+  common_password_verbs as verbs,
+} from "./wordlists.js";
 
-let wordCount = parseInt(localStorage.getItem("wordCount")) || 4;
+const defaultWordCount = 4;
+let wordCount = loadWordCount();
+
+// localStorage access throws when storage is disabled, and saved values may be stale or tampered with.
+function loadWordCount() {
+  try {
+    const saved = Number(localStorage.getItem("wordCount"));
+    if (saved in phraseShapes) return saved;
+  } catch {
+    // Fall back to the default below
+  }
+  return defaultWordCount;
+}
+
+function saveWordCount() {
+  try {
+    localStorage.setItem("wordCount", wordCount);
+  } catch {
+    // Not remembering the choice is fine
+  }
+}
 
 function showPassphrase() {
   try {
@@ -14,7 +39,15 @@ function showPassphrase() {
 }
 
 function updateSelectors() {
-  document.getElementById("passphrase_generation_symbol_count").innerHTML = Array.from(document.querySelectorAll("#passphrase_generation_symbol_counts a")).filter(elem => elem.dataset.value == wordCount)[0].innerHTML;
+  const selected = document.querySelector(`#passphrase_generation_symbol_counts a[data-value="${wordCount}"]`);
+  document.getElementById("passphrase_generation_symbol_count").textContent = selected.textContent;
+}
+
+function showWordListSizes() {
+  const sizes = { adjective_count: adjectives, noun_count: nouns, verb_count: verbs };
+  for (const [id, list] of Object.entries(sizes)) {
+    document.getElementById(id).textContent = list.length.toLocaleString("en-US");
+  }
 }
 
 function selectNodeContents(event) {
@@ -30,21 +63,23 @@ function displayPassphraseStrength(bitsOfEntropy) {
   const entropyElement = document.getElementById("generated_passphrase_entropy");
 
   entropyElement.textContent = "~" + Math.floor(bitsOfEntropy) + " bits of entropy";
-  offlineElement.textContent = getTimeToCrackText(offlineElement.dataset.rate, bitsOfEntropy);
+  offlineElement.textContent = getTimeToCrackText(Number(offlineElement.dataset.rate), bitsOfEntropy);
 }
 
 function displayError(exception) {
   const element = document.getElementById("passphrase_generation_error");
-  element.innerHTML = "<strong>Error</strong>: " + exception.message;
-  element.style.display = "";
+  const label = document.createElement("strong");
+  label.textContent = "Error";
+  element.replaceChildren(label, ": " + exception.message);
+  element.style.display = "inline-block";
 }
 
 function onChangeWordCount(event) {
   event.preventDefault();
-  wordCount = parseInt(event.target.dataset.value);
-  localStorage.setItem("wordCount", wordCount);
+  wordCount = Number(event.target.dataset.value);
+  saveWordCount();
+  updateSelectors();
   showPassphrase();
-  document.getElementById("passphrase_generation_symbol_count").innerHTML = event.target.innerHTML;
 }
 
 for (const elem of document.querySelectorAll("#passphrase_generation_symbol_counts a")) {
@@ -53,4 +88,5 @@ for (const elem of document.querySelectorAll("#passphrase_generation_symbol_coun
 document.getElementById("generated_passphrase").addEventListener("click", selectNodeContents);
 
 updateSelectors();
+showWordListSizes();
 showPassphrase();
