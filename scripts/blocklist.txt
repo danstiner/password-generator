@@ -1,0 +1,60 @@
+# Words excluded from the derived word lists, separated by whitespace. See scripts/derive-wordlists.js.
+# Anything after # is a comment. Grouped by reason; keep each group sorted.
+
+# Sexual, intimate or crude
+anal anus ass bisexual boner bra breast brothel bum butt cleavage cock condom consensual crotch
+cunt dildo douche ejaculate erect erection excrement fart fondle fucking genital groin hickey
+hooker horny impregnate lingerie lovemaking menstrual mistress monogamous naked nipple nude
+nudity ovarian pantyhose pecker penetrate pimp poop porn prenuptial prostate prostitute pubic
+puss pussy pussycat rectal screw semen sex sexy shit shitty snot spanking sperm stripper suck
+testicle testicular thong tit topless turd undress undressed urinary urinate urine uterus
+vagina vaginal vibrator voluptuous whore whorehouse womb
+
+# Slurs, identity, religion and politics
+afghan afro albino bible capitalist catholic communist crucifix dwarf dyke extremist gay geisha
+gypsy heathen homophobic lesbian midget militant negro oriental pagan pope protestant rabbi
+racist rosary schoolgirl slave socialist soviet thug
+
+# Disability, illness, bodily conditions and life circumstances
+anorexic asthmatic autistic bipolar blind bubonic catatonic childbirth childless chubby
+comatose contagious crippling deaf deformed disabled diseased epileptic fat fetal fetus flabby
+geriatric gimpy hideous homeless illiterate infection inoperable jobless lame malignant
+motherless mute obese orphan orphanage orphaned overweight paraplegic pregnancy pregnant
+prenatal pudgy retarded scrawny septic smallpox spastic toothless tumor ugly ulcer unborn
+underage unemployed widow widowed
+
+# Violence against people, gore and death
+abusive amputate assassin attacker autopsy bleed bloody cadaver carcass carjack castrate choke
+coroner corpse cremate crucify decapitate deceased detonator dissect drown fatal firearm
+grenade grisly gruesome gunfight gunfire gunman gunshot handgun hangman headless hostage injure
+kidnapper kill lacerated laceration lethal lifeless massacre morgue mortuary mutilate mutilated
+noose obituary rapist sever shoot shooter slit smother sniper stab starve strangle suffocate
+undertaker wounded
+
+# Drugs
+anthrax bong cocaine coke cyanide hash heroin marijuana valium
+
+# Spelling variants, which are easy to mistype (gray/grey, theater/theatre)
+advisor aluminum armor auntie axe banister barbecue blonde bony brooch canister carousel
+catalog catalogue chili color colored counselor cozy curb diarrhea disc disk donut doughnut
+dryer favorite fiber flier flyer gauge granddad gray grey guerrilla harbor jeweler jewelry
+ketchup license liter mama mantle marshal meter millimeter mold moldy moustache mustache
+neighbor omelet pajama parlor pinkie plow racket scrabble sizable sulfur theater traveler
+whiskey whisky woolen woolly yogurt
+
+# Plural nouns, which would break subject-verb agreement ("men eats")
+bacteria cattle dice men people police teeth
+
+# Verbs that read as past tense (saw, fell) or need a preposition before the object (cling to)
+barge bask bound can cater cling collide commute cry dispose fall fell felt graduate hover lie
+listen live mingle reside sag saw sit spat talk tamper trespass
+
+# Activities rather than things, which read oddly as a subject ("swimming eats")
+bowling boxing camping cooking drumming fencing fishing golfing ironing knitting mining
+printing sewing skiing swimming whistling wrestling
+
+# Homophones of a more concrete word in the same list, which are easy to mistype (hare/hair)
+aunt chord fairy flour hare mousse rapper son sow stake tee wiry
+
+# Adjectives that only work after a verb ("afraid goat") or only in compounds ("blue-eyed")
+ablaze adrift afloat afraid ajar alive alone asleep awake blooded eyed manned mid utter
