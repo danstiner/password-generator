@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { generatePassphrase, getTimeToCrackText, phraseShapes } from "../javascripts/passphrase_generator.js";
+import { generatePassphrase, getTimeToCrackText, phraseShapes } from "../js/passphrase_generator.js";
 
 test("generates one word from the expected list for each position", () => {
   for (const [wordCount, shape] of Object.entries(phraseShapes)) {

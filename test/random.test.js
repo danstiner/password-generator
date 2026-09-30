@@ -1,6 +1,6 @@
 import { test, mock } from "node:test";
 import assert from "node:assert/strict";
-import { randomBelow, getRandomSymbolsFromAlphabets } from "../javascripts/random.js";
+import { randomBelow, getRandomSymbolsFromAlphabets } from "../js/random.js";
 
 test("randomBelow returns integers in [0, n)", () => {
   for (const n of [1, 2, 3, 7, 361, 2643, 2 ** 31 + 1, 2 ** 32]) {

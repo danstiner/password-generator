@@ -1,4 +1,4 @@
-// Builds javascripts/wordlists.js from the source word lists in src/wordlists.
+// Builds js/wordlists.js from the source word lists in src/wordlists.
 //
 // 1. Intersect the 100,000 most common passwords with Google Books n-gram words of each part
 //    of speech, writing src/wordlists/lists/common_password_<pos>.txt.
@@ -10,7 +10,7 @@ import { fileURLToPath } from "node:url";
 const root = fileURLToPath(new URL("..", import.meta.url));
 const sourceDir = `${root}src/wordlists/`;
 const listsDir = `${sourceDir}lists/`;
-const target = `${root}javascripts/wordlists.js`;
+const target = `${root}js/wordlists.js`;
 
 // Output order is fixed so the build is reproducible.
 const partsOfSpeech = ["adjectives", "verbs", "nouns"];
