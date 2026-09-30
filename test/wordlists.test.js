@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import * as wordlists from "../javascripts/wordlists.js";
+import * as wordlists from "../js/wordlists.js";
 
 // Entropy is computed from list lengths, so duplicate or malformed entries would overstate it.
 for (const [name, words] of Object.entries(wordlists)) {
