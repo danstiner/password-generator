@@ -2,10 +2,12 @@
   "name": "password-generator",
   "private": true,
   "description": "Secure multi-word passphrases generated in your browser",
+  "type": "module",
   "engines": {
     "node": ">=22"
   },
   "scripts": {
+    "build:wordlists": "node scripts/build-wordlists.js",
     "test": "node --test"
   }
 }
